@@ -30,12 +30,12 @@
         {
             this.appMenu = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ltime = new System.Windows.Forms.Label();
             this.programsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.noProgramsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.shutdownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.shutdownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ltime = new System.Windows.Forms.Label();
             this.appMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,6 +63,38 @@
             this.menuToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.menuToolStripMenuItem.Text = "Menu";
             // 
+            // programsToolStripMenuItem
+            // 
+            this.programsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.noProgramsToolStripMenuItem});
+            this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
+            this.programsToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.programsToolStripMenuItem.Text = "Programs";
+            // 
+            // noProgramsToolStripMenuItem
+            // 
+            this.noProgramsToolStripMenuItem.Name = "noProgramsToolStripMenuItem";
+            this.noProgramsToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.noProgramsToolStripMenuItem.Text = "No programs :(";
+            // 
+            // settingsToolStripMenuItem
+            // 
+            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.settingsToolStripMenuItem.Text = "Settings";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(128, 6);
+            // 
+            // shutdownToolStripMenuItem
+            // 
+            this.shutdownToolStripMenuItem.Name = "shutdownToolStripMenuItem";
+            this.shutdownToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.shutdownToolStripMenuItem.Text = "Shutdown";
+            this.shutdownToolStripMenuItem.Click += new System.EventHandler(this.shutdownToolStripMenuItem_Click);
+            // 
             // ltime
             // 
             this.ltime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -75,38 +107,6 @@
             this.ltime.TabIndex = 1;
             this.ltime.Text = "label1";
             this.ltime.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // programsToolStripMenuItem
-            // 
-            this.programsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.noProgramsToolStripMenuItem});
-            this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
-            this.programsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.programsToolStripMenuItem.Text = "Programs";
-            // 
-            // noProgramsToolStripMenuItem
-            // 
-            this.noProgramsToolStripMenuItem.Name = "noProgramsToolStripMenuItem";
-            this.noProgramsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.noProgramsToolStripMenuItem.Text = "No programs :(";
-            // 
-            // settingsToolStripMenuItem
-            // 
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.settingsToolStripMenuItem.Text = "Settings";
-            // 
-            // shutdownToolStripMenuItem
-            // 
-            this.shutdownToolStripMenuItem.Name = "shutdownToolStripMenuItem";
-            this.shutdownToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.shutdownToolStripMenuItem.Text = "Shutdown";
-            this.shutdownToolStripMenuItem.Click += new System.EventHandler(this.shutdownToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // Desktop
             // 

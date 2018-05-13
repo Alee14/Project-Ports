@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project Ports", "Project Ports\Project Ports.csproj", "{7FF89341-BE42-4AE1-B53E-F9FA4104D30F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortEngine", "PortEngine\PortEngine.csproj", "{C1B21B60-7CCC-42FC-83AA-B41644FAA952}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7FF89341-BE42-4AE1-B53E-F9FA4104D30F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7FF89341-BE42-4AE1-B53E-F9FA4104D30F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FF89341-BE42-4AE1-B53E-F9FA4104D30F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1B21B60-7CCC-42FC-83AA-B41644FAA952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1B21B60-7CCC-42FC-83AA-B41644FAA952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B21B60-7CCC-42FC-83AA-B41644FAA952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1B21B60-7CCC-42FC-83AA-B41644FAA952}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
