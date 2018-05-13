@@ -57,5 +57,11 @@ namespace Project_Ports
         {
             
         }
+
+        private void btnDebugMode_Click(object sender, EventArgs e)
+        {
+            DebugMode debugForm = new DebugMode();
+            debugForm.Show();
+        }
     }
 }
