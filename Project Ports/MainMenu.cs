@@ -36,18 +36,18 @@ namespace Project_Ports
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnPlay_Click(object sender, EventArgs e)
         {
             Desktop desktop = new Desktop();
             desktop.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnAbout_Click(object sender, EventArgs e)
         {
             About aboutForm = new About();
             aboutForm.Show();
