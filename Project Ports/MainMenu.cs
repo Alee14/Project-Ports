@@ -38,7 +38,8 @@ namespace Project_Ports
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Oof... you can't play this game yet, but our team is working very hard :)");
+            Desktop desktop = new Desktop();
+            desktop.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
