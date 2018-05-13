@@ -51,5 +51,10 @@ namespace Project_Ports
             About aboutForm = new About();
             aboutForm.Show();
         }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
