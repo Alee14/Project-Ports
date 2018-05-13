@@ -29,19 +29,14 @@ using System.Windows.Forms;
 
 namespace Project_Ports
 {
-    public partial class Form1 : Form
+    public partial class About : Form
     {
-        public Form1()
+        public About()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Oof... you can't play this game yet. Our team is working very hard :)");
-        }
-
-        private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
