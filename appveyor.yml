@@ -1,3 +1,5 @@
 artifacts:
-  - path: \bin\debug\*
+  - path: bin\debug\Project Ports.zip 
     name: Project Ports
+after_build:
+  - dir bin\debug\Project Ports.zip
