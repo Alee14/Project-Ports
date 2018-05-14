@@ -1,5 +1,5 @@
 artifacts:
-  - path: bin\debug\* 
+  - path: Project-Ports\bin\debug\* 
     name: Project Ports
 after_build:
-  - dir bin\debug
+  - ps: $root = Resolve-Path .\Project-Ports\bin\debug; [IO.Directory]::GetFiles($root.Path, '*.*', 'AllDirectories') | % { Push-AppveyorArtifact $_ -FileName $_.Substring($root.Path.Length + 1) -DeploymentName test101 }
