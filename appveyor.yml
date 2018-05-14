@@ -1,3 +1,7 @@
 artifacts:
-  - path: bin/debug
+  - path: \bin\debug\*.zip
     name: Project Ports
+deploy: 
+  - provider: auto 
+    ...
+    artifact: ports
