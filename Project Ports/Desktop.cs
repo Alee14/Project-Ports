@@ -36,19 +36,19 @@ namespace Project_Ports
             InitializeComponent();
         }
 
-        private void Desktop_Load(object sender, EventArgs e)
+        private void dclock_Tick(object sender, EventArgs e)
         {
-            MessageBox.Show("Welcome to the Project Ports Desktop!");
+
+                this.ltime.Text = DateTime.Now.ToString("hh:mm tt");
             
         }
 
-        public static string GetTime()
+        private void Desktop_Load(object sender, EventArgs e)
         {
-            var time = DateTime.Now;
-   
-            return time.TimeOfDay.TotalHours > 12 ? $"{time.Hour - 12} PM" : $"{time.Hour} AM";
-
+            MessageBox.Show("Welcome to the Project Ports Desktop!");
+            dclock.Start();
         }
+        
 
         private void label1_Click(object sender, EventArgs e)
         {

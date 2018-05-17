@@ -153,7 +153,7 @@
             this.Controls.Add(this.btnPlay);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MainMenu";
-            this.Text = "Form1";
+            this.Text = "MainMenu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);

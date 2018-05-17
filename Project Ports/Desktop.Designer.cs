@@ -28,15 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.appMenu = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.programsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.noProgramsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.terminalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.shutdownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ltime = new System.Windows.Forms.Label();
-            this.terminalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dclock = new System.Windows.Forms.Timer(this.components);
             this.appMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,30 +72,37 @@
             this.noProgramsToolStripMenuItem,
             this.terminalToolStripMenuItem});
             this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
-            this.programsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.programsToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.programsToolStripMenuItem.Text = "Programs";
             // 
             // noProgramsToolStripMenuItem
             // 
             this.noProgramsToolStripMenuItem.Name = "noProgramsToolStripMenuItem";
-            this.noProgramsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.noProgramsToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
             this.noProgramsToolStripMenuItem.Text = "No programs :(";
+            // 
+            // terminalToolStripMenuItem
+            // 
+            this.terminalToolStripMenuItem.Name = "terminalToolStripMenuItem";
+            this.terminalToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.terminalToolStripMenuItem.Text = "Terminal";
+            this.terminalToolStripMenuItem.Click += new System.EventHandler(this.terminalToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(128, 6);
             // 
             // shutdownToolStripMenuItem
             // 
             this.shutdownToolStripMenuItem.Name = "shutdownToolStripMenuItem";
-            this.shutdownToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.shutdownToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.shutdownToolStripMenuItem.Text = "Shutdown";
             this.shutdownToolStripMenuItem.Click += new System.EventHandler(this.shutdownToolStripMenuItem_Click);
             // 
@@ -103,19 +112,16 @@
             this.ltime.AutoSize = true;
             this.ltime.BackColor = System.Drawing.Color.Silver;
             this.ltime.ForeColor = System.Drawing.Color.Black;
-            this.ltime.Location = new System.Drawing.Point(753, 7);
+            this.ltime.Location = new System.Drawing.Point(738, 6);
             this.ltime.Name = "ltime";
             this.ltime.Size = new System.Drawing.Size(26, 13);
             this.ltime.TabIndex = 1;
             this.ltime.Text = "time";
             this.ltime.Click += new System.EventHandler(this.label1_Click);
             // 
-            // terminalToolStripMenuItem
+            // dclock
             // 
-            this.terminalToolStripMenuItem.Name = "terminalToolStripMenuItem";
-            this.terminalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.terminalToolStripMenuItem.Text = "Terminal";
-            this.terminalToolStripMenuItem.Click += new System.EventHandler(this.terminalToolStripMenuItem_Click);
+            this.dclock.Tick += new System.EventHandler(this.dclock_Tick);
             // 
             // Desktop
             // 
@@ -150,5 +156,6 @@
         private System.Windows.Forms.ToolStripMenuItem shutdownToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem terminalToolStripMenuItem;
+        private System.Windows.Forms.Timer dclock;
     }
 }

@@ -28,27 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTerminal = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtTerminal
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Black;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(1, 0);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(555, 320);
-            this.textBox1.TabIndex = 0;
+            this.txtTerminal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTerminal.BackColor = System.Drawing.Color.Black;
+            this.txtTerminal.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTerminal.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTerminal.ForeColor = System.Drawing.Color.White;
+            this.txtTerminal.Location = new System.Drawing.Point(1, 0);
+            this.txtTerminal.Multiline = true;
+            this.txtTerminal.Name = "txtTerminal";
+            this.txtTerminal.Size = new System.Drawing.Size(555, 320);
+            this.txtTerminal.TabIndex = 0;
             // 
             // Terminal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(558, 321);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTerminal);
             this.Name = "Terminal";
             this.Text = "Terminal";
             this.ResumeLayout(false);
@@ -58,6 +61,6 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTerminal;
     }
 }
