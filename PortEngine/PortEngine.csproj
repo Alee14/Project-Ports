@@ -43,17 +43,30 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WindowManager\WM.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="WindowManager\WM.Designer.cs">
-      <DependentUpon>WM.cs</DependentUpon>
+    <Compile Include="WindowManager\base.cs">
+      <SubType>Form</SubType>
     </Compile>
+    <Compile Include="WindowManager\base.Designer.cs">
+      <DependentUpon>base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowManager\WindowManager.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="WindowManager\WM.resx">
-      <DependentUpon>WM.cs</DependentUpon>
+    <EmbeddedResource Include="WindowManager\base.resx">
+      <DependentUpon>base.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

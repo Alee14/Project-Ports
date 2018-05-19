@@ -81,7 +81,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(542, 646);
+            this.label2.Location = new System.Drawing.Point(563, 621);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(252, 38);
             this.label2.TabIndex = 3;
@@ -108,7 +108,7 @@
             this.webBrowser1.Location = new System.Drawing.Point(300, 32);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(891, 571);
+            this.webBrowser1.Size = new System.Drawing.Size(876, 508);
             this.webBrowser1.TabIndex = 5;
             this.webBrowser1.Url = new System.Uri("https://aleecorp.github.io/project-ports", System.UriKind.Absolute);
             // 

@@ -16,5 +16,10 @@ namespace Project_Ports
         {
             InitializeComponent();
         }
+
+        private void DebugMode_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
