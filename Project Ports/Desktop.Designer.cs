@@ -112,11 +112,11 @@
             this.ltime.AutoSize = true;
             this.ltime.BackColor = System.Drawing.Color.Silver;
             this.ltime.ForeColor = System.Drawing.Color.Black;
-            this.ltime.Location = new System.Drawing.Point(738, 6);
+            this.ltime.Location = new System.Drawing.Point(742, 7);
             this.ltime.Name = "ltime";
-            this.ltime.Size = new System.Drawing.Size(26, 13);
+            this.ltime.Size = new System.Drawing.Size(53, 13);
             this.ltime.TabIndex = 1;
-            this.ltime.Text = "time";
+            this.ltime.Text = "00:00 AM";
             this.ltime.Click += new System.EventHandler(this.label1_Click);
             // 
             // dclock
