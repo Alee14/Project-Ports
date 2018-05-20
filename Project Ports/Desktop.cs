@@ -26,6 +26,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PortEngine;
 
 namespace Project_Ports
 {
@@ -35,6 +36,8 @@ namespace Project_Ports
         {
             InitializeComponent();
         }
+
+        WindowManager wm = new WindowManager();
 
         private void dclock_Tick(object sender, EventArgs e)
         {
@@ -62,8 +65,7 @@ namespace Project_Ports
 
         private void terminalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Terminal terminalForm = new Terminal();
-            terminalForm.Show();
+            wm.createWindow(new Terminal(), "Terminal");
         }
 
         private void testWindowToolStripMenuItem_Click(object sender, EventArgs e)

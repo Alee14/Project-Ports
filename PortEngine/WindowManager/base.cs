@@ -9,8 +9,6 @@ namespace PortEngine
         bool drag;
         int mousex;
         int mousey;
-        public string rpcData;
-        public string rpcImage;
         public @base()
         {
             InitializeComponent();

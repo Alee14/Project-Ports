@@ -7,7 +7,7 @@ namespace PortEngine
 {
     public class WindowManager
     {
-        public void createWindow(UserControl program, String name, String rpcData, String rpcImage, Image icon)
+        public void createWindow(UserControl program, String name)
         {
             @base window = new @base()
             {
@@ -20,8 +20,6 @@ namespace PortEngine
             window.lblProg.Text = name;
             if  (PortEngine.Properties.Settings.Default.graphicsFriendly == false)  window.Opacity = 0;
             window.TopMost = true;
-            window.rpcData = rpcData;
-            window.rpcImage = rpcImage;
             window.Show();
         }
     }
