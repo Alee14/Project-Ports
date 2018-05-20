@@ -54,6 +54,7 @@
             this.Controls.Add(this.textBox1);
             this.Name = "Terminal";
             this.Size = new System.Drawing.Size(456, 337);
+            this.Load += new System.EventHandler(this.Terminal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

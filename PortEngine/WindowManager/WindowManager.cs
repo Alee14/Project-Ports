@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace PortEngine
 {
-    class WindowManager
+    public class WindowManager
     {
         public void createWindow(UserControl program, String name, String rpcData, String rpcImage, Image icon)
         {

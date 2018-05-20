@@ -39,6 +39,7 @@
             this.shutdownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ltime = new System.Windows.Forms.Label();
             this.dclock = new System.Windows.Forms.Timer(this.components);
+            this.testWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.appMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,39 +71,40 @@
             // 
             this.programsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.noProgramsToolStripMenuItem,
-            this.terminalToolStripMenuItem});
+            this.terminalToolStripMenuItem,
+            this.testWindowToolStripMenuItem});
             this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
-            this.programsToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.programsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.programsToolStripMenuItem.Text = "Programs";
             // 
             // noProgramsToolStripMenuItem
             // 
             this.noProgramsToolStripMenuItem.Name = "noProgramsToolStripMenuItem";
-            this.noProgramsToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.noProgramsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.noProgramsToolStripMenuItem.Text = "No programs :(";
             // 
             // terminalToolStripMenuItem
             // 
             this.terminalToolStripMenuItem.Name = "terminalToolStripMenuItem";
-            this.terminalToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.terminalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.terminalToolStripMenuItem.Text = "Terminal";
             this.terminalToolStripMenuItem.Click += new System.EventHandler(this.terminalToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(128, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // shutdownToolStripMenuItem
             // 
             this.shutdownToolStripMenuItem.Name = "shutdownToolStripMenuItem";
-            this.shutdownToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.shutdownToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.shutdownToolStripMenuItem.Text = "Shutdown";
             this.shutdownToolStripMenuItem.Click += new System.EventHandler(this.shutdownToolStripMenuItem_Click);
             // 
@@ -122,6 +124,13 @@
             // dclock
             // 
             this.dclock.Tick += new System.EventHandler(this.dclock_Tick);
+            // 
+            // testWindowToolStripMenuItem
+            // 
+            this.testWindowToolStripMenuItem.Name = "testWindowToolStripMenuItem";
+            this.testWindowToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.testWindowToolStripMenuItem.Text = "TestWindow";
+            this.testWindowToolStripMenuItem.Click += new System.EventHandler(this.testWindowToolStripMenuItem_Click);
             // 
             // Desktop
             // 
@@ -157,5 +166,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem terminalToolStripMenuItem;
         private System.Windows.Forms.Timer dclock;
+        private System.Windows.Forms.ToolStripMenuItem testWindowToolStripMenuItem;
     }
 }

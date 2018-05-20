@@ -11,15 +11,14 @@ using PortEngine;
 
 namespace Project_Ports
 {
-    public partial class Terminal : UserControl
+    public partial class TestWindow : UserControl
     {
-       
-        public Terminal()
+        public TestWindow()
         {
             InitializeComponent();
-        }    
+        }
 
-        private void Terminal_Load(object sender, EventArgs e)
+        private void TestWindow_Load(object sender, EventArgs e)
         {
             WindowManager wm = new WindowManager();
         }

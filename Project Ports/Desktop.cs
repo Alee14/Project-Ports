@@ -65,5 +65,11 @@ namespace Project_Ports
             Terminal terminalForm = new Terminal();
             terminalForm.Show();
         }
+
+        private void testWindowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+                TestWindow testForm = new TestWindow();
+                testForm.Show();
+        }
     }
 }
