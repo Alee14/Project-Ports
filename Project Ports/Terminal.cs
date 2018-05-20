@@ -18,6 +18,7 @@ namespace Project_Ports
         {
             InitializeComponent();
         }
-     //   WindowManager wm = new WindowManager();
+           WindowManager wm = new PortEngine.WindowManager();
+           
     }
 }

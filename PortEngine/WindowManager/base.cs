@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Amethyst
+namespace PortEngine
 {
     public partial class @base : Form
     {

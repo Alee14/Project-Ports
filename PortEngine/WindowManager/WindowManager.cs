@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Amethyst
+namespace PortEngine
 {
     class WindowManager
     {

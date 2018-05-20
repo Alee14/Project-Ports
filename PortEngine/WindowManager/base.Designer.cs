@@ -1,4 +1,4 @@
-﻿namespace Amethyst
+﻿namespace PortEngine
 {
     partial class @base
     {
