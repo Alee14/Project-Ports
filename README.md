@@ -1,5 +1,5 @@
 # Project Ports
-A game project by AleeCorp
+A game project by Universe
 
 ##TO DO LIST
 
