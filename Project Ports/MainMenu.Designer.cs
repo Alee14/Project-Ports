@@ -47,7 +47,7 @@
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(193, 44);
             this.btnPlay.TabIndex = 0;
-            this.btnPlay.Text = "Play";
+            this.btnPlay.Text = "Campaign";
             this.btnPlay.UseVisualStyleBackColor = true;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
@@ -83,9 +83,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(563, 621);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(252, 38);
+            this.label2.Size = new System.Drawing.Size(270, 38);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Copyright (C) 2018 AleeCorp\r\nLicensed with: GPL 3.0";
+            this.label2.Text = "Copyright (C) 2018 UniverseDG\r\nLicensed with: GPL 3.0";
             // 
             // btnAbout
             // 
@@ -133,7 +133,7 @@
             this.btnDebugMode.Name = "btnDebugMode";
             this.btnDebugMode.Size = new System.Drawing.Size(193, 44);
             this.btnDebugMode.TabIndex = 7;
-            this.btnDebugMode.Text = "Debug Mode";
+            this.btnDebugMode.Text = "Sandbox";
             this.btnDebugMode.UseVisualStyleBackColor = true;
             this.btnDebugMode.Click += new System.EventHandler(this.btnDebugMode_Click);
             // 

@@ -32,9 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PortEngine">
-      <HintPath>..\PortEngine\bin\Debug\PortEngine.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -79,22 +76,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Settings.cs">
+    <Compile Include="Programs\Settings.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Settings.Designer.cs">
+    <Compile Include="Programs\Settings.Designer.cs">
       <DependentUpon>Settings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Terminal.cs">
+    <Compile Include="Programs\Terminal.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Terminal.Designer.cs">
+    <Compile Include="Programs\Terminal.Designer.cs">
       <DependentUpon>Terminal.cs</DependentUpon>
     </Compile>
-    <Compile Include="TestWindow.cs">
+    <Compile Include="Programs\TestWindow.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TestWindow.Designer.cs">
+    <Compile Include="Programs\TestWindow.Designer.cs">
       <DependentUpon>TestWindow.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="About.resx">
@@ -114,13 +111,13 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Settings.resx">
+    <EmbeddedResource Include="Programs\Settings.resx">
       <DependentUpon>Settings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Terminal.resx">
+    <EmbeddedResource Include="Programs\Terminal.resx">
       <DependentUpon>Terminal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TestWindow.resx">
+    <EmbeddedResource Include="Programs\TestWindow.resx">
       <DependentUpon>TestWindow.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -138,6 +135,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PortEngine\PortEngine.csproj">
+      <Project>{c1b21b60-7ccc-42fc-83aa-b41644faa952}</Project>
+      <Name>PortEngine</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,7 +1,7 @@
 ﻿/************************************************************************
  *  
  *  Project Ports
- *  Copyright (C) 2018 AleeCorp
+ *  Copyright (C) 2018 UniverseDG
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -27,6 +27,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PortEngine;
+
 
 namespace Project_Ports
 {
@@ -70,8 +71,7 @@ namespace Project_Ports
 
         private void testWindowToolStripMenuItem_Click(object sender, EventArgs e)
         {
-                TestWindow testForm = new TestWindow();
-                testForm.Show();
+            wm.createWindow(new TestWindow(), "TestWindow");
         }
     }
 }
