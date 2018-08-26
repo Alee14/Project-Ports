@@ -43,6 +43,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChatAPI.cs" />
+    <Compile Include="EarnSite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EarnSite.Designer.cs">
+      <DependentUpon>EarnSite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuantumAPI\Sites\Malwarebits.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuantumAPI\Sites\Malwarebits.Designer.cs">
+      <DependentUpon>Malwarebits.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -72,8 +84,14 @@
     <Compile Include="WindowManager\WindowManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="EarnSite.resx">
+      <DependentUpon>EarnSite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuantumAPI\Sites\404Error.resx">
       <DependentUpon>404Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuantumAPI\Sites\Malwarebits.resx">
+      <DependentUpon>Malwarebits.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuantumAPI\Sites\QuantumISP.resx">
       <DependentUpon>QuantumISP.cs</DependentUpon>

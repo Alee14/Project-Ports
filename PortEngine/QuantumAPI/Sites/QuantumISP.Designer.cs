@@ -32,6 +32,8 @@
             this.lblQuantumISPSubtitle = new System.Windows.Forms.Label();
             this.lblYourPlan = new System.Windows.Forms.Label();
             this.btnUnsub = new System.Windows.Forms.Button();
+            this.lblBookmarks = new System.Windows.Forms.Label();
+            this.lblMalwarebitsHyperlink = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblQuantumISPTitle
@@ -74,10 +76,34 @@
             this.btnUnsub.Text = "Unsubscribe";
             this.btnUnsub.UseVisualStyleBackColor = true;
             // 
+            // lblBookmarks
+            // 
+            this.lblBookmarks.AutoSize = true;
+            this.lblBookmarks.Font = new System.Drawing.Font("Candara", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBookmarks.Location = new System.Drawing.Point(27, 224);
+            this.lblBookmarks.Name = "lblBookmarks";
+            this.lblBookmarks.Size = new System.Drawing.Size(101, 23);
+            this.lblBookmarks.TabIndex = 4;
+            this.lblBookmarks.Text = "Bookmarks";
+            // 
+            // lblMalwarebitsHyperlink
+            // 
+            this.lblMalwarebitsHyperlink.AutoSize = true;
+            this.lblMalwarebitsHyperlink.Font = new System.Drawing.Font("Lucida Console", 12F);
+            this.lblMalwarebitsHyperlink.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.lblMalwarebitsHyperlink.Location = new System.Drawing.Point(27, 250);
+            this.lblMalwarebitsHyperlink.Name = "lblMalwarebitsHyperlink";
+            this.lblMalwarebitsHyperlink.Size = new System.Drawing.Size(148, 16);
+            this.lblMalwarebitsHyperlink.TabIndex = 5;
+            this.lblMalwarebitsHyperlink.Text = "malwarebits.qt";
+            this.lblMalwarebitsHyperlink.Click += new System.EventHandler(this.lblMalwarebitsHyperlink_Click);
+            // 
             // QuantumISP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblMalwarebitsHyperlink);
+            this.Controls.Add(this.lblBookmarks);
             this.Controls.Add(this.btnUnsub);
             this.Controls.Add(this.lblYourPlan);
             this.Controls.Add(this.lblQuantumISPSubtitle);
@@ -95,5 +121,7 @@
         private System.Windows.Forms.Label lblQuantumISPSubtitle;
         private System.Windows.Forms.Label lblYourPlan;
         private System.Windows.Forms.Button btnUnsub;
+        private System.Windows.Forms.Label lblBookmarks;
+        private System.Windows.Forms.Label lblMalwarebitsHyperlink;
     }
 }

@@ -23,6 +23,9 @@ namespace PortEngine
                 case "quantumconnections.qt":
                     loadSite(new QuantumAPI.Sites.QuantumISP(), pnlLoadSiteHere);
                     break;
+                case "malwarebits.qt":
+                    loadSite(new Malwarebits(), pnlLoadSiteHere);
+                    break;
                 default:
                     loadSite(new QuantumAPI.Sites._404Error(), pnlLoadSiteHere);
                     break;

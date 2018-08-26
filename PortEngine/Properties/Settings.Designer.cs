@@ -23,15 +23,12 @@ namespace PortEngine.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool graphicsFriendly {
             get {
                 return ((bool)(this["graphicsFriendly"]));
-            }
-            set {
-                this["graphicsFriendly"] = value;
             }
         }
         
@@ -44,6 +41,42 @@ namespace PortEngine.Properties {
             }
             set {
                 this["userDisplayName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int userBalance {
+            get {
+                return ((int)(this["userBalance"]));
+            }
+            set {
+                this["userBalance"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string userSecurityLevel {
+            get {
+                return ((string)(this["userSecurityLevel"]));
+            }
+            set {
+                this["userSecurityLevel"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string userPowerLevel {
+            get {
+                return ((string)(this["userPowerLevel"]));
+            }
+            set {
+                this["userPowerLevel"] = value;
             }
         }
     }

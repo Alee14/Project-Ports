@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PortEngine.QuantumAPI.Sites
+namespace PortEngine
 {
-    public partial class QuantumISP : UserControl
+    public partial class EarnSite : UserControl
     {
-        public QuantumISP()
+        public EarnSite()
         {
             InitializeComponent();
-        }
-
-        private void lblMalwarebitsHyperlink_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

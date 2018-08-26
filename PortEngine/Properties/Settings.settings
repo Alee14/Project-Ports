@@ -2,11 +2,20 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PortEngine.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="graphicsFriendly" Type="System.Boolean" Scope="User">
+    <Setting Name="graphicsFriendly" Type="System.Boolean" Scope="Application">
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="userDisplayName" Type="System.String" Scope="User">
       <Value Profile="(Default)">Player</Value>
+    </Setting>
+    <Setting Name="userBalance" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="userSecurityLevel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="userPowerLevel" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
     </Setting>
   </Settings>
 </SettingsFile>
