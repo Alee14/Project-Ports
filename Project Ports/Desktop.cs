@@ -49,9 +49,16 @@ namespace Project_Ports
 
         private void Desktop_Load(object sender, EventArgs e)
         {
-            #if DEBUG
-            MessageBox.Show("Welcome to the Project Ports Desktop!");
-            #endif
+            hijackLabel.Hide();
+            hijackStoryline.Hide();
+            hijackScreen.Hide();
+            if(Properties.Settings.Default.hijacked == true)
+            {
+                hijackLabel.Show();
+                hijackStoryline.Show();
+                hijackScreen.Show();
+
+            }
             dclock.Start();
         }
         
