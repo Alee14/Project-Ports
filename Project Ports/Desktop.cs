@@ -97,5 +97,10 @@ namespace Project_Ports
         {
             wm.createWindow(new QuantumNet(), "QuantumNet Browser");
         }
+
+        private void btnGoToDesktop_Click(object sender, EventArgs e)
+        {
+            hijackScreen.Hide();
+        }
     }
 }

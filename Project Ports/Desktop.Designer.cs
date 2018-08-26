@@ -35,16 +35,17 @@
             this.terminalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chatterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quantumNetBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.shutdownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ltime = new System.Windows.Forms.Label();
             this.dclock = new System.Windows.Forms.Timer(this.components);
-            this.quantumNetBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hijackScreen = new System.Windows.Forms.Panel();
-            this.hijackLabel = new System.Windows.Forms.Label();
             this.hijackStoryline = new System.Windows.Forms.Label();
+            this.hijackLabel = new System.Windows.Forms.Label();
             this.textgen = new System.Windows.Forms.Timer(this.components);
+            this.btnGoToDesktop = new System.Windows.Forms.Button();
             this.appMenu.SuspendLayout();
             this.hijackScreen.SuspendLayout();
             this.SuspendLayout();
@@ -87,24 +88,30 @@
             // terminalToolStripMenuItem
             // 
             this.terminalToolStripMenuItem.Name = "terminalToolStripMenuItem";
-            this.terminalToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.terminalToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.terminalToolStripMenuItem.Text = "Terminal";
             this.terminalToolStripMenuItem.Click += new System.EventHandler(this.terminalToolStripMenuItem_Click);
             // 
             // testWindowToolStripMenuItem
             // 
             this.testWindowToolStripMenuItem.Name = "testWindowToolStripMenuItem";
-            this.testWindowToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.testWindowToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.testWindowToolStripMenuItem.Text = "TestWindow";
             this.testWindowToolStripMenuItem.Click += new System.EventHandler(this.testWindowToolStripMenuItem_Click);
             // 
             // chatterToolStripMenuItem
             // 
             this.chatterToolStripMenuItem.Name = "chatterToolStripMenuItem";
-            this.chatterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.chatterToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.chatterToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.chatterToolStripMenuItem.Text = "Chatter";
             this.chatterToolStripMenuItem.Click += new System.EventHandler(this.chatterToolStripMenuItem_Click);
+            // 
+            // quantumNetBrowserToolStripMenuItem
+            // 
+            this.quantumNetBrowserToolStripMenuItem.Name = "quantumNetBrowserToolStripMenuItem";
+            this.quantumNetBrowserToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.quantumNetBrowserToolStripMenuItem.Text = "QuantumNet Browser";
+            this.quantumNetBrowserToolStripMenuItem.Click += new System.EventHandler(this.quantumNetBrowserToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
@@ -142,24 +149,28 @@
             // 
             this.dclock.Tick += new System.EventHandler(this.dclock_Tick);
             // 
-            // quantumNetBrowserToolStripMenuItem
-            // 
-            this.quantumNetBrowserToolStripMenuItem.Name = "quantumNetBrowserToolStripMenuItem";
-            this.quantumNetBrowserToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            this.quantumNetBrowserToolStripMenuItem.Text = "QuantumNet Browser";
-            this.quantumNetBrowserToolStripMenuItem.Click += new System.EventHandler(this.quantumNetBrowserToolStripMenuItem_Click);
             // hijackScreen
             // 
             this.hijackScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.hijackScreen.BackColor = System.Drawing.Color.Black;
+            this.hijackScreen.Controls.Add(this.btnGoToDesktop);
             this.hijackScreen.Controls.Add(this.hijackStoryline);
             this.hijackScreen.Controls.Add(this.hijackLabel);
             this.hijackScreen.Location = new System.Drawing.Point(0, 0);
             this.hijackScreen.Name = "hijackScreen";
             this.hijackScreen.Size = new System.Drawing.Size(800, 449);
             this.hijackScreen.TabIndex = 2;
+            // 
+            // hijackStoryline
+            // 
+            this.hijackStoryline.AutoSize = true;
+            this.hijackStoryline.Location = new System.Drawing.Point(12, 40);
+            this.hijackStoryline.Name = "hijackStoryline";
+            this.hijackStoryline.Size = new System.Drawing.Size(75, 13);
+            this.hijackStoryline.TabIndex = 1;
+            this.hijackStoryline.Text = "hijackStoryline";
             // 
             // hijackLabel
             // 
@@ -172,14 +183,16 @@
             this.hijackLabel.TabIndex = 0;
             this.hijackLabel.Text = "SYSTEM ERROR 3923882: BEING HIJACKED";
             // 
-            // hijackStoryline
+            // btnGoToDesktop
             // 
-            this.hijackStoryline.AutoSize = true;
-            this.hijackStoryline.Location = new System.Drawing.Point(12, 40);
-            this.hijackStoryline.Name = "hijackStoryline";
-            this.hijackStoryline.Size = new System.Drawing.Size(75, 13);
-            this.hijackStoryline.TabIndex = 1;
-            this.hijackStoryline.Text = "hijackStoryline";
+            this.btnGoToDesktop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGoToDesktop.Location = new System.Drawing.Point(119, 40);
+            this.btnGoToDesktop.Name = "btnGoToDesktop";
+            this.btnGoToDesktop.Size = new System.Drawing.Size(75, 23);
+            this.btnGoToDesktop.TabIndex = 2;
+            this.btnGoToDesktop.Text = "Continue";
+            this.btnGoToDesktop.UseVisualStyleBackColor = true;
+            this.btnGoToDesktop.Click += new System.EventHandler(this.btnGoToDesktop_Click);
             // 
             // Desktop
             // 
@@ -224,5 +237,6 @@
         private System.Windows.Forms.Label hijackLabel;
         private System.Windows.Forms.Label hijackStoryline;
         private System.Windows.Forms.Timer textgen;
+        private System.Windows.Forms.Button btnGoToDesktop;
     }
 }
