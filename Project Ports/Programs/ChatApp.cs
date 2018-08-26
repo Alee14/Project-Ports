@@ -21,7 +21,16 @@ namespace Project_Ports
 
         private void btnSendMSG_Click(object sender, EventArgs e)
         {
-            PortEngine.ChatAPI.SendMessage(txtMsgContents, txtSentMessages);
+            ChatAPI.SendMessage(txtMsgContents, txtSentMessages);
+        }
+
+        private void txtMsgContents_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                ChatAPI.SendMessage(txtMsgContents, txtSentMessages);
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }

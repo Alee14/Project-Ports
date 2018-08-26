@@ -12,7 +12,7 @@ namespace PortEngine
     {
         public static void SendMessage(TextBox txtPending, TextBox txtDestination)
         {
-            txtDestination.AppendText("<Player> " + txtPending.Text + Environment.NewLine);
+            txtDestination.AppendText("<" + Properties.Settings.Default.userDisplayName + "> " + txtPending.Text + Environment.NewLine);
             txtPending.Clear();
         }
     }

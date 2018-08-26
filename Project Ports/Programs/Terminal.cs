@@ -23,5 +23,15 @@ namespace Project_Ports
         {
             WindowManager wm = new WindowManager();
         }
+
+        private void txtInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                TerminalAPI.RunCommand(txtInput, txtConsole);
+                e.SuppressKeyPress = true;
+                txtInput.Clear();
+            }
+        }
     }
 }

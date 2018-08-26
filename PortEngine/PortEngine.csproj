@@ -49,6 +49,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="TerminalAPI.cs" />
     <Compile Include="WindowManager\base.cs">
       <SubType>Form</SubType>
     </Compile>

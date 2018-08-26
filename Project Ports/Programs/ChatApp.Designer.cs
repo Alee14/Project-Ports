@@ -57,6 +57,7 @@
             this.txtMsgContents.Name = "txtMsgContents";
             this.txtMsgContents.Size = new System.Drawing.Size(384, 18);
             this.txtMsgContents.TabIndex = 1;
+            this.txtMsgContents.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMsgContents_KeyDown);
             // 
             // listBox1
             // 
