@@ -7,21 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PortEngine;
 
 namespace Project_Ports
 {
-    public partial class TestWindow : UserControl
+    public partial class AboutPorts : UserControl
     {
-        public TestWindow()
+        public AboutPorts()
         {
             InitializeComponent();
         }
-
-        private void TestWindow_Load(object sender, EventArgs e)
-        {
-           WindowManager wm = new WindowManager();
-        }
-
     }
 }

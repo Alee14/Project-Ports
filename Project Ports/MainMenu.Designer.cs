@@ -33,7 +33,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnAbout = new System.Windows.Forms.Button();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.wbPortsNews = new System.Windows.Forms.WebBrowser();
             this.label3 = new System.Windows.Forms.Label();
             this.btnDebugMode = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -100,17 +100,18 @@
             this.btnAbout.UseVisualStyleBackColor = true;
             this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
-            // webBrowser1
+            // wbPortsNews
             // 
-            this.webBrowser1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.wbPortsNews.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.webBrowser1.Location = new System.Drawing.Point(300, 32);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(876, 508);
-            this.webBrowser1.TabIndex = 5;
-            this.webBrowser1.Url = new System.Uri("https://aleecorp.github.io/project-ports", System.UriKind.Absolute);
+            this.wbPortsNews.Location = new System.Drawing.Point(300, 32);
+            this.wbPortsNews.MinimumSize = new System.Drawing.Size(20, 20);
+            this.wbPortsNews.Name = "wbPortsNews";
+            this.wbPortsNews.ScrollBarsEnabled = false;
+            this.wbPortsNews.Size = new System.Drawing.Size(876, 508);
+            this.wbPortsNews.TabIndex = 5;
+            this.wbPortsNews.Url = new System.Uri("http://universedevgroup.net/ports.html", System.UriKind.Absolute);
             // 
             // label3
             // 
@@ -145,7 +146,7 @@
             this.ClientSize = new System.Drawing.Size(1235, 704);
             this.Controls.Add(this.btnDebugMode);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.wbPortsNews);
             this.Controls.Add(this.btnAbout);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnExit);
@@ -168,7 +169,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAbout;
-        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.WebBrowser wbPortsNews;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnDebugMode;
     }

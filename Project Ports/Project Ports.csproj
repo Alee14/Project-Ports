@@ -51,6 +51,12 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="AboutPorts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AboutPorts.Designer.cs">
+      <DependentUpon>AboutPorts.cs</DependentUpon>
+    </Compile>
     <Compile Include="DebugMode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Programs\ChatApp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Programs\ChatApp.Designer.cs">
+      <DependentUpon>ChatApp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -97,6 +109,9 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AboutPorts.resx">
+      <DependentUpon>AboutPorts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DebugMode.resx">
       <DependentUpon>DebugMode.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programs\ChatApp.resx">
+      <DependentUpon>ChatApp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

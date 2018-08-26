@@ -39,6 +39,7 @@
             this.shutdownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ltime = new System.Windows.Forms.Label();
             this.dclock = new System.Windows.Forms.Timer(this.components);
+            this.chatterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.appMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,7 +71,8 @@
             // 
             this.programsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.terminalToolStripMenuItem,
-            this.testWindowToolStripMenuItem});
+            this.testWindowToolStripMenuItem,
+            this.chatterToolStripMenuItem});
             this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
             this.programsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.programsToolStripMenuItem.Text = "Programs";
@@ -94,6 +96,7 @@
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
             this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
+            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -113,7 +116,7 @@
             this.ltime.AutoSize = true;
             this.ltime.BackColor = System.Drawing.Color.Silver;
             this.ltime.ForeColor = System.Drawing.Color.Black;
-            this.ltime.Location = new System.Drawing.Point(742, 7);
+            this.ltime.Location = new System.Drawing.Point(742, 6);
             this.ltime.Name = "ltime";
             this.ltime.Size = new System.Drawing.Size(53, 13);
             this.ltime.TabIndex = 1;
@@ -123,6 +126,13 @@
             // dclock
             // 
             this.dclock.Tick += new System.EventHandler(this.dclock_Tick);
+            // 
+            // chatterToolStripMenuItem
+            // 
+            this.chatterToolStripMenuItem.Name = "chatterToolStripMenuItem";
+            this.chatterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.chatterToolStripMenuItem.Text = "Chatter";
+            this.chatterToolStripMenuItem.Click += new System.EventHandler(this.chatterToolStripMenuItem_Click);
             // 
             // Desktop
             // 
@@ -158,5 +168,6 @@
         private System.Windows.Forms.ToolStripMenuItem terminalToolStripMenuItem;
         private System.Windows.Forms.Timer dclock;
         private System.Windows.Forms.ToolStripMenuItem testWindowToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem chatterToolStripMenuItem;
     }
 }

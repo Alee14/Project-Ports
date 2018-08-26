@@ -49,7 +49,9 @@ namespace Project_Ports
 
         private void Desktop_Load(object sender, EventArgs e)
         {
+            #if DEBUG
             MessageBox.Show("Welcome to the Project Ports Desktop!");
+            #endif
             dclock.Start();
         }
         
@@ -72,6 +74,16 @@ namespace Project_Ports
         private void testWindowToolStripMenuItem_Click(object sender, EventArgs e)
         {
             wm.createWindow(new TestWindow(), "TestWindow");
+        }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            wm.createWindow(new Settings(), "System Settings");
+        }
+
+        private void chatterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            wm.createWindow(new ChatApp(), "Chatter");
         }
     }
 }

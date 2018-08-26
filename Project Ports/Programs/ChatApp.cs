@@ -11,17 +11,17 @@ using PortEngine;
 
 namespace Project_Ports
 {
-    public partial class TestWindow : UserControl
+    public partial class ChatApp : UserControl
     {
-        public TestWindow()
+
+        public ChatApp()
         {
             InitializeComponent();
         }
 
-        private void TestWindow_Load(object sender, EventArgs e)
+        private void btnSendMSG_Click(object sender, EventArgs e)
         {
-           WindowManager wm = new WindowManager();
+            PortEngine.ChatAPI.SendMessage(txtMsgContents, txtSentMessages);
         }
-
     }
 }

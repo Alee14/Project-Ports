@@ -1,7 +1,7 @@
 ﻿/************************************************************************
  *  
  *  Project Ports
- *  Copyright (C) 2018 AleeCorp
+ *  Copyright (C) 2018 UniverseDG
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -26,11 +26,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PortEngine;
 
 namespace Project_Ports
 {
+
     public partial class MainMenu : Form
     {
+        WindowManager wm = new WindowManager();
+
         public MainMenu()
         {
             InitializeComponent();
@@ -49,8 +53,7 @@ namespace Project_Ports
 
         private void btnAbout_Click(object sender, EventArgs e)
         {
-            About aboutForm = new About();
-            aboutForm.Show();
+            wm.createWindow(new AboutPorts(), "About Ports");
         }
 
         private void MainMenu_Load(object sender, EventArgs e)
