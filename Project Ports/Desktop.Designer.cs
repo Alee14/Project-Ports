@@ -34,13 +34,18 @@
             this.programsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.terminalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chatterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.shutdownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ltime = new System.Windows.Forms.Label();
             this.dclock = new System.Windows.Forms.Timer(this.components);
-            this.chatterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hijackScreen = new System.Windows.Forms.Panel();
+            this.hijackLabel = new System.Windows.Forms.Label();
+            this.hijackStoryline = new System.Windows.Forms.Label();
+            this.textgen = new System.Windows.Forms.Timer(this.components);
             this.appMenu.SuspendLayout();
+            this.hijackScreen.SuspendLayout();
             this.SuspendLayout();
             // 
             // appMenu
@@ -74,39 +79,46 @@
             this.testWindowToolStripMenuItem,
             this.chatterToolStripMenuItem});
             this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
-            this.programsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.programsToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.programsToolStripMenuItem.Text = "Programs";
             // 
             // terminalToolStripMenuItem
             // 
             this.terminalToolStripMenuItem.Name = "terminalToolStripMenuItem";
-            this.terminalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.terminalToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.terminalToolStripMenuItem.Text = "Terminal";
             this.terminalToolStripMenuItem.Click += new System.EventHandler(this.terminalToolStripMenuItem_Click);
             // 
             // testWindowToolStripMenuItem
             // 
             this.testWindowToolStripMenuItem.Name = "testWindowToolStripMenuItem";
-            this.testWindowToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.testWindowToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.testWindowToolStripMenuItem.Text = "TestWindow";
             this.testWindowToolStripMenuItem.Click += new System.EventHandler(this.testWindowToolStripMenuItem_Click);
+            // 
+            // chatterToolStripMenuItem
+            // 
+            this.chatterToolStripMenuItem.Name = "chatterToolStripMenuItem";
+            this.chatterToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.chatterToolStripMenuItem.Text = "Chatter";
+            this.chatterToolStripMenuItem.Click += new System.EventHandler(this.chatterToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(128, 6);
             // 
             // shutdownToolStripMenuItem
             // 
             this.shutdownToolStripMenuItem.Name = "shutdownToolStripMenuItem";
-            this.shutdownToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.shutdownToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
             this.shutdownToolStripMenuItem.Text = "Shutdown";
             this.shutdownToolStripMenuItem.Click += new System.EventHandler(this.shutdownToolStripMenuItem_Click);
             // 
@@ -127,12 +139,38 @@
             // 
             this.dclock.Tick += new System.EventHandler(this.dclock_Tick);
             // 
-            // chatterToolStripMenuItem
+            // hijackScreen
             // 
-            this.chatterToolStripMenuItem.Name = "chatterToolStripMenuItem";
-            this.chatterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.chatterToolStripMenuItem.Text = "Chatter";
-            this.chatterToolStripMenuItem.Click += new System.EventHandler(this.chatterToolStripMenuItem_Click);
+            this.hijackScreen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.hijackScreen.BackColor = System.Drawing.Color.Black;
+            this.hijackScreen.Controls.Add(this.hijackStoryline);
+            this.hijackScreen.Controls.Add(this.hijackLabel);
+            this.hijackScreen.Location = new System.Drawing.Point(0, 0);
+            this.hijackScreen.Name = "hijackScreen";
+            this.hijackScreen.Size = new System.Drawing.Size(800, 449);
+            this.hijackScreen.TabIndex = 2;
+            // 
+            // hijackLabel
+            // 
+            this.hijackLabel.AutoSize = true;
+            this.hijackLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hijackLabel.ForeColor = System.Drawing.Color.Red;
+            this.hijackLabel.Location = new System.Drawing.Point(12, 11);
+            this.hijackLabel.Name = "hijackLabel";
+            this.hijackLabel.Size = new System.Drawing.Size(259, 15);
+            this.hijackLabel.TabIndex = 0;
+            this.hijackLabel.Text = "SYSTEM ERROR 3923882: BEING HIJACKED";
+            // 
+            // hijackStoryline
+            // 
+            this.hijackStoryline.AutoSize = true;
+            this.hijackStoryline.Location = new System.Drawing.Point(12, 40);
+            this.hijackStoryline.Name = "hijackStoryline";
+            this.hijackStoryline.Size = new System.Drawing.Size(75, 13);
+            this.hijackStoryline.TabIndex = 1;
+            this.hijackStoryline.Text = "hijackStoryline";
             // 
             // Desktop
             // 
@@ -140,6 +178,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.hijackScreen);
             this.Controls.Add(this.ltime);
             this.Controls.Add(this.appMenu);
             this.ForeColor = System.Drawing.Color.White;
@@ -151,6 +190,8 @@
             this.Load += new System.EventHandler(this.Desktop_Load);
             this.appMenu.ResumeLayout(false);
             this.appMenu.PerformLayout();
+            this.hijackScreen.ResumeLayout(false);
+            this.hijackScreen.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -169,5 +210,9 @@
         private System.Windows.Forms.Timer dclock;
         private System.Windows.Forms.ToolStripMenuItem testWindowToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem chatterToolStripMenuItem;
+        private System.Windows.Forms.Panel hijackScreen;
+        private System.Windows.Forms.Label hijackLabel;
+        private System.Windows.Forms.Label hijackStoryline;
+        private System.Windows.Forms.Timer textgen;
     }
 }
