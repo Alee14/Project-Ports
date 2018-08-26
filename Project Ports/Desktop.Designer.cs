@@ -166,7 +166,7 @@
             // btnGoToDesktop
             // 
             this.btnGoToDesktop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGoToDesktop.Location = new System.Drawing.Point(119, 40);
+            this.btnGoToDesktop.Location = new System.Drawing.Point(15, 415);
             this.btnGoToDesktop.Name = "btnGoToDesktop";
             this.btnGoToDesktop.Size = new System.Drawing.Size(75, 23);
             this.btnGoToDesktop.TabIndex = 2;
