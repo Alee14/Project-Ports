@@ -42,10 +42,10 @@
             this.ltime = new System.Windows.Forms.Label();
             this.dclock = new System.Windows.Forms.Timer(this.components);
             this.hijackScreen = new System.Windows.Forms.Panel();
+            this.btnGoToDesktop = new System.Windows.Forms.Button();
             this.hijackStoryline = new System.Windows.Forms.Label();
             this.hijackLabel = new System.Windows.Forms.Label();
             this.textgen = new System.Windows.Forms.Timer(this.components);
-            this.btnGoToDesktop = new System.Windows.Forms.Button();
             this.appMenu.SuspendLayout();
             this.hijackScreen.SuspendLayout();
             this.SuspendLayout();
@@ -163,6 +163,17 @@
             this.hijackScreen.Size = new System.Drawing.Size(800, 449);
             this.hijackScreen.TabIndex = 2;
             // 
+            // btnGoToDesktop
+            // 
+            this.btnGoToDesktop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGoToDesktop.Location = new System.Drawing.Point(119, 40);
+            this.btnGoToDesktop.Name = "btnGoToDesktop";
+            this.btnGoToDesktop.Size = new System.Drawing.Size(75, 23);
+            this.btnGoToDesktop.TabIndex = 2;
+            this.btnGoToDesktop.Text = "Continue";
+            this.btnGoToDesktop.UseVisualStyleBackColor = true;
+            this.btnGoToDesktop.Click += new System.EventHandler(this.btnGoToDesktop_Click);
+            // 
             // hijackStoryline
             // 
             this.hijackStoryline.AutoSize = true;
@@ -182,17 +193,6 @@
             this.hijackLabel.Size = new System.Drawing.Size(259, 15);
             this.hijackLabel.TabIndex = 0;
             this.hijackLabel.Text = "SYSTEM ERROR 3923882: BEING HIJACKED";
-            // 
-            // btnGoToDesktop
-            // 
-            this.btnGoToDesktop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGoToDesktop.Location = new System.Drawing.Point(119, 40);
-            this.btnGoToDesktop.Name = "btnGoToDesktop";
-            this.btnGoToDesktop.Size = new System.Drawing.Size(75, 23);
-            this.btnGoToDesktop.TabIndex = 2;
-            this.btnGoToDesktop.Text = "Continue";
-            this.btnGoToDesktop.UseVisualStyleBackColor = true;
-            this.btnGoToDesktop.Click += new System.EventHandler(this.btnGoToDesktop_Click);
             // 
             // Desktop
             // 

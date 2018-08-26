@@ -45,7 +45,6 @@ namespace Project_Ports
             Desktop desktop = new Desktop();
             desktop.Show();
         }
-
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -66,6 +65,5 @@ namespace Project_Ports
             DebugMode debugForm = new DebugMode();
             debugForm.Show();
         }
-
     }
 }
