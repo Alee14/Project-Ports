@@ -13,11 +13,11 @@ namespace PortEngine
         {
             bool LastCommandWasClear = false;
 
+            txtConsoleOutput.AppendText(Properties.Settings.Default.userDisplayName + "@PortOS:~$ " + txtConsoleInput.Text + Environment.NewLine);
+
 
             switch (txtConsoleInput.Text.ToLower())
             {
-                
-
                 case "help":
                     txtConsoleOutput.AppendText("help - lists the commands\r\ntest - displays a test message\r\nclear - clears the terminal\r\nchangeusername - changes your username for use with the Chatter application\r\n   example: changeusername --TheBestUser" + Environment.NewLine);
                     break;

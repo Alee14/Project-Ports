@@ -40,10 +40,12 @@
             // 
             // btnPlay
             // 
+            this.btnPlay.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnPlay.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnPlay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlay.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPlay.ForeColor = System.Drawing.Color.White;
-            this.btnPlay.Location = new System.Drawing.Point(53, 103);
+            this.btnPlay.Location = new System.Drawing.Point(530, 109);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(193, 44);
             this.btnPlay.TabIndex = 0;
@@ -53,10 +55,11 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(47, 41);
+            this.label1.Location = new System.Drawing.Point(524, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(210, 32);
             this.label1.TabIndex = 1;
@@ -64,10 +67,12 @@
             // 
             // btnExit
             // 
+            this.btnExit.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnExit.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(53, 253);
+            this.btnExit.Location = new System.Drawing.Point(530, 259);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(193, 44);
             this.btnExit.TabIndex = 2;
@@ -77,11 +82,11 @@
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(563, 621);
+            this.label2.Location = new System.Drawing.Point(903, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(270, 38);
             this.label2.TabIndex = 3;
@@ -89,10 +94,12 @@
             // 
             // btnAbout
             // 
+            this.btnAbout.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnAbout.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnAbout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbout.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbout.ForeColor = System.Drawing.Color.White;
-            this.btnAbout.Location = new System.Drawing.Point(53, 203);
+            this.btnAbout.Location = new System.Drawing.Point(530, 209);
             this.btnAbout.Name = "btnAbout";
             this.btnAbout.Size = new System.Drawing.Size(193, 44);
             this.btnAbout.TabIndex = 4;
@@ -105,21 +112,21 @@
             this.wbPortsNews.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.wbPortsNews.Location = new System.Drawing.Point(300, 32);
+            this.wbPortsNews.Location = new System.Drawing.Point(315, 309);
             this.wbPortsNews.MinimumSize = new System.Drawing.Size(20, 20);
             this.wbPortsNews.Name = "wbPortsNews";
             this.wbPortsNews.ScrollBarsEnabled = false;
-            this.wbPortsNews.Size = new System.Drawing.Size(876, 508);
+            this.wbPortsNews.Size = new System.Drawing.Size(625, 393);
             this.wbPortsNews.TabIndex = 5;
-            this.wbPortsNews.Url = new System.Uri("http://universedevgroup.net/ports.html", System.UriKind.Absolute);
+            this.wbPortsNews.Url = new System.Uri("https://portsupdate.tumblr.com/", System.UriKind.Absolute);
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(50, 646);
+            this.label3.Location = new System.Drawing.Point(1113, 80);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 13);
             this.label3.TabIndex = 6;
@@ -127,10 +134,12 @@
             // 
             // btnDebugMode
             // 
+            this.btnDebugMode.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnDebugMode.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.btnDebugMode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDebugMode.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDebugMode.ForeColor = System.Drawing.Color.White;
-            this.btnDebugMode.Location = new System.Drawing.Point(53, 153);
+            this.btnDebugMode.Location = new System.Drawing.Point(530, 159);
             this.btnDebugMode.Name = "btnDebugMode";
             this.btnDebugMode.Size = new System.Drawing.Size(193, 44);
             this.btnDebugMode.TabIndex = 7;
