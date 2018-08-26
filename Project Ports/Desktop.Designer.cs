@@ -165,6 +165,7 @@
             // 
             // btnGoToDesktop
             // 
+            this.btnGoToDesktop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnGoToDesktop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGoToDesktop.Location = new System.Drawing.Point(15, 415);
             this.btnGoToDesktop.Name = "btnGoToDesktop";
