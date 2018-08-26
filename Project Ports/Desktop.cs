@@ -85,5 +85,10 @@ namespace Project_Ports
         {
             wm.createWindow(new ChatApp(), "Chatter");
         }
+
+        private void quantumNetBrowserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            wm.createWindow(new QuantumNet(), "QuantumNet Browser");
+        }
     }
 }

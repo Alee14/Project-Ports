@@ -34,12 +34,13 @@
             this.programsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.terminalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.testWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.chatterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.shutdownToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ltime = new System.Windows.Forms.Label();
             this.dclock = new System.Windows.Forms.Timer(this.components);
-            this.chatterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quantumNetBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.appMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,7 +73,8 @@
             this.programsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.terminalToolStripMenuItem,
             this.testWindowToolStripMenuItem,
-            this.chatterToolStripMenuItem});
+            this.chatterToolStripMenuItem,
+            this.quantumNetBrowserToolStripMenuItem});
             this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
             this.programsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.programsToolStripMenuItem.Text = "Programs";
@@ -90,6 +92,13 @@
             this.testWindowToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.testWindowToolStripMenuItem.Text = "TestWindow";
             this.testWindowToolStripMenuItem.Click += new System.EventHandler(this.testWindowToolStripMenuItem_Click);
+            // 
+            // chatterToolStripMenuItem
+            // 
+            this.chatterToolStripMenuItem.Name = "chatterToolStripMenuItem";
+            this.chatterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.chatterToolStripMenuItem.Text = "Chatter";
+            this.chatterToolStripMenuItem.Click += new System.EventHandler(this.chatterToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
@@ -127,12 +136,12 @@
             // 
             this.dclock.Tick += new System.EventHandler(this.dclock_Tick);
             // 
-            // chatterToolStripMenuItem
+            // quantumNetBrowserToolStripMenuItem
             // 
-            this.chatterToolStripMenuItem.Name = "chatterToolStripMenuItem";
-            this.chatterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.chatterToolStripMenuItem.Text = "Chatter";
-            this.chatterToolStripMenuItem.Click += new System.EventHandler(this.chatterToolStripMenuItem_Click);
+            this.quantumNetBrowserToolStripMenuItem.Name = "quantumNetBrowserToolStripMenuItem";
+            this.quantumNetBrowserToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            this.quantumNetBrowserToolStripMenuItem.Text = "QuantumNet Browser";
+            this.quantumNetBrowserToolStripMenuItem.Click += new System.EventHandler(this.quantumNetBrowserToolStripMenuItem_Click);
             // 
             // Desktop
             // 
@@ -169,5 +178,6 @@
         private System.Windows.Forms.Timer dclock;
         private System.Windows.Forms.ToolStripMenuItem testWindowToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem chatterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quantumNetBrowserToolStripMenuItem;
     }
 }

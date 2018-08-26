@@ -49,6 +49,19 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="QuantumAPI\QuantumAPI.cs" />
+    <Compile Include="QuantumAPI\Sites\404Error.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuantumAPI\Sites\404Error.Designer.cs">
+      <DependentUpon>404Error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuantumAPI\Sites\QuantumISP.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuantumAPI\Sites\QuantumISP.Designer.cs">
+      <DependentUpon>QuantumISP.cs</DependentUpon>
+    </Compile>
     <Compile Include="TerminalAPI.cs" />
     <Compile Include="WindowManager\base.cs">
       <SubType>Form</SubType>
@@ -59,6 +72,12 @@
     <Compile Include="WindowManager\WindowManager.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="QuantumAPI\Sites\404Error.resx">
+      <DependentUpon>404Error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuantumAPI\Sites\QuantumISP.resx">
+      <DependentUpon>QuantumISP.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WindowManager\base.resx">
       <DependentUpon>base.cs</DependentUpon>
     </EmbeddedResource>

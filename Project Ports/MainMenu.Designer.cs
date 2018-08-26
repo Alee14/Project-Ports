@@ -130,7 +130,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(79, 13);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Alpha 0.1";
+            this.label3.Text = "Alpha 0.2";
             // 
             // btnDebugMode
             // 

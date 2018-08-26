@@ -76,6 +76,12 @@
     <Compile Include="Programs\ChatApp.Designer.cs">
       <DependentUpon>ChatApp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Programs\QuantumNet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Programs\QuantumNet.Designer.cs">
+      <DependentUpon>QuantumNet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Programs\ChatApp.resx">
       <DependentUpon>ChatApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programs\QuantumNet.resx">
+      <DependentUpon>QuantumNet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
