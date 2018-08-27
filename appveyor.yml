@@ -1,3 +1,10 @@
 artifacts:
-  - path: Project-Ports\bin\debug 
-    name: Project Ports
+  - path: Ports-%APPVEYOR_REPO_COMMIT%.zip
+    name: Ports-%APPVEYOR_REPO_COMMIT%
+    
+after_build:
+# scripts to run after build
+- netstat -ab
+- tree /F
+# zip the archive
+- '7z a Ports-%APPVEYOR_REPO_COMMIT%.zip build-win'
