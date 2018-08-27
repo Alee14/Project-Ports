@@ -238,7 +238,7 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Desktop";
-            this.Text = "Desktop";
+            this.Text = "mr";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Desktop_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Desktop_MouseClick);
