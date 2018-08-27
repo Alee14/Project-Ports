@@ -1,3 +1,3 @@
 artifacts:
-  - path: Project-Ports\bin\debug\* 
+  - path: Project-Ports\bin\debug 
     name: Project Ports
