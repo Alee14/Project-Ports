@@ -97,6 +97,7 @@
             this.Controls.Add(this.txtSentMessages);
             this.Name = "ChatApp";
             this.Size = new System.Drawing.Size(578, 219);
+            this.Load += new System.EventHandler(this.ChatApp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

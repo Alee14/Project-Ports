@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.ltime = new System.Windows.Forms.Label();
             this.dclock = new System.Windows.Forms.Timer(this.components);
-            this.textgen = new System.Windows.Forms.Timer(this.components);
             this.appMenu = new System.Windows.Forms.Panel();
             this.programStrip = new System.Windows.Forms.ToolStrip();
             this.programButton = new System.Windows.Forms.ToolStripDropDownButton();
@@ -41,8 +40,8 @@
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quantumNetBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.shutdownButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.shutdownButton = new System.Windows.Forms.Button();
             this.playerName = new System.Windows.Forms.Label();
             this.taskBar = new System.Windows.Forms.Panel();
             this.appButton = new System.Windows.Forms.Button();
@@ -89,7 +88,7 @@
             this.programStrip.Location = new System.Drawing.Point(9, 349);
             this.programStrip.Name = "programStrip";
             this.programStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.programStrip.Size = new System.Drawing.Size(110, 25);
+            this.programStrip.Size = new System.Drawing.Size(79, 25);
             this.programStrip.TabIndex = 2;
             this.programStrip.Text = "toolStrip1";
             // 
@@ -154,6 +153,17 @@
             this.panel2.Size = new System.Drawing.Size(376, 52);
             this.panel2.TabIndex = 1;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.Controls.Add(this.shutdownButton);
+            this.panel1.Controls.Add(this.playerName);
+            this.panel1.ForeColor = System.Drawing.Color.Gray;
+            this.panel1.Location = new System.Drawing.Point(0, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(376, 51);
+            this.panel1.TabIndex = 0;
+            // 
             // shutdownButton
             // 
             this.shutdownButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -166,17 +176,6 @@
             this.shutdownButton.Text = "Shutdown";
             this.shutdownButton.UseVisualStyleBackColor = true;
             this.shutdownButton.Click += new System.EventHandler(this.shutdownButton_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
-            this.panel1.Controls.Add(this.shutdownButton);
-            this.panel1.Controls.Add(this.playerName);
-            this.panel1.ForeColor = System.Drawing.Color.Gray;
-            this.panel1.Location = new System.Drawing.Point(0, 1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(376, 51);
-            this.panel1.TabIndex = 0;
             // 
             // playerName
             // 
@@ -244,7 +243,6 @@
         #endregion
         private System.Windows.Forms.Label ltime;
         private System.Windows.Forms.Timer dclock;
-        private System.Windows.Forms.Timer textgen;
         private System.Windows.Forms.Panel appMenu;
         private System.Windows.Forms.Panel taskBar;
         private System.Windows.Forms.Button appButton;

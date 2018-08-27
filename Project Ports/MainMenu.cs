@@ -44,8 +44,8 @@ namespace Project_Ports
         {
             Desktop desktop = new Desktop();
             #if DEBUG
+            Properties.Settings.Default.hijacked = false;
             desktop.Show();
-            return;
             #endif
             if (Properties.Settings.Default.hijacked == true)
             {
