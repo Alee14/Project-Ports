@@ -73,10 +73,5 @@ namespace Project_Ports
             portsVersion.Text = Properties.Settings.Default.version;
         }
 
-        private void btnDebugMode_Click(object sender, EventArgs e)
-        {
-            DebugMode debugForm = new DebugMode();
-            debugForm.Show();
-        }
     }
 }
