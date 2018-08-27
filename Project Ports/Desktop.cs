@@ -50,7 +50,7 @@ namespace Project_Ports
 
         private void Desktop_Load(object sender, EventArgs e)
         {
-#if DEBUG
+            #if DEBUG
             MessageBox.Show("You have set the build to \"Debug\" there are some features that is disabled in this build.");
             #endif
             hijackScreen.Hide();
