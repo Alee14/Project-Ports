@@ -50,9 +50,6 @@ namespace Project_Ports
 
         private void Desktop_Load(object sender, EventArgs e)
         {
-            #if DEBUG
-            MessageBox.Show("You have set the build to \"Debug\" there are some features that is disabled in this build.");
-            #endif
             dclock.Start();
             desktopWatermark.Text = "Project: Ports " + Properties.Settings.Default.version + Environment.NewLine + "Working Progress";
             appMenu.Hide();

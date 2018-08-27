@@ -70,6 +70,9 @@ namespace Project_Ports
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
+            #if DEBUG
+            MessageBox.Show("You have set the build to \"Debug\". There are some features that is disabled in debug builds.");
+            #endif
             portsVersion.Text = Properties.Settings.Default.version;
         }
 
