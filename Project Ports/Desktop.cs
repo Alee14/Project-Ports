@@ -63,7 +63,6 @@ namespace Project_Ports
                 hijackScreen.Hide();
                 return;
                 #endif
-                this.quantumNetBrowserToolStripMenuItem.Visible = false;
                 hijackScreen.Show();
                 Thread.Sleep(2000);
                 txtHijack.AppendText("PortOS is now booting..." + Environment.NewLine);

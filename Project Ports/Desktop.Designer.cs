@@ -80,7 +80,7 @@
             this.chatterToolStripMenuItem,
             this.quantumNetBrowserToolStripMenuItem});
             this.programsToolStripMenuItem.Name = "programsToolStripMenuItem";
-            this.programsToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.programsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.programsToolStripMenuItem.Text = "Programs";
             // 
             // terminalToolStripMenuItem
@@ -109,24 +109,25 @@
             this.quantumNetBrowserToolStripMenuItem.Name = "quantumNetBrowserToolStripMenuItem";
             this.quantumNetBrowserToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.quantumNetBrowserToolStripMenuItem.Text = "QuantumNet Browser";
+            this.quantumNetBrowserToolStripMenuItem.Visible = false;
             this.quantumNetBrowserToolStripMenuItem.Click += new System.EventHandler(this.quantumNetBrowserToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.settingsToolStripMenuItem.Text = "Settings";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(128, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // shutdownToolStripMenuItem
             // 
             this.shutdownToolStripMenuItem.Name = "shutdownToolStripMenuItem";
-            this.shutdownToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.shutdownToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.shutdownToolStripMenuItem.Text = "Shutdown";
             this.shutdownToolStripMenuItem.Click += new System.EventHandler(this.shutdownToolStripMenuItem_Click);
             // 
