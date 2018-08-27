@@ -70,7 +70,7 @@ namespace Project_Ports
 
         private void MainMenu_Load(object sender, EventArgs e)
         {
-
+            portsVersion.Text = Properties.Settings.Default.version;
         }
 
         private void btnDebugMode_Click(object sender, EventArgs e)

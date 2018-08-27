@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnAbout = new System.Windows.Forms.Button();
             this.wbPortsNews = new System.Windows.Forms.WebBrowser();
-            this.label3 = new System.Windows.Forms.Label();
+            this.portsVersion = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -93,17 +93,17 @@
             this.wbPortsNews.TabIndex = 5;
             this.wbPortsNews.Url = new System.Uri("https://portsupdate.tumblr.com/", System.UriKind.Absolute);
             // 
-            // label3
+            // portsVersion
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(13, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Alpha 0.2";
+            this.portsVersion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.portsVersion.AutoSize = true;
+            this.portsVersion.Font = new System.Drawing.Font("Lucida Console", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.portsVersion.ForeColor = System.Drawing.Color.White;
+            this.portsVersion.Location = new System.Drawing.Point(13, 66);
+            this.portsVersion.Name = "portsVersion";
+            this.portsVersion.Size = new System.Drawing.Size(103, 13);
+            this.portsVersion.TabIndex = 6;
+            this.portsVersion.Text = "portsVersion";
             // 
             // btnExit
             // 
@@ -123,7 +123,7 @@
             this.panel1.Controls.Add(this.btnPlay);
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.portsVersion);
             this.panel1.Controls.Add(this.btnAbout);
             this.panel1.Location = new System.Drawing.Point(-1, 451);
             this.panel1.Name = "panel1";
@@ -155,7 +155,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnAbout;
         private System.Windows.Forms.WebBrowser wbPortsNews;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label portsVersion;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel panel1;
     }

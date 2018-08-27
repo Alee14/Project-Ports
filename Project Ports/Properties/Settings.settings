@@ -8,5 +8,8 @@
     <Setting Name="chatterStoryline" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="version" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Alpha 0.2</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

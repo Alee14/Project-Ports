@@ -54,6 +54,7 @@ namespace Project_Ports
             MessageBox.Show("You have set the build to \"Debug\" there are some features that is disabled in this build.");
             #endif
             dclock.Start();
+            desktopWatermark.Text = "Project: Ports " + Properties.Settings.Default.version + Environment.NewLine + "Working Progress";
             appMenu.Hide();
             //TODO: Display player name in app menu
             //playerName.Text = PortEngine.Properties.Settings.

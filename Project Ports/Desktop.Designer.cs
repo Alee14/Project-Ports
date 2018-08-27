@@ -45,6 +45,7 @@
             this.playerName = new System.Windows.Forms.Label();
             this.taskBar = new System.Windows.Forms.Panel();
             this.appButton = new System.Windows.Forms.Button();
+            this.desktopWatermark = new System.Windows.Forms.Label();
             this.appMenu.SuspendLayout();
             this.programStrip.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -88,7 +89,7 @@
             this.programStrip.Location = new System.Drawing.Point(9, 349);
             this.programStrip.Name = "programStrip";
             this.programStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.programStrip.Size = new System.Drawing.Size(79, 25);
+            this.programStrip.Size = new System.Drawing.Size(77, 25);
             this.programStrip.TabIndex = 2;
             this.programStrip.Text = "toolStrip1";
             // 
@@ -213,12 +214,25 @@
             this.appButton.UseVisualStyleBackColor = true;
             this.appButton.Click += new System.EventHandler(this.appButton_Click);
             // 
+            // desktopWatermark
+            // 
+            this.desktopWatermark.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.desktopWatermark.AutoSize = true;
+            this.desktopWatermark.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.desktopWatermark.ForeColor = System.Drawing.Color.Black;
+            this.desktopWatermark.Location = new System.Drawing.Point(854, 515);
+            this.desktopWatermark.Name = "desktopWatermark";
+            this.desktopWatermark.Size = new System.Drawing.Size(136, 18);
+            this.desktopWatermark.TabIndex = 5;
+            this.desktopWatermark.Text = "desktopWatermark";
+            // 
             // Desktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.BackColor = System.Drawing.Color.Silver;
             this.ClientSize = new System.Drawing.Size(1066, 560);
+            this.Controls.Add(this.desktopWatermark);
             this.Controls.Add(this.taskBar);
             this.Controls.Add(this.appMenu);
             this.ForeColor = System.Drawing.Color.White;
@@ -237,6 +251,7 @@
             this.taskBar.ResumeLayout(false);
             this.taskBar.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -257,5 +272,6 @@
         private System.Windows.Forms.ToolStripMenuItem chatterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quantumNetBrowserToolStripMenuItem;
+        private System.Windows.Forms.Label desktopWatermark;
     }
 }
