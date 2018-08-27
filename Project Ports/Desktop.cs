@@ -52,7 +52,6 @@ namespace Project_Ports
         {
             #if DEBUG
             MessageBox.Show("You have set the build to \"Debug\" there are some features that is disabled in this build.");
-            this.quantumNetBrowserToolStripMenuItem.Visible = true;
             #endif
             dclock.Start();
             hijackScreen.Hide();

@@ -109,7 +109,6 @@
             this.quantumNetBrowserToolStripMenuItem.Name = "quantumNetBrowserToolStripMenuItem";
             this.quantumNetBrowserToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             this.quantumNetBrowserToolStripMenuItem.Text = "QuantumNet Browser";
-            this.quantumNetBrowserToolStripMenuItem.Visible = false;
             this.quantumNetBrowserToolStripMenuItem.Click += new System.EventHandler(this.quantumNetBrowserToolStripMenuItem_Click);
             // 
             // settingsToolStripMenuItem
