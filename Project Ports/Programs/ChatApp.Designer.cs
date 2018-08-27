@@ -28,10 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.txtSentMessages = new System.Windows.Forms.TextBox();
             this.txtMsgContents = new System.Windows.Forms.TextBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.btnSendMSG = new System.Windows.Forms.Button();
+            this.delay = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // txtSentMessages
@@ -109,5 +111,6 @@
         private System.Windows.Forms.TextBox txtMsgContents;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button btnSendMSG;
+        private System.Windows.Forms.Timer delay;
     }
 }

@@ -75,6 +75,7 @@
             this.btnUnsub.TabIndex = 3;
             this.btnUnsub.Text = "Unsubscribe";
             this.btnUnsub.UseVisualStyleBackColor = true;
+            this.btnUnsub.Click += new System.EventHandler(this.btnUnsub_Click);
             // 
             // lblBookmarks
             // 

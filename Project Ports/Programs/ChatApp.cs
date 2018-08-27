@@ -41,10 +41,8 @@ namespace Project_Ports
             Properties.Settings.Default.chatterStoryline = false;
             #endif
             
-
             if (Properties.Settings.Default.chatterStoryline == true)
             {
-                Thread.Sleep(2000);
                 txtSentMessages.AppendText("Adam has entered the channel..." + Environment.NewLine);
                 Thread.Sleep(2000);
                 txtSentMessages.AppendText("<Adam> Hey there user!" + Environment.NewLine);

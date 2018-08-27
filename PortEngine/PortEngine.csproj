@@ -69,6 +69,12 @@
     <Compile Include="QuantumAPI\Sites\404Error.Designer.cs">
       <DependentUpon>404Error.cs</DependentUpon>
     </Compile>
+    <Compile Include="QuantumAPI\Sites\PortOSDefender.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuantumAPI\Sites\PortOSDefender.Designer.cs">
+      <DependentUpon>PortOSDefender.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuantumAPI\Sites\QuantumISP.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuantumAPI\Sites\Malwarebits.resx">
       <DependentUpon>Malwarebits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuantumAPI\Sites\PortOSDefender.resx">
+      <DependentUpon>PortOSDefender.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuantumAPI\Sites\QuantumISP.resx">
       <DependentUpon>QuantumISP.cs</DependentUpon>

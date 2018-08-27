@@ -117,7 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="delay.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="rtxtNews.Text" xml:space="preserve">
+    <value>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum placerat ipsum, nec tincidunt lectus. Sed scelerisque, magna at elementum congue, risus lacus suscipit neque, mollis consectetur eros tellus eu ligula. Ut ante dui, laoreet id consequat sit amet, sollicitudin et magna. Etiam maximus gravida neque id dictum. Suspendisse rhoncus nisl non lacus mattis, eget fringilla dui sodales. Pellentesque auctor dictum faucibus. Duis dignissim dolor sed tincidunt mollis. Vivamus eu lorem hendrerit, imperdiet quam eu, fringilla sem. Donec eu viverra urna, ac volutpat massa.
+
+Etiam mollis nisl eu odio ullamcorper, quis porta nisl euismod. Phasellus eu orci eget erat aliquam convallis ac vel erat. Aenean maximus nibh id nunc luctus, vel sodales ex ultrices. Vestibulum imperdiet odio vel nisl pulvinar gravida. Nam auctor magna eget justo accumsan faucibus. Morbi consequat, lectus ac feugiat suscipit, ante sapien imperdiet lacus, nec tincidunt nulla quam congue ipsum. Fusce iaculis nibh sapien, placerat varius tellus mollis eget. Aenean quis libero leo. Aliquam vulputate purus lorem, vitae pretium leo accumsan vel. Aenean ut ipsum lobortis, semper lectus et, facilisis lorem. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean bibendum porta consectetur. Morbi venenatis lobortis nisl. Nulla nec pellentesque lacus, sed sagittis felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi laoreet quis dolor a sagittis.
+
+Integer in suscipit mauris, non pulvinar nibh. Suspendisse faucibus lobortis nunc in facilisis. Duis risus nisi, imperdiet nec egestas non, feugiat in dolor. Duis bibendum, tellus et efficitur suscipit, nunc ante dictum tortor, sed gravida leo velit ac risus. Vestibulum eget nulla mollis, ultricies neque sit amet, iaculis turpis. Donec auctor ultricies lacus, quis placerat mauris malesuada non. Etiam non nisi ut mauris tristique placerat et ut eros. Nunc pharetra mattis porttitor. Nulla mattis feugiat neque at cursus. Aenean velit ligula, porttitor a justo at, egestas fringilla est.
+
+Nulla facilisi. Donec sit amet porttitor mauris. Aliquam in mollis odio. Aliquam vel nulla luctus, pellentesque lectus sit amet, commodo purus. Aliquam vitae rutrum mi, et cursus dui. Fusce fermentum urna in lorem faucibus vulputate. Nunc tincidunt tempor lorem, eget dignissim nulla sodales sit amet. Suspendisse gravida congue risus, nec egestas quam eleifend eget. Proin tincidunt dui sit amet turpis scelerisque varius. Fusce interdum nulla id rutrum ullamcorper.
+
+Nam convallis massa velit, vel hendrerit neque molestie ac. Sed sollicitudin pretium metus sed aliquet. Vivamus vestibulum diam eget euismod posuere. Nunc neque lacus, pretium id suscipit ac, luctus at est. Mauris hendrerit nibh id ante dictum, accumsan mollis purus blandit. Sed a accumsan sapien. Nullam et ante ultrices, porttitor nisi commodo, tristique lorem. Morbi turpis ex, bibendum at faucibus quis, mollis non enim. Praesent condimentum dignissim est, sed scelerisque lorem iaculis vitae. </value>
+  </data>
 </root>
