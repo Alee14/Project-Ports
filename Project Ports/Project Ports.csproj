@@ -63,6 +63,12 @@
     <Compile Include="Desktop.Designer.cs">
       <DependentUpon>Desktop.cs</DependentUpon>
     </Compile>
+    <Compile Include="hijackScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hijackScreen.Designer.cs">
+      <DependentUpon>hijackScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Desktop.resx">
       <DependentUpon>Desktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hijackScreen.resx">
+      <DependentUpon>hijackScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>

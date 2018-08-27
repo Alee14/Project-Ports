@@ -43,7 +43,20 @@ namespace Project_Ports
         private void btnPlay_Click(object sender, EventArgs e)
         {
             Desktop desktop = new Desktop();
+            #if DEBUG
             desktop.Show();
+            return;
+            #endif
+            if (Properties.Settings.Default.hijacked == true)
+            {
+                hijackScreen hijack = new hijackScreen();
+                hijack.Show();
+            } else
+            {
+                
+                desktop.Show();
+            }
+
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
