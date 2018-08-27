@@ -42,9 +42,8 @@
             this.ltime = new System.Windows.Forms.Label();
             this.dclock = new System.Windows.Forms.Timer(this.components);
             this.hijackScreen = new System.Windows.Forms.Panel();
+            this.txtHijack = new System.Windows.Forms.TextBox();
             this.btnGoToDesktop = new System.Windows.Forms.Button();
-            this.hijackStoryline = new System.Windows.Forms.Label();
-            this.hijackLabel = new System.Windows.Forms.Label();
             this.textgen = new System.Windows.Forms.Timer(this.components);
             this.appMenu.SuspendLayout();
             this.hijackScreen.SuspendLayout();
@@ -155,45 +154,40 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.hijackScreen.BackColor = System.Drawing.Color.Black;
+            this.hijackScreen.Controls.Add(this.txtHijack);
             this.hijackScreen.Controls.Add(this.btnGoToDesktop);
-            this.hijackScreen.Controls.Add(this.hijackStoryline);
-            this.hijackScreen.Controls.Add(this.hijackLabel);
             this.hijackScreen.Location = new System.Drawing.Point(0, 0);
             this.hijackScreen.Name = "hijackScreen";
-            this.hijackScreen.Size = new System.Drawing.Size(800, 449);
+            this.hijackScreen.Size = new System.Drawing.Size(800, 450);
             this.hijackScreen.TabIndex = 2;
+            // 
+            // txtHijack
+            // 
+            this.txtHijack.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtHijack.BackColor = System.Drawing.Color.Black;
+            this.txtHijack.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHijack.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHijack.ForeColor = System.Drawing.Color.White;
+            this.txtHijack.Location = new System.Drawing.Point(15, 12);
+            this.txtHijack.Multiline = true;
+            this.txtHijack.Name = "txtHijack";
+            this.txtHijack.ReadOnly = true;
+            this.txtHijack.Size = new System.Drawing.Size(773, 392);
+            this.txtHijack.TabIndex = 3;
             // 
             // btnGoToDesktop
             // 
             this.btnGoToDesktop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnGoToDesktop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGoToDesktop.Location = new System.Drawing.Point(15, 415);
+            this.btnGoToDesktop.Location = new System.Drawing.Point(15, 416);
             this.btnGoToDesktop.Name = "btnGoToDesktop";
             this.btnGoToDesktop.Size = new System.Drawing.Size(75, 23);
             this.btnGoToDesktop.TabIndex = 2;
             this.btnGoToDesktop.Text = "Continue";
             this.btnGoToDesktop.UseVisualStyleBackColor = true;
             this.btnGoToDesktop.Click += new System.EventHandler(this.btnGoToDesktop_Click);
-            // 
-            // hijackStoryline
-            // 
-            this.hijackStoryline.AutoSize = true;
-            this.hijackStoryline.Location = new System.Drawing.Point(12, 40);
-            this.hijackStoryline.Name = "hijackStoryline";
-            this.hijackStoryline.Size = new System.Drawing.Size(75, 13);
-            this.hijackStoryline.TabIndex = 1;
-            this.hijackStoryline.Text = "hijackStoryline";
-            // 
-            // hijackLabel
-            // 
-            this.hijackLabel.AutoSize = true;
-            this.hijackLabel.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hijackLabel.ForeColor = System.Drawing.Color.Red;
-            this.hijackLabel.Location = new System.Drawing.Point(12, 11);
-            this.hijackLabel.Name = "hijackLabel";
-            this.hijackLabel.Size = new System.Drawing.Size(259, 15);
-            this.hijackLabel.TabIndex = 0;
-            this.hijackLabel.Text = "SYSTEM ERROR 3923882: BEING HIJACKED";
             // 
             // Desktop
             // 
@@ -235,9 +229,8 @@
         private System.Windows.Forms.ToolStripMenuItem chatterToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quantumNetBrowserToolStripMenuItem;
         private System.Windows.Forms.Panel hijackScreen;
-        private System.Windows.Forms.Label hijackLabel;
-        private System.Windows.Forms.Label hijackStoryline;
         private System.Windows.Forms.Timer textgen;
         private System.Windows.Forms.Button btnGoToDesktop;
+        private System.Windows.Forms.TextBox txtHijack;
     }
 }
