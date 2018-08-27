@@ -40,7 +40,7 @@ namespace Project_Ports
             #if DEBUG
             Properties.Settings.Default.chatterStoryline = false;
             #endif
-            */
+            
 
             if (Properties.Settings.Default.chatterStoryline == true)
             {
@@ -56,7 +56,8 @@ namespace Project_Ports
                 txtSentMessages.AppendText("<Adam> Great!" + Environment.NewLine);
                 Thread.Sleep(2000);
                 txtSentMessages.AppendText("<Adam> Hello username" + Environment.NewLine); //TODO
-            } 
+                
+            } */
         }
     }
 }
