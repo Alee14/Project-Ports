@@ -1,7 +1,7 @@
 ﻿/************************************************************************
  *  
  *  Project Ports
- *  Copyright (C) 2018 AleeCorp
+ *  Copyright (C) 2018 UniverseDG
  *
  *  This program is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
