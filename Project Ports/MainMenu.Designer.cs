@@ -110,9 +110,9 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Lucida Console", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(401, 47);
+            this.btnExit.Location = new System.Drawing.Point(401, 42);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(193, 32);
+            this.btnExit.Size = new System.Drawing.Size(193, 37);
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;

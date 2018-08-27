@@ -40,7 +40,7 @@
             this.richTextBox1.Enabled = false;
             this.richTextBox1.Location = new System.Drawing.Point(3, 3);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(529, 551);
+            this.richTextBox1.Size = new System.Drawing.Size(426, 238);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -50,7 +50,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.richTextBox1);
             this.Name = "AboutPorts";
-            this.Size = new System.Drawing.Size(535, 557);
+            this.Size = new System.Drawing.Size(432, 244);
             this.ResumeLayout(false);
 
         }
