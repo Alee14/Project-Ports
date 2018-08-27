@@ -43,7 +43,6 @@
             this.dclock = new System.Windows.Forms.Timer(this.components);
             this.hijackScreen = new System.Windows.Forms.Panel();
             this.txtHijack = new System.Windows.Forms.TextBox();
-            this.btnGoToDesktop = new System.Windows.Forms.Button();
             this.textgen = new System.Windows.Forms.Timer(this.components);
             this.appMenu.SuspendLayout();
             this.hijackScreen.SuspendLayout();
@@ -155,7 +154,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.hijackScreen.BackColor = System.Drawing.Color.Black;
             this.hijackScreen.Controls.Add(this.txtHijack);
-            this.hijackScreen.Controls.Add(this.btnGoToDesktop);
             this.hijackScreen.Location = new System.Drawing.Point(0, 0);
             this.hijackScreen.Name = "hijackScreen";
             this.hijackScreen.Size = new System.Drawing.Size(800, 450);
@@ -174,20 +172,8 @@
             this.txtHijack.Multiline = true;
             this.txtHijack.Name = "txtHijack";
             this.txtHijack.ReadOnly = true;
-            this.txtHijack.Size = new System.Drawing.Size(773, 392);
+            this.txtHijack.Size = new System.Drawing.Size(773, 426);
             this.txtHijack.TabIndex = 3;
-            // 
-            // btnGoToDesktop
-            // 
-            this.btnGoToDesktop.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnGoToDesktop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGoToDesktop.Location = new System.Drawing.Point(15, 416);
-            this.btnGoToDesktop.Name = "btnGoToDesktop";
-            this.btnGoToDesktop.Size = new System.Drawing.Size(75, 23);
-            this.btnGoToDesktop.TabIndex = 2;
-            this.btnGoToDesktop.Text = "Continue";
-            this.btnGoToDesktop.UseVisualStyleBackColor = true;
-            this.btnGoToDesktop.Click += new System.EventHandler(this.btnGoToDesktop_Click);
             // 
             // Desktop
             // 
@@ -230,7 +216,6 @@
         private System.Windows.Forms.ToolStripMenuItem quantumNetBrowserToolStripMenuItem;
         private System.Windows.Forms.Panel hijackScreen;
         private System.Windows.Forms.Timer textgen;
-        private System.Windows.Forms.Button btnGoToDesktop;
         private System.Windows.Forms.TextBox txtHijack;
     }
 }

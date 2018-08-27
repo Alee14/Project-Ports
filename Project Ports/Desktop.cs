@@ -53,6 +53,10 @@ namespace Project_Ports
             hijackScreen.Hide();
             if(Properties.Settings.Default.hijacked == true)
             {
+                #if DEBUG
+                hijackScreen.Hide();
+                return;
+                #endif
                 hijackScreen.Show();
                 Thread.Sleep(2000);
                 txtHijack.AppendText("PortOS is now booting..." + Environment.NewLine);
@@ -158,11 +162,6 @@ namespace Project_Ports
         private void quantumNetBrowserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             wm.createWindow(new QuantumNet(), "QuantumNet Browser");
-        }
-
-        private void btnGoToDesktop_Click(object sender, EventArgs e)
-        {
-            hijackScreen.Hide();
         }
     }
 }
