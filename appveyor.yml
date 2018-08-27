@@ -7,4 +7,4 @@ after_build:
 - netstat -ab
 - tree /F
 # zip the archive
-- '7z a Ports-%APPVEYOR_REPO_COMMIT%.zip bin/Debug'
+- '7z a Ports-%APPVEYOR_REPO_COMMIT%.zip bin/Debug/*'
