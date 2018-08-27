@@ -56,6 +56,7 @@ namespace Project_Ports
             dclock.Start();
             appMenu.Hide();
             //TODO: Display player name in app menu
+            //playerName.Text = PortEngine.Properties.Settings.
 
         }
         
