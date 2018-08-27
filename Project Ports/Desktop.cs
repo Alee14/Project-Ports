@@ -52,14 +52,18 @@ namespace Project_Ports
         {
             #if DEBUG
             MessageBox.Show("You have set the build to \"Debug\" there are some features that is disabled in this build.");
+            this.quantumNetBrowserToolStripMenuItem.Visible = true;
             #endif
+            dclock.Start();
             hijackScreen.Hide();
-            if(Properties.Settings.Default.hijacked == true)
+            
+            if (Properties.Settings.Default.hijacked == true)
             {
                 #if DEBUG
                 hijackScreen.Hide();
                 return;
                 #endif
+                this.quantumNetBrowserToolStripMenuItem.Visible = false;
                 hijackScreen.Show();
                 Thread.Sleep(2000);
                 txtHijack.AppendText("PortOS is now booting..." + Environment.NewLine);
@@ -128,7 +132,7 @@ namespace Project_Ports
 
 
             }
-            dclock.Start();
+            
         }
         
 
