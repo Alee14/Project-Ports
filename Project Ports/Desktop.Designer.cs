@@ -89,7 +89,7 @@
             this.programStrip.Location = new System.Drawing.Point(9, 349);
             this.programStrip.Name = "programStrip";
             this.programStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.programStrip.Size = new System.Drawing.Size(77, 25);
+            this.programStrip.Size = new System.Drawing.Size(79, 25);
             this.programStrip.TabIndex = 2;
             this.programStrip.Text = "toolStrip1";
             // 
@@ -204,11 +204,11 @@
             // appButton
             // 
             this.appButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.appButton.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.appButton.Font = new System.Drawing.Font("Consolas", 9.25F);
             this.appButton.ForeColor = System.Drawing.Color.Black;
-            this.appButton.Location = new System.Drawing.Point(12, 6);
+            this.appButton.Location = new System.Drawing.Point(9, 3);
             this.appButton.Name = "appButton";
-            this.appButton.Size = new System.Drawing.Size(107, 23);
+            this.appButton.Size = new System.Drawing.Size(107, 26);
             this.appButton.TabIndex = 2;
             this.appButton.Text = "Applications";
             this.appButton.UseVisualStyleBackColor = true;

@@ -43,7 +43,7 @@ namespace Project_Ports
 
         private void dclock_Tick(object sender, EventArgs e)
         {
-
+            GeneralAPI.setNameOnAppLauncher(playerName);
                 this.ltime.Text = DateTime.Now.ToString("hh:mm tt");
             
         }
@@ -53,8 +53,6 @@ namespace Project_Ports
             dclock.Start();
             desktopWatermark.Text = "Project: Ports " + Properties.Settings.Default.version + Environment.NewLine + "Working Progress";
             appMenu.Hide();
-            //TODO: Display player name in app menu
-            //playerName.Text = PortEngine.Properties.Settings.
 
         }
         

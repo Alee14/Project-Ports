@@ -49,6 +49,7 @@
     <Compile Include="EarnSite.Designer.cs">
       <DependentUpon>EarnSite.cs</DependentUpon>
     </Compile>
+    <Compile Include="GeneralAPI.cs" />
     <Compile Include="QuantumAPI\Sites\Malwarebits.cs">
       <SubType>UserControl</SubType>
     </Compile>
