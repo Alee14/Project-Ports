@@ -1,7 +1,7 @@
 after_build:
   - cd ../
-  - 7z a artifacts\Ports-%APPVEYOR_BUILD_VERSION%.zip "%APPVEYOR_BUILD_FOLDER%\Project Ports\bin\Debug\**"
+  - 7z a "%APPVEYOR_BUILD_FOLDER%\Project Ports\bin\Ports-%APPVEYOR_BUILD_VERSION%.zip" "%APPVEYOR_BUILD_FOLDER%\Project Ports\bin\Debug\**"
 
 artifacts:
-  - path: artifacts\*.zip
+  - path: project-ports\Project Ports\bin\*.zip
     name: ports
