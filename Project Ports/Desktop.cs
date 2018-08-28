@@ -50,8 +50,8 @@ namespace Project_Ports
 
         private void Desktop_Load(object sender, EventArgs e)
         {
-            #if DEBUG
-            testWindowToolStripMenuItem.Visible = true;
+#if DEBUG
+            btnTestWindow.Visible = true;
             btnhijack2.Visible = true;
             btnCrash.Visible = true;
             #endif
@@ -71,43 +71,39 @@ namespace Project_Ports
             this.Close();
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void Desktop_MouseClick(object sender, MouseEventArgs e)
         {
-
+            appMenu.Hide();
         }
 
-        private void terminalToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void btnTerminal_Click(object sender, EventArgs e)
         {
             wm.createWindow(new Terminal(), "Terminal");
             appMenu.Hide();
+
         }
 
-        private void testWindowToolStripMenuItem_Click_1(object sender, EventArgs e)
-        {
-            wm.createWindow(new TestWindow(), "TestWindow");
-            appMenu.Hide();
-        }
-
-        private void chatterToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void btnChatter_Click(object sender, EventArgs e)
         {
             wm.createWindow(new ChatApp(), "Chatter");
             appMenu.Hide();
         }
 
-        private void settingsToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void btnSettings_Click(object sender, EventArgs e)
         {
             wm.createWindow(new Settings(), "System Settings");
             appMenu.Hide();
         }
 
-        private void quantumNetBrowserToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void btnQuantumNet_Click(object sender, EventArgs e)
         {
             wm.createWindow(new QuantumNet(), "QuantumNet Browser");
             appMenu.Hide();
         }
 
-        private void Desktop_MouseClick(object sender, MouseEventArgs e)
+        private void btnTestWindow_Click(object sender, EventArgs e)
         {
+            wm.createWindow(new TestWindow(), "TestWindow");
             appMenu.Hide();
         }
 

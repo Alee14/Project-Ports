@@ -32,13 +32,8 @@
             this.ltime = new System.Windows.Forms.Label();
             this.dclock = new System.Windows.Forms.Timer(this.components);
             this.appMenu = new System.Windows.Forms.Panel();
-            this.programStrip = new System.Windows.Forms.ToolStrip();
-            this.programButton = new System.Windows.Forms.ToolStripDropDownButton();
-            this.terminalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.testWindowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.chatterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quantumNetBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnCrash = new System.Windows.Forms.Button();
+            this.btnhijack2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.shutdownButton = new System.Windows.Forms.Button();
@@ -46,10 +41,14 @@
             this.taskBar = new System.Windows.Forms.Panel();
             this.appButton = new System.Windows.Forms.Button();
             this.desktopWatermark = new System.Windows.Forms.Label();
-            this.btnhijack2 = new System.Windows.Forms.Button();
-            this.btnCrash = new System.Windows.Forms.Button();
+            this.lbPrograms = new System.Windows.Forms.Label();
+            this.btnTerminal = new System.Windows.Forms.Button();
+            this.btnChatter = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.btnQuantumNet = new System.Windows.Forms.Button();
+            this.btnTestWindow = new System.Windows.Forms.Button();
             this.appMenu.SuspendLayout();
-            this.programStrip.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.taskBar.SuspendLayout();
             this.SuspendLayout();
@@ -74,9 +73,11 @@
             // appMenu
             // 
             this.appMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.appMenu.Controls.Add(this.btnCrash);
-            this.appMenu.Controls.Add(this.btnhijack2);
-            this.appMenu.Controls.Add(this.programStrip);
+            this.appMenu.Controls.Add(this.btnQuantumNet);
+            this.appMenu.Controls.Add(this.btnSettings);
+            this.appMenu.Controls.Add(this.btnChatter);
+            this.appMenu.Controls.Add(this.btnTerminal);
+            this.appMenu.Controls.Add(this.lbPrograms);
             this.appMenu.Controls.Add(this.panel2);
             this.appMenu.Controls.Add(this.panel1);
             this.appMenu.ForeColor = System.Drawing.Color.Black;
@@ -85,75 +86,38 @@
             this.appMenu.Size = new System.Drawing.Size(376, 429);
             this.appMenu.TabIndex = 3;
             // 
-            // programStrip
+            // btnCrash
             // 
-            this.programStrip.Dock = System.Windows.Forms.DockStyle.None;
-            this.programStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.programButton});
-            this.programStrip.Location = new System.Drawing.Point(9, 349);
-            this.programStrip.Name = "programStrip";
-            this.programStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.programStrip.Size = new System.Drawing.Size(79, 25);
-            this.programStrip.TabIndex = 2;
-            this.programStrip.Text = "toolStrip1";
+            this.btnCrash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrash.ForeColor = System.Drawing.Color.White;
+            this.btnCrash.Location = new System.Drawing.Point(145, 16);
+            this.btnCrash.Name = "btnCrash";
+            this.btnCrash.Size = new System.Drawing.Size(75, 23);
+            this.btnCrash.TabIndex = 7;
+            this.btnCrash.Text = "Crash";
+            this.btnCrash.UseVisualStyleBackColor = true;
+            this.btnCrash.Visible = false;
+            this.btnCrash.Click += new System.EventHandler(this.btnCrash_Click);
             // 
-            // programButton
+            // btnhijack2
             // 
-            this.programButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.programButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.terminalToolStripMenuItem,
-            this.testWindowToolStripMenuItem,
-            this.chatterToolStripMenuItem,
-            this.settingsToolStripMenuItem,
-            this.quantumNetBrowserToolStripMenuItem});
-            this.programButton.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.programButton.ForeColor = System.Drawing.Color.Black;
-            this.programButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.programButton.Name = "programButton";
-            this.programButton.ShowDropDownArrow = false;
-            this.programButton.Size = new System.Drawing.Size(67, 22);
-            this.programButton.Text = "Programs";
-            this.programButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            // 
-            // terminalToolStripMenuItem
-            // 
-            this.terminalToolStripMenuItem.Name = "terminalToolStripMenuItem";
-            this.terminalToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
-            this.terminalToolStripMenuItem.Text = "Terminal";
-            this.terminalToolStripMenuItem.Click += new System.EventHandler(this.terminalToolStripMenuItem_Click_1);
-            // 
-            // testWindowToolStripMenuItem
-            // 
-            this.testWindowToolStripMenuItem.Name = "testWindowToolStripMenuItem";
-            this.testWindowToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
-            this.testWindowToolStripMenuItem.Text = "TestWindow";
-            this.testWindowToolStripMenuItem.Visible = false;
-            this.testWindowToolStripMenuItem.Click += new System.EventHandler(this.testWindowToolStripMenuItem_Click_1);
-            // 
-            // chatterToolStripMenuItem
-            // 
-            this.chatterToolStripMenuItem.Name = "chatterToolStripMenuItem";
-            this.chatterToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
-            this.chatterToolStripMenuItem.Text = "Chatter";
-            this.chatterToolStripMenuItem.Click += new System.EventHandler(this.chatterToolStripMenuItem_Click_1);
-            // 
-            // settingsToolStripMenuItem
-            // 
-            this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
-            this.settingsToolStripMenuItem.Text = "Settings";
-            this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click_1);
-            // 
-            // quantumNetBrowserToolStripMenuItem
-            // 
-            this.quantumNetBrowserToolStripMenuItem.Name = "quantumNetBrowserToolStripMenuItem";
-            this.quantumNetBrowserToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
-            this.quantumNetBrowserToolStripMenuItem.Text = "QuantumNet Browser";
-            this.quantumNetBrowserToolStripMenuItem.Click += new System.EventHandler(this.quantumNetBrowserToolStripMenuItem_Click_1);
+            this.btnhijack2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnhijack2.ForeColor = System.Drawing.Color.White;
+            this.btnhijack2.Location = new System.Drawing.Point(273, 16);
+            this.btnhijack2.Name = "btnhijack2";
+            this.btnhijack2.Size = new System.Drawing.Size(89, 23);
+            this.btnhijack2.TabIndex = 6;
+            this.btnhijack2.Text = "Start Hijack 2";
+            this.btnhijack2.UseVisualStyleBackColor = true;
+            this.btnhijack2.Visible = false;
+            this.btnhijack2.Click += new System.EventHandler(this.btnhijack2_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.btnTestWindow);
+            this.panel2.Controls.Add(this.btnCrash);
+            this.panel2.Controls.Add(this.btnhijack2);
             this.panel2.Location = new System.Drawing.Point(0, 377);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(376, 52);
@@ -175,9 +139,9 @@
             this.shutdownButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.shutdownButton.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shutdownButton.ForeColor = System.Drawing.Color.White;
-            this.shutdownButton.Location = new System.Drawing.Point(283, 12);
+            this.shutdownButton.Location = new System.Drawing.Point(273, 11);
             this.shutdownButton.Name = "shutdownButton";
-            this.shutdownButton.Size = new System.Drawing.Size(79, 27);
+            this.shutdownButton.Size = new System.Drawing.Size(89, 29);
             this.shutdownButton.TabIndex = 0;
             this.shutdownButton.Text = "Shutdown";
             this.shutdownButton.UseVisualStyleBackColor = true;
@@ -186,11 +150,11 @@
             // playerName
             // 
             this.playerName.AutoSize = true;
-            this.playerName.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerName.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerName.ForeColor = System.Drawing.Color.White;
-            this.playerName.Location = new System.Drawing.Point(20, 18);
+            this.playerName.Location = new System.Drawing.Point(17, 15);
             this.playerName.Name = "playerName";
-            this.playerName.Size = new System.Drawing.Size(77, 15);
+            this.playerName.Size = new System.Drawing.Size(99, 19);
             this.playerName.TabIndex = 0;
             this.playerName.Text = "playerName";
             // 
@@ -231,31 +195,77 @@
             this.desktopWatermark.TabIndex = 5;
             this.desktopWatermark.Text = "desktopWatermark";
             // 
-            // btnhijack2
+            // lbPrograms
             // 
-            this.btnhijack2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnhijack2.ForeColor = System.Drawing.Color.White;
-            this.btnhijack2.Location = new System.Drawing.Point(273, 351);
-            this.btnhijack2.Name = "btnhijack2";
-            this.btnhijack2.Size = new System.Drawing.Size(89, 23);
-            this.btnhijack2.TabIndex = 6;
-            this.btnhijack2.Text = "Start Hijack 2";
-            this.btnhijack2.UseVisualStyleBackColor = true;
-            this.btnhijack2.Visible = false;
-            this.btnhijack2.Click += new System.EventHandler(this.btnhijack2_Click);
+            this.lbPrograms.AutoSize = true;
+            this.lbPrograms.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPrograms.ForeColor = System.Drawing.Color.White;
+            this.lbPrograms.Location = new System.Drawing.Point(17, 66);
+            this.lbPrograms.Name = "lbPrograms";
+            this.lbPrograms.Size = new System.Drawing.Size(81, 19);
+            this.lbPrograms.TabIndex = 8;
+            this.lbPrograms.Text = "Programs";
             // 
-            // btnCrash
+            // btnTerminal
             // 
-            this.btnCrash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCrash.ForeColor = System.Drawing.Color.White;
-            this.btnCrash.Location = new System.Drawing.Point(192, 351);
-            this.btnCrash.Name = "btnCrash";
-            this.btnCrash.Size = new System.Drawing.Size(75, 23);
-            this.btnCrash.TabIndex = 7;
-            this.btnCrash.Text = "Crash";
-            this.btnCrash.UseVisualStyleBackColor = true;
-            this.btnCrash.Visible = false;
-            this.btnCrash.Click += new System.EventHandler(this.btnCrash_Click);
+            this.btnTerminal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTerminal.ForeColor = System.Drawing.Color.White;
+            this.btnTerminal.Location = new System.Drawing.Point(21, 101);
+            this.btnTerminal.Name = "btnTerminal";
+            this.btnTerminal.Size = new System.Drawing.Size(120, 23);
+            this.btnTerminal.TabIndex = 9;
+            this.btnTerminal.Text = "Terminal";
+            this.btnTerminal.UseVisualStyleBackColor = true;
+            this.btnTerminal.Click += new System.EventHandler(this.btnTerminal_Click);
+            // 
+            // btnChatter
+            // 
+            this.btnChatter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChatter.ForeColor = System.Drawing.Color.White;
+            this.btnChatter.Location = new System.Drawing.Point(21, 130);
+            this.btnChatter.Name = "btnChatter";
+            this.btnChatter.Size = new System.Drawing.Size(120, 23);
+            this.btnChatter.TabIndex = 10;
+            this.btnChatter.Text = "Chatter";
+            this.btnChatter.UseVisualStyleBackColor = true;
+            this.btnChatter.Click += new System.EventHandler(this.btnChatter_Click);
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.ForeColor = System.Drawing.Color.White;
+            this.btnSettings.Location = new System.Drawing.Point(21, 159);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(120, 23);
+            this.btnSettings.TabIndex = 11;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
+            // 
+            // btnQuantumNet
+            // 
+            this.btnQuantumNet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuantumNet.ForeColor = System.Drawing.Color.White;
+            this.btnQuantumNet.Location = new System.Drawing.Point(21, 188);
+            this.btnQuantumNet.Name = "btnQuantumNet";
+            this.btnQuantumNet.Size = new System.Drawing.Size(120, 23);
+            this.btnQuantumNet.TabIndex = 12;
+            this.btnQuantumNet.Text = "QuantumNet Browser";
+            this.btnQuantumNet.UseVisualStyleBackColor = true;
+            this.btnQuantumNet.Click += new System.EventHandler(this.btnQuantumNet_Click);
+            // 
+            // btnTestWindow
+            // 
+            this.btnTestWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTestWindow.ForeColor = System.Drawing.Color.White;
+            this.btnTestWindow.Location = new System.Drawing.Point(21, 16);
+            this.btnTestWindow.Name = "btnTestWindow";
+            this.btnTestWindow.Size = new System.Drawing.Size(77, 23);
+            this.btnTestWindow.TabIndex = 13;
+            this.btnTestWindow.Text = "TestWindow";
+            this.btnTestWindow.UseVisualStyleBackColor = true;
+            this.btnTestWindow.Visible = false;
+            this.btnTestWindow.Click += new System.EventHandler(this.btnTestWindow_Click);
             // 
             // Desktop
             // 
@@ -275,8 +285,7 @@
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Desktop_MouseClick);
             this.appMenu.ResumeLayout(false);
             this.appMenu.PerformLayout();
-            this.programStrip.ResumeLayout(false);
-            this.programStrip.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.taskBar.ResumeLayout(false);
@@ -296,15 +305,14 @@
         private System.Windows.Forms.Label playerName;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button shutdownButton;
-        private System.Windows.Forms.ToolStrip programStrip;
-        private System.Windows.Forms.ToolStripDropDownButton programButton;
-        private System.Windows.Forms.ToolStripMenuItem terminalToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem testWindowToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem chatterToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quantumNetBrowserToolStripMenuItem;
         private System.Windows.Forms.Label desktopWatermark;
         private System.Windows.Forms.Button btnhijack2;
         private System.Windows.Forms.Button btnCrash;
+        private System.Windows.Forms.Button btnTerminal;
+        private System.Windows.Forms.Label lbPrograms;
+        private System.Windows.Forms.Button btnQuantumNet;
+        private System.Windows.Forms.Button btnSettings;
+        private System.Windows.Forms.Button btnChatter;
+        private System.Windows.Forms.Button btnTestWindow;
     }
 }
