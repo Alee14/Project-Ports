@@ -50,6 +50,9 @@ namespace Project_Ports
 
         private void Desktop_Load(object sender, EventArgs e)
         {
+            #if DEBUG
+            testWindowToolStripMenuItem.Visible = true;
+            #endif
             dclock.Start();
             desktopWatermark.Text = "Project: Ports " + Properties.Settings.Default.version + Environment.NewLine + "Working Progress";
             appMenu.Hide();

@@ -123,6 +123,7 @@
             this.testWindowToolStripMenuItem.Name = "testWindowToolStripMenuItem";
             this.testWindowToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.testWindowToolStripMenuItem.Text = "TestWindow";
+            this.testWindowToolStripMenuItem.Visible = false;
             this.testWindowToolStripMenuItem.Click += new System.EventHandler(this.testWindowToolStripMenuItem_Click_1);
             // 
             // chatterToolStripMenuItem

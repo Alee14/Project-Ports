@@ -63,6 +63,12 @@
     <Compile Include="Desktop.Designer.cs">
       <DependentUpon>Desktop.cs</DependentUpon>
     </Compile>
+    <Compile Include="Crash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Crash.Designer.cs">
+      <DependentUpon>Crash.cs</DependentUpon>
+    </Compile>
     <Compile Include="hijackScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +120,9 @@
     </Compile>
     <EmbeddedResource Include="AboutPorts.resx">
       <DependentUpon>AboutPorts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crash.resx">
+      <DependentUpon>Crash.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DebugMode.resx">
       <DependentUpon>DebugMode.cs</DependentUpon>

@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChatAPI.cs" />
+    <Compile Include="CrashAPI.cs" />
     <Compile Include="EarnSite.cs">
       <SubType>UserControl</SubType>
     </Compile>

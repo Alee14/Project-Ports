@@ -23,5 +23,10 @@ namespace Project_Ports
            WindowManager wm = new WindowManager();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Crash crash = new Crash();
+            crash.Show();
+        }
     }
 }
