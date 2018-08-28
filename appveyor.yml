@@ -1,10 +1,7 @@
-artifacts:
-  - path: Ports-%APPVEYOR_REPO_COMMIT%.zip
-    name: Ports-%APPVEYOR_REPO_COMMIT%
-    
 after_build:
-# scripts to run after build
-- netstat -ab
-- tree /F
-# zip the archive
-- '7z a Ports-%APPVEYOR_REPO_COMMIT%.zip bin/Debug/*'
+  - cd ../
+  - 7z a artifacts\Ports-%APPVEYOR_BUILD_VERSION%.zip %APPVEYOR_BUILD_FOLDER%\Source\public\**
+
+artifacts:
+  - path: artifacts\*.zip
+    name: ports
