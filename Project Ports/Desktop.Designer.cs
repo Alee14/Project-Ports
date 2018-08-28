@@ -47,6 +47,7 @@
             this.appButton = new System.Windows.Forms.Button();
             this.desktopWatermark = new System.Windows.Forms.Label();
             this.btnhijack2 = new System.Windows.Forms.Button();
+            this.btnCrash = new System.Windows.Forms.Button();
             this.appMenu.SuspendLayout();
             this.programStrip.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -73,6 +74,7 @@
             // appMenu
             // 
             this.appMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.appMenu.Controls.Add(this.btnCrash);
             this.appMenu.Controls.Add(this.btnhijack2);
             this.appMenu.Controls.Add(this.programStrip);
             this.appMenu.Controls.Add(this.panel2);
@@ -242,6 +244,19 @@
             this.btnhijack2.Visible = false;
             this.btnhijack2.Click += new System.EventHandler(this.btnhijack2_Click);
             // 
+            // btnCrash
+            // 
+            this.btnCrash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCrash.ForeColor = System.Drawing.Color.White;
+            this.btnCrash.Location = new System.Drawing.Point(192, 351);
+            this.btnCrash.Name = "btnCrash";
+            this.btnCrash.Size = new System.Drawing.Size(75, 23);
+            this.btnCrash.TabIndex = 7;
+            this.btnCrash.Text = "Crash";
+            this.btnCrash.UseVisualStyleBackColor = true;
+            this.btnCrash.Visible = false;
+            this.btnCrash.Click += new System.EventHandler(this.btnCrash_Click);
+            // 
             // Desktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,5 +305,6 @@
         private System.Windows.Forms.ToolStripMenuItem quantumNetBrowserToolStripMenuItem;
         private System.Windows.Forms.Label desktopWatermark;
         private System.Windows.Forms.Button btnhijack2;
+        private System.Windows.Forms.Button btnCrash;
     }
 }

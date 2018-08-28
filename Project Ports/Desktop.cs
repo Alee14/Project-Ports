@@ -53,6 +53,7 @@ namespace Project_Ports
             #if DEBUG
             testWindowToolStripMenuItem.Visible = true;
             btnhijack2.Visible = true;
+            btnCrash.Visible = true;
             #endif
             dclock.Start();
             desktopWatermark.Text = "Project: Ports " + Properties.Settings.Default.version + Environment.NewLine + "Working Progress";
@@ -123,6 +124,13 @@ namespace Project_Ports
             Crash crash = new Crash();
             crash.Show();
 
+        }
+
+        private void btnCrash_Click(object sender, EventArgs e)
+        {
+            Crash crash = new Crash();
+            crash.Show();
+            this.Close();
         }
     }
 }

@@ -58,5 +58,17 @@ namespace Project_Ports.Properties {
                 this["version"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool hijacked2 {
+            get {
+                return ((bool)(this["hijacked2"]));
+            }
+            set {
+                this["hijacked2"] = value;
+            }
+        }
     }
 }

@@ -11,5 +11,8 @@
     <Setting Name="version" Type="System.String" Scope="User">
       <Value Profile="(Default)">Alpha 0.2</Value>
     </Setting>
+    <Setting Name="hijacked2" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

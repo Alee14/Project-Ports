@@ -42,18 +42,18 @@ namespace Project_Ports
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            Desktop desktop = new Desktop();
+            Desktop desktop = new Desktop(); 
             #if DEBUG
             Properties.Settings.Default.hijacked = false;
             desktop.Show();
-            #endif
+            #endif 
             if (Properties.Settings.Default.hijacked == true)
             {
                 hijackScreen hijack = new hijackScreen();
                 hijack.Show();
-            } else
+            }
+            else
             {
-                
                 desktop.Show();
             }
 

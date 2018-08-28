@@ -51,6 +51,12 @@
     <Compile Include="AboutPorts.Designer.cs">
       <DependentUpon>AboutPorts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Boot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Boot.Designer.cs">
+      <DependentUpon>Boot.cs</DependentUpon>
+    </Compile>
     <Compile Include="DebugMode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +127,9 @@
     <EmbeddedResource Include="AboutPorts.resx">
       <DependentUpon>AboutPorts.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Boot.resx">
+      <DependentUpon>Boot.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Crash.resx">
       <DependentUpon>Crash.cs</DependentUpon>
     </EmbeddedResource>
@@ -171,6 +180,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="Storyline\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PortEngine\PortEngine.csproj">

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PortEngine;
@@ -18,12 +19,25 @@ namespace Project_Ports
             InitializeComponent();
         }
 
-        private void btnStartOver_Click(object sender, EventArgs e)
+        private void Crash_Load(object sender, EventArgs e)
         {
-            Properties.Settings.Default.hijacked = true;
-            Properties.Settings.Default.chatterStoryline = true;
-            this.Close();
-            
+            this.BringToFront();
+            Thread.Sleep(2000);
+            txtCrash.AppendText("PortOS.GUI has crashed..." + Environment.NewLine);
+            Thread.Sleep(2000);
+            txtCrash.AppendText("SYSTEM ERROR: Crashed" + Environment.NewLine);
+            Thread.Sleep(2000);
+            txtCrash.AppendText("Rebooting PortOS..." + Environment.NewLine);
+            if (Properties.Settings.Default.hijacked2 == true)
+            {
+                MessageBox.Show("Coming soon!");
+            }
+            else
+            {
+                Boot boot = new Boot();
+                boot.Show();
+                this.Close();
+            }
         }
     }
 }
