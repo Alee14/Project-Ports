@@ -46,6 +46,7 @@
             this.taskBar = new System.Windows.Forms.Panel();
             this.appButton = new System.Windows.Forms.Button();
             this.desktopWatermark = new System.Windows.Forms.Label();
+            this.btnhijack2 = new System.Windows.Forms.Button();
             this.appMenu.SuspendLayout();
             this.programStrip.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -72,6 +73,7 @@
             // appMenu
             // 
             this.appMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.appMenu.Controls.Add(this.btnhijack2);
             this.appMenu.Controls.Add(this.programStrip);
             this.appMenu.Controls.Add(this.panel2);
             this.appMenu.Controls.Add(this.panel1);
@@ -227,6 +229,19 @@
             this.desktopWatermark.TabIndex = 5;
             this.desktopWatermark.Text = "desktopWatermark";
             // 
+            // btnhijack2
+            // 
+            this.btnhijack2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnhijack2.ForeColor = System.Drawing.Color.White;
+            this.btnhijack2.Location = new System.Drawing.Point(273, 351);
+            this.btnhijack2.Name = "btnhijack2";
+            this.btnhijack2.Size = new System.Drawing.Size(89, 23);
+            this.btnhijack2.TabIndex = 6;
+            this.btnhijack2.Text = "Start Hijack 2";
+            this.btnhijack2.UseVisualStyleBackColor = true;
+            this.btnhijack2.Visible = false;
+            this.btnhijack2.Click += new System.EventHandler(this.btnhijack2_Click);
+            // 
             // Desktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,5 +289,6 @@
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quantumNetBrowserToolStripMenuItem;
         private System.Windows.Forms.Label desktopWatermark;
+        private System.Windows.Forms.Button btnhijack2;
     }
 }

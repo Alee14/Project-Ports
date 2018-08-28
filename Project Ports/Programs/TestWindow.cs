@@ -28,5 +28,10 @@ namespace Project_Ports
             Crash crash = new Crash();
             crash.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
