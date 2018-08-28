@@ -1,5 +1,5 @@
 after_build:
-  - cd ../
+  - tree /F
   - 7z a "%APPVEYOR_BUILD_FOLDER%\Project Ports\bin\Ports-%APPVEYOR_BUILD_VERSION%.zip" "%APPVEYOR_BUILD_FOLDER%\Project Ports\bin\Debug\**"
 
 artifacts:
