@@ -124,6 +124,12 @@
     <Compile Include="Programs\TestWindow.Designer.cs">
       <DependentUpon>TestWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="Storyline\Hijack2Terminal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storyline\Hijack2Terminal.Designer.cs">
+      <DependentUpon>Hijack2Terminal.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutPorts.resx">
       <DependentUpon>AboutPorts.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +171,9 @@
     <EmbeddedResource Include="Programs\TestWindow.resx">
       <DependentUpon>TestWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Storyline\Hijack2Terminal.resx">
+      <DependentUpon>Hijack2Terminal.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -180,7 +189,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
-    <Folder Include="Storyline\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PortEngine\PortEngine.csproj">
