@@ -43,6 +43,7 @@
             this.txtBoot.Location = new System.Drawing.Point(12, 12);
             this.txtBoot.Name = "txtBoot";
             this.txtBoot.ReadOnly = true;
+            this.txtBoot.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.txtBoot.Size = new System.Drawing.Size(565, 429);
             this.txtBoot.TabIndex = 0;
             this.txtBoot.Text = "";
