@@ -209,9 +209,9 @@
             this.btnQuantumNet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuantumNet.Font = new System.Drawing.Font("Consolas", 9.75F);
             this.btnQuantumNet.ForeColor = System.Drawing.Color.White;
-            this.btnQuantumNet.Location = new System.Drawing.Point(32, 188);
+            this.btnQuantumNet.Location = new System.Drawing.Point(32, 202);
             this.btnQuantumNet.Name = "btnQuantumNet";
-            this.btnQuantumNet.Size = new System.Drawing.Size(120, 23);
+            this.btnQuantumNet.Size = new System.Drawing.Size(148, 43);
             this.btnQuantumNet.TabIndex = 12;
             this.btnQuantumNet.Text = "QuantumNet Browser";
             this.btnQuantumNet.UseVisualStyleBackColor = true;
@@ -222,9 +222,9 @@
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Consolas", 9.75F);
             this.btnSettings.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.Location = new System.Drawing.Point(32, 159);
+            this.btnSettings.Location = new System.Drawing.Point(32, 153);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(120, 23);
+            this.btnSettings.Size = new System.Drawing.Size(148, 43);
             this.btnSettings.TabIndex = 11;
             this.btnSettings.Text = "Settings";
             this.btnSettings.UseVisualStyleBackColor = true;
@@ -235,9 +235,9 @@
             this.btnChatter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChatter.Font = new System.Drawing.Font("Consolas", 9.75F);
             this.btnChatter.ForeColor = System.Drawing.Color.White;
-            this.btnChatter.Location = new System.Drawing.Point(32, 130);
+            this.btnChatter.Location = new System.Drawing.Point(32, 104);
             this.btnChatter.Name = "btnChatter";
-            this.btnChatter.Size = new System.Drawing.Size(120, 23);
+            this.btnChatter.Size = new System.Drawing.Size(148, 43);
             this.btnChatter.TabIndex = 10;
             this.btnChatter.Text = "Chatter";
             this.btnChatter.UseVisualStyleBackColor = true;
@@ -248,9 +248,9 @@
             this.btnTerminal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTerminal.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTerminal.ForeColor = System.Drawing.Color.White;
-            this.btnTerminal.Location = new System.Drawing.Point(32, 101);
+            this.btnTerminal.Location = new System.Drawing.Point(32, 249);
             this.btnTerminal.Name = "btnTerminal";
-            this.btnTerminal.Size = new System.Drawing.Size(120, 23);
+            this.btnTerminal.Size = new System.Drawing.Size(148, 43);
             this.btnTerminal.TabIndex = 9;
             this.btnTerminal.Text = "Terminal";
             this.btnTerminal.UseVisualStyleBackColor = true;
