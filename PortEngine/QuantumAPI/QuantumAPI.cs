@@ -36,10 +36,5 @@ namespace PortEngine
             }
 
         }
-
-        internal static void loadSite(QuantumAPI.Sites.MalwareBits malwareBits, object pnlLoadSiteHere)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
