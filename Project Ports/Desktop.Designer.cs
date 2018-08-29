@@ -37,20 +37,24 @@
             this.btnChatter = new System.Windows.Forms.Button();
             this.btnTerminal = new System.Windows.Forms.Button();
             this.lbPrograms = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btnTestWindow = new System.Windows.Forms.Button();
             this.btnCrash = new System.Windows.Forms.Button();
             this.btnhijack2 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.shutdownButton = new System.Windows.Forms.Button();
             this.playerName = new System.Windows.Forms.Label();
             this.taskBar = new System.Windows.Forms.Panel();
             this.appButton = new System.Windows.Forms.Button();
             this.desktopWatermark = new System.Windows.Forms.Label();
+            this.appMenuFrame2 = new System.Windows.Forms.PictureBox();
+            this.appMenuFrame1 = new System.Windows.Forms.PictureBox();
+            this.appMenuPanel1 = new System.Windows.Forms.PictureBox();
+            this.appMenuPanel2 = new System.Windows.Forms.PictureBox();
             this.appMenu.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.taskBar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.appMenuFrame2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appMenuFrame1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appMenuPanel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appMenuPanel2)).BeginInit();
             this.SuspendLayout();
             // 
             // ltime
@@ -72,14 +76,21 @@
             // 
             // appMenu
             // 
-            this.appMenu.BackColor = System.Drawing.Color.Gray;
+            this.appMenu.BackColor = System.Drawing.Color.Black;
+            this.appMenu.Controls.Add(this.btnTestWindow);
+            this.appMenu.Controls.Add(this.btnCrash);
+            this.appMenu.Controls.Add(this.btnhijack2);
+            this.appMenu.Controls.Add(this.shutdownButton);
+            this.appMenu.Controls.Add(this.playerName);
+            this.appMenu.Controls.Add(this.appMenuPanel2);
+            this.appMenu.Controls.Add(this.appMenuPanel1);
+            this.appMenu.Controls.Add(this.appMenuFrame1);
+            this.appMenu.Controls.Add(this.appMenuFrame2);
             this.appMenu.Controls.Add(this.btnQuantumNet);
             this.appMenu.Controls.Add(this.btnSettings);
             this.appMenu.Controls.Add(this.btnChatter);
             this.appMenu.Controls.Add(this.btnTerminal);
             this.appMenu.Controls.Add(this.lbPrograms);
-            this.appMenu.Controls.Add(this.panel2);
-            this.appMenu.Controls.Add(this.panel1);
             this.appMenu.ForeColor = System.Drawing.Color.Black;
             this.appMenu.Location = new System.Drawing.Point(0, 32);
             this.appMenu.Name = "appMenu";
@@ -90,7 +101,7 @@
             // 
             this.btnQuantumNet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuantumNet.ForeColor = System.Drawing.Color.White;
-            this.btnQuantumNet.Location = new System.Drawing.Point(21, 188);
+            this.btnQuantumNet.Location = new System.Drawing.Point(32, 188);
             this.btnQuantumNet.Name = "btnQuantumNet";
             this.btnQuantumNet.Size = new System.Drawing.Size(120, 23);
             this.btnQuantumNet.TabIndex = 12;
@@ -102,7 +113,7 @@
             // 
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.Location = new System.Drawing.Point(21, 159);
+            this.btnSettings.Location = new System.Drawing.Point(32, 159);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(120, 23);
             this.btnSettings.TabIndex = 11;
@@ -114,7 +125,7 @@
             // 
             this.btnChatter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChatter.ForeColor = System.Drawing.Color.White;
-            this.btnChatter.Location = new System.Drawing.Point(21, 130);
+            this.btnChatter.Location = new System.Drawing.Point(32, 130);
             this.btnChatter.Name = "btnChatter";
             this.btnChatter.Size = new System.Drawing.Size(120, 23);
             this.btnChatter.TabIndex = 10;
@@ -126,7 +137,7 @@
             // 
             this.btnTerminal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTerminal.ForeColor = System.Drawing.Color.White;
-            this.btnTerminal.Location = new System.Drawing.Point(21, 101);
+            this.btnTerminal.Location = new System.Drawing.Point(32, 101);
             this.btnTerminal.Name = "btnTerminal";
             this.btnTerminal.Size = new System.Drawing.Size(120, 23);
             this.btnTerminal.TabIndex = 9;
@@ -139,92 +150,75 @@
             this.lbPrograms.AutoSize = true;
             this.lbPrograms.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPrograms.ForeColor = System.Drawing.Color.White;
-            this.lbPrograms.Location = new System.Drawing.Point(17, 66);
+            this.lbPrograms.Location = new System.Drawing.Point(28, 68);
             this.lbPrograms.Name = "lbPrograms";
             this.lbPrograms.Size = new System.Drawing.Size(81, 19);
             this.lbPrograms.TabIndex = 8;
             this.lbPrograms.Text = "Programs";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.btnTestWindow);
-            this.panel2.Controls.Add(this.btnCrash);
-            this.panel2.Controls.Add(this.btnhijack2);
-            this.panel2.Location = new System.Drawing.Point(0, 377);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(376, 52);
-            this.panel2.TabIndex = 1;
-            // 
             // btnTestWindow
             // 
+            this.btnTestWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnTestWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTestWindow.ForeColor = System.Drawing.Color.White;
-            this.btnTestWindow.Location = new System.Drawing.Point(21, 16);
+            this.btnTestWindow.Location = new System.Drawing.Point(32, 390);
             this.btnTestWindow.Name = "btnTestWindow";
             this.btnTestWindow.Size = new System.Drawing.Size(77, 23);
             this.btnTestWindow.TabIndex = 13;
             this.btnTestWindow.Text = "TestWindow";
-            this.btnTestWindow.UseVisualStyleBackColor = true;
+            this.btnTestWindow.UseVisualStyleBackColor = false;
             this.btnTestWindow.Visible = false;
             this.btnTestWindow.Click += new System.EventHandler(this.btnTestWindow_Click);
             // 
             // btnCrash
             // 
+            this.btnCrash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnCrash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrash.ForeColor = System.Drawing.Color.White;
-            this.btnCrash.Location = new System.Drawing.Point(145, 16);
+            this.btnCrash.Location = new System.Drawing.Point(148, 390);
             this.btnCrash.Name = "btnCrash";
             this.btnCrash.Size = new System.Drawing.Size(75, 23);
             this.btnCrash.TabIndex = 7;
             this.btnCrash.Text = "Crash";
-            this.btnCrash.UseVisualStyleBackColor = true;
+            this.btnCrash.UseVisualStyleBackColor = false;
             this.btnCrash.Visible = false;
             this.btnCrash.Click += new System.EventHandler(this.btnCrash_Click);
             // 
             // btnhijack2
             // 
+            this.btnhijack2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnhijack2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnhijack2.ForeColor = System.Drawing.Color.White;
-            this.btnhijack2.Location = new System.Drawing.Point(273, 16);
+            this.btnhijack2.Location = new System.Drawing.Point(260, 390);
             this.btnhijack2.Name = "btnhijack2";
             this.btnhijack2.Size = new System.Drawing.Size(89, 23);
             this.btnhijack2.TabIndex = 6;
             this.btnhijack2.Text = "Start Hijack 2";
-            this.btnhijack2.UseVisualStyleBackColor = true;
+            this.btnhijack2.UseVisualStyleBackColor = false;
             this.btnhijack2.Visible = false;
             this.btnhijack2.Click += new System.EventHandler(this.btnhijack2_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.shutdownButton);
-            this.panel1.Controls.Add(this.playerName);
-            this.panel1.ForeColor = System.Drawing.Color.Gray;
-            this.panel1.Location = new System.Drawing.Point(0, 1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(376, 51);
-            this.panel1.TabIndex = 0;
-            // 
             // shutdownButton
             // 
+            this.shutdownButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.shutdownButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.shutdownButton.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shutdownButton.ForeColor = System.Drawing.Color.White;
-            this.shutdownButton.Location = new System.Drawing.Point(273, 11);
+            this.shutdownButton.Location = new System.Drawing.Point(260, 13);
             this.shutdownButton.Name = "shutdownButton";
             this.shutdownButton.Size = new System.Drawing.Size(89, 29);
             this.shutdownButton.TabIndex = 0;
             this.shutdownButton.Text = "Shutdown";
-            this.shutdownButton.UseVisualStyleBackColor = true;
+            this.shutdownButton.UseVisualStyleBackColor = false;
             this.shutdownButton.Click += new System.EventHandler(this.shutdownButton_Click);
             // 
             // playerName
             // 
             this.playerName.AutoSize = true;
+            this.playerName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.playerName.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerName.ForeColor = System.Drawing.Color.White;
-            this.playerName.Location = new System.Drawing.Point(17, 15);
+            this.playerName.Location = new System.Drawing.Point(28, 17);
             this.playerName.Name = "playerName";
             this.playerName.Size = new System.Drawing.Size(99, 19);
             this.playerName.TabIndex = 0;
@@ -260,18 +254,54 @@
             this.desktopWatermark.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.desktopWatermark.AutoSize = true;
             this.desktopWatermark.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.desktopWatermark.ForeColor = System.Drawing.Color.Black;
+            this.desktopWatermark.ForeColor = System.Drawing.Color.White;
             this.desktopWatermark.Location = new System.Drawing.Point(854, 515);
             this.desktopWatermark.Name = "desktopWatermark";
             this.desktopWatermark.Size = new System.Drawing.Size(136, 18);
             this.desktopWatermark.TabIndex = 5;
             this.desktopWatermark.Text = "desktopWatermark";
             // 
+            // appMenuFrame2
+            // 
+            this.appMenuFrame2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.appMenuFrame2.Location = new System.Drawing.Point(366, 50);
+            this.appMenuFrame2.Name = "appMenuFrame2";
+            this.appMenuFrame2.Size = new System.Drawing.Size(10, 327);
+            this.appMenuFrame2.TabIndex = 13;
+            this.appMenuFrame2.TabStop = false;
+            // 
+            // appMenuFrame1
+            // 
+            this.appMenuFrame1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.appMenuFrame1.Location = new System.Drawing.Point(0, 50);
+            this.appMenuFrame1.Name = "appMenuFrame1";
+            this.appMenuFrame1.Size = new System.Drawing.Size(10, 327);
+            this.appMenuFrame1.TabIndex = 14;
+            this.appMenuFrame1.TabStop = false;
+            // 
+            // appMenuPanel1
+            // 
+            this.appMenuPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.appMenuPanel1.Location = new System.Drawing.Point(0, 0);
+            this.appMenuPanel1.Name = "appMenuPanel1";
+            this.appMenuPanel1.Size = new System.Drawing.Size(376, 54);
+            this.appMenuPanel1.TabIndex = 6;
+            this.appMenuPanel1.TabStop = false;
+            // 
+            // appMenuPanel2
+            // 
+            this.appMenuPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.appMenuPanel2.Location = new System.Drawing.Point(0, 376);
+            this.appMenuPanel2.Name = "appMenuPanel2";
+            this.appMenuPanel2.Size = new System.Drawing.Size(376, 53);
+            this.appMenuPanel2.TabIndex = 7;
+            this.appMenuPanel2.TabStop = false;
+            // 
             // Desktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(1066, 560);
             this.Controls.Add(this.desktopWatermark);
             this.Controls.Add(this.taskBar);
@@ -279,17 +309,18 @@
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Desktop";
-            this.Text = "mr";
+            this.Text = "desktop";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Desktop_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Desktop_MouseClick);
             this.appMenu.ResumeLayout(false);
             this.appMenu.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.taskBar.ResumeLayout(false);
             this.taskBar.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.appMenuFrame2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appMenuFrame1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appMenuPanel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appMenuPanel2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,9 +332,7 @@
         private System.Windows.Forms.Panel appMenu;
         private System.Windows.Forms.Panel taskBar;
         private System.Windows.Forms.Button appButton;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label playerName;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button shutdownButton;
         private System.Windows.Forms.Label desktopWatermark;
         private System.Windows.Forms.Button btnhijack2;
@@ -314,5 +343,9 @@
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnChatter;
         private System.Windows.Forms.Button btnTestWindow;
+        private System.Windows.Forms.PictureBox appMenuFrame1;
+        private System.Windows.Forms.PictureBox appMenuFrame2;
+        private System.Windows.Forms.PictureBox appMenuPanel2;
+        private System.Windows.Forms.PictureBox appMenuPanel1;
     }
 }
