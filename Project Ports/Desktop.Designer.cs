@@ -96,7 +96,7 @@
             this.appMenu.ForeColor = System.Drawing.Color.Black;
             this.appMenu.Location = new System.Drawing.Point(0, 39);
             this.appMenu.Name = "appMenu";
-            this.appMenu.Size = new System.Drawing.Size(376, 429);
+            this.appMenu.Size = new System.Drawing.Size(471, 429);
             this.appMenu.TabIndex = 3;
             // 
             // btnTestWindow
@@ -150,7 +150,7 @@
             this.shutdownButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.shutdownButton.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shutdownButton.ForeColor = System.Drawing.Color.White;
-            this.shutdownButton.Location = new System.Drawing.Point(260, 13);
+            this.shutdownButton.Location = new System.Drawing.Point(361, 13);
             this.shutdownButton.Name = "shutdownButton";
             this.shutdownButton.Size = new System.Drawing.Size(89, 29);
             this.shutdownButton.TabIndex = 0;
@@ -175,7 +175,7 @@
             this.appMenuPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.appMenuPanel2.Location = new System.Drawing.Point(0, 376);
             this.appMenuPanel2.Name = "appMenuPanel2";
-            this.appMenuPanel2.Size = new System.Drawing.Size(376, 53);
+            this.appMenuPanel2.Size = new System.Drawing.Size(471, 53);
             this.appMenuPanel2.TabIndex = 7;
             this.appMenuPanel2.TabStop = false;
             // 
@@ -184,7 +184,7 @@
             this.appMenuPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.appMenuPanel1.Location = new System.Drawing.Point(0, 0);
             this.appMenuPanel1.Name = "appMenuPanel1";
-            this.appMenuPanel1.Size = new System.Drawing.Size(376, 54);
+            this.appMenuPanel1.Size = new System.Drawing.Size(471, 54);
             this.appMenuPanel1.TabIndex = 6;
             this.appMenuPanel1.TabStop = false;
             // 
@@ -200,7 +200,7 @@
             // appMenuFrame2
             // 
             this.appMenuFrame2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.appMenuFrame2.Location = new System.Drawing.Point(366, 50);
+            this.appMenuFrame2.Location = new System.Drawing.Point(460, 50);
             this.appMenuFrame2.Name = "appMenuFrame2";
             this.appMenuFrame2.Size = new System.Drawing.Size(10, 327);
             this.appMenuFrame2.TabIndex = 13;
