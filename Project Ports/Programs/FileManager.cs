@@ -16,5 +16,10 @@ namespace Project_Ports.Programs
         {
             InitializeComponent();
         }
+
+        private void FileManager_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

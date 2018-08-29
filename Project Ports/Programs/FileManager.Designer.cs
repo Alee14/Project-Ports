@@ -59,9 +59,9 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Silver;
-            this.panel3.Location = new System.Drawing.Point(171, 67);
+            this.panel3.Location = new System.Drawing.Point(172, 67);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(664, 560);
+            this.panel3.Size = new System.Drawing.Size(663, 560);
             this.panel3.TabIndex = 2;
             // 
             // button1
@@ -105,6 +105,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "FileManager";
             this.Size = new System.Drawing.Size(835, 627);
+            this.Load += new System.EventHandler(this.FileManager_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
