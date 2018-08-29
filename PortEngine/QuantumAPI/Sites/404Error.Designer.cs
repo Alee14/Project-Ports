@@ -61,7 +61,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(510, 32);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Lost? Visit quantumconnections.qt";
+            this.label2.Text = "Lost? Visit qt.quantumconnections";
             // 
             // _404Error
             // 

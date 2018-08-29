@@ -96,7 +96,7 @@
             this.lblMalwarebitsHyperlink.Name = "lblMalwarebitsHyperlink";
             this.lblMalwarebitsHyperlink.Size = new System.Drawing.Size(148, 16);
             this.lblMalwarebitsHyperlink.TabIndex = 5;
-            this.lblMalwarebitsHyperlink.Text = "malwarebits.qt";
+            this.lblMalwarebitsHyperlink.Text = "qt.malwarebits";
             this.lblMalwarebitsHyperlink.Click += new System.EventHandler(this.lblMalwarebitsHyperlink_Click);
             // 
             // QuantumISP

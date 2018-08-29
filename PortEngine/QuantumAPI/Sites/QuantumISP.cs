@@ -19,7 +19,7 @@ namespace PortEngine.QuantumAPI.Sites
 
         private void lblMalwarebitsHyperlink_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void btnUnsub_Click(object sender, EventArgs e)

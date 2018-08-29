@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PortOSDefender));
             this.posLogo = new System.Windows.Forms.Label();
             this.btnSignin = new System.Windows.Forms.Button();
             this.rtxtNews = new System.Windows.Forms.RichTextBox();
             this.lbNews = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbAbout = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // posLogo
             // 
             this.posLogo.AutoSize = true;
             this.posLogo.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.posLogo.ForeColor = System.Drawing.Color.Green;
+            this.posLogo.ForeColor = System.Drawing.Color.LimeGreen;
             this.posLogo.Location = new System.Drawing.Point(21, 18);
             this.posLogo.Name = "posLogo";
             this.posLogo.Size = new System.Drawing.Size(190, 24);
@@ -50,6 +50,7 @@
             // btnSignin
             // 
             this.btnSignin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignin.ForeColor = System.Drawing.Color.White;
             this.btnSignin.Location = new System.Drawing.Point(725, 21);
             this.btnSignin.Name = "btnSignin";
             this.btnSignin.Size = new System.Drawing.Size(75, 23);
@@ -59,42 +60,61 @@
             // 
             // rtxtNews
             // 
-            this.rtxtNews.BackColor = System.Drawing.Color.White;
-            this.rtxtNews.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.rtxtNews.BackColor = System.Drawing.Color.Black;
+            this.rtxtNews.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtxtNews.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.rtxtNews.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtNews.ForeColor = System.Drawing.Color.White;
             this.rtxtNews.Location = new System.Drawing.Point(25, 113);
             this.rtxtNews.Name = "rtxtNews";
             this.rtxtNews.ReadOnly = true;
             this.rtxtNews.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
             this.rtxtNews.Size = new System.Drawing.Size(200, 288);
             this.rtxtNews.TabIndex = 2;
-            this.rtxtNews.Text = resources.GetString("rtxtNews.Text");
+            this.rtxtNews.Text = "";
             // 
             // lbNews
             // 
             this.lbNews.AutoSize = true;
             this.lbNews.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNews.ForeColor = System.Drawing.Color.White;
             this.lbNews.Location = new System.Drawing.Point(21, 91);
             this.lbNews.Name = "lbNews";
             this.lbNews.Size = new System.Drawing.Size(108, 19);
             this.lbNews.TabIndex = 3;
             this.lbNews.Text = "Latest News";
             // 
-            // label1
+            // lbAbout
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(253, 91);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Who are we?";
+            this.lbAbout.AutoSize = true;
+            this.lbAbout.Font = new System.Drawing.Font("Consolas", 12F);
+            this.lbAbout.ForeColor = System.Drawing.Color.White;
+            this.lbAbout.Location = new System.Drawing.Point(251, 91);
+            this.lbAbout.Name = "lbAbout";
+            this.lbAbout.Size = new System.Drawing.Size(108, 19);
+            this.lbAbout.TabIndex = 4;
+            this.lbAbout.Text = "Who are we?";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.Color.Black;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.richTextBox1.ForeColor = System.Drawing.Color.White;
+            this.richTextBox1.Location = new System.Drawing.Point(255, 113);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.richTextBox1.Size = new System.Drawing.Size(187, 288);
+            this.richTextBox1.TabIndex = 5;
+            this.richTextBox1.Text = "We are a hacker group and the point of this is to defeat the A.H.G.";
             // 
             // PortOSDefender
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.lbAbout);
             this.Controls.Add(this.lbNews);
             this.Controls.Add(this.rtxtNews);
             this.Controls.Add(this.btnSignin);
@@ -113,6 +133,7 @@
         private System.Windows.Forms.Button btnSignin;
         private System.Windows.Forms.RichTextBox rtxtNews;
         private System.Windows.Forms.Label lbNews;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbAbout;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

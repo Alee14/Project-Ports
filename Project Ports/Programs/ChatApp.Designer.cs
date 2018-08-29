@@ -69,7 +69,7 @@
             this.listBox1.ForeColor = System.Drawing.SystemColors.Control;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Items.AddRange(new object[] {
-            "#test"});
+            "#chat"});
             this.listBox1.Location = new System.Drawing.Point(4, 4);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(126, 210);

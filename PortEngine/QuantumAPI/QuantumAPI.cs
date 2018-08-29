@@ -21,13 +21,13 @@ namespace PortEngine
         {
             switch (txtNavigateToThis.Text)
             {
-                case "quantumconnections.qt":
+                case "qt.quantumconnections":
                     loadSite(new QuantumAPI.Sites.QuantumISP(), pnlLoadSiteHere);
                     break;
-                case "malwarebits.qt":
+                case "qt.malwarebits":
                     loadSite(new Malwarebits(), pnlLoadSiteHere);
                     break;
-                case "portosdefender.qt":
+                case "qt.portosdefender":
                     loadSite(new QuantumAPI.Sites.PortOSDefender(), pnlLoadSiteHere);
                     break;
                 default:
@@ -35,6 +35,11 @@ namespace PortEngine
                     break;
             }
 
+        }
+
+        internal static void loadSite(QuantumAPI.Sites.MalwareBits malwareBits, object pnlLoadSiteHere)
+        {
+            throw new NotImplementedException();
         }
     }
 }
