@@ -64,7 +64,7 @@
             this.ltime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ltime.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ltime.ForeColor = System.Drawing.Color.White;
-            this.ltime.Location = new System.Drawing.Point(991, 9);
+            this.ltime.Location = new System.Drawing.Point(991, 12);
             this.ltime.Name = "ltime";
             this.ltime.Size = new System.Drawing.Size(63, 15);
             this.ltime.TabIndex = 1;
@@ -92,7 +92,7 @@
             this.appMenu.Controls.Add(this.btnTerminal);
             this.appMenu.Controls.Add(this.lbPrograms);
             this.appMenu.ForeColor = System.Drawing.Color.Black;
-            this.appMenu.Location = new System.Drawing.Point(0, 32);
+            this.appMenu.Location = new System.Drawing.Point(0, 38);
             this.appMenu.Name = "appMenu";
             this.appMenu.Size = new System.Drawing.Size(376, 429);
             this.appMenu.TabIndex = 3;
@@ -276,7 +276,7 @@
             this.taskBar.Controls.Add(this.ltime);
             this.taskBar.Location = new System.Drawing.Point(0, 0);
             this.taskBar.Name = "taskBar";
-            this.taskBar.Size = new System.Drawing.Size(1066, 32);
+            this.taskBar.Size = new System.Drawing.Size(1066, 38);
             this.taskBar.TabIndex = 4;
             // 
             // appButton
@@ -284,7 +284,7 @@
             this.appButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.appButton.Font = new System.Drawing.Font("Consolas", 9.25F);
             this.appButton.ForeColor = System.Drawing.Color.White;
-            this.appButton.Location = new System.Drawing.Point(9, 3);
+            this.appButton.Location = new System.Drawing.Point(12, 6);
             this.appButton.Name = "appButton";
             this.appButton.Size = new System.Drawing.Size(107, 26);
             this.appButton.TabIndex = 2;
