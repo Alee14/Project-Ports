@@ -32,6 +32,7 @@
             this.ltime = new System.Windows.Forms.Label();
             this.dclock = new System.Windows.Forms.Timer(this.components);
             this.appMenu = new System.Windows.Forms.Panel();
+            this.btnFileManager = new System.Windows.Forms.Button();
             this.btnTestWindow = new System.Windows.Forms.Button();
             this.btnCrash = new System.Windows.Forms.Button();
             this.btnhijack2 = new System.Windows.Forms.Button();
@@ -49,7 +50,6 @@
             this.taskBar = new System.Windows.Forms.Panel();
             this.appButton = new System.Windows.Forms.Button();
             this.desktopWatermark = new System.Windows.Forms.Label();
-            this.btnFileManager = new System.Windows.Forms.Button();
             this.appMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appMenuPanel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenuPanel1)).BeginInit();
@@ -94,10 +94,23 @@
             this.appMenu.Controls.Add(this.btnTerminal);
             this.appMenu.Controls.Add(this.lbPrograms);
             this.appMenu.ForeColor = System.Drawing.Color.Black;
-            this.appMenu.Location = new System.Drawing.Point(0, 39);
+            this.appMenu.Location = new System.Drawing.Point(0, 38);
             this.appMenu.Name = "appMenu";
             this.appMenu.Size = new System.Drawing.Size(317, 429);
             this.appMenu.TabIndex = 3;
+            // 
+            // btnFileManager
+            // 
+            this.btnFileManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFileManager.Font = new System.Drawing.Font("Consolas", 9.75F);
+            this.btnFileManager.ForeColor = System.Drawing.Color.White;
+            this.btnFileManager.Location = new System.Drawing.Point(83, 106);
+            this.btnFileManager.Name = "btnFileManager";
+            this.btnFileManager.Size = new System.Drawing.Size(148, 43);
+            this.btnFileManager.TabIndex = 15;
+            this.btnFileManager.Text = "File Manager";
+            this.btnFileManager.UseVisualStyleBackColor = true;
+            this.btnFileManager.Click += new System.EventHandler(this.btnFileManager_Click);
             // 
             // btnTestWindow
             // 
@@ -105,7 +118,7 @@
             this.btnTestWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTestWindow.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTestWindow.ForeColor = System.Drawing.Color.White;
-            this.btnTestWindow.Location = new System.Drawing.Point(32, 390);
+            this.btnTestWindow.Location = new System.Drawing.Point(23, 391);
             this.btnTestWindow.Name = "btnTestWindow";
             this.btnTestWindow.Size = new System.Drawing.Size(77, 23);
             this.btnTestWindow.TabIndex = 13;
@@ -120,7 +133,7 @@
             this.btnCrash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrash.Font = new System.Drawing.Font("Consolas", 9.75F);
             this.btnCrash.ForeColor = System.Drawing.Color.White;
-            this.btnCrash.Location = new System.Drawing.Point(115, 390);
+            this.btnCrash.Location = new System.Drawing.Point(106, 391);
             this.btnCrash.Name = "btnCrash";
             this.btnCrash.Size = new System.Drawing.Size(75, 23);
             this.btnCrash.TabIndex = 7;
@@ -135,7 +148,7 @@
             this.btnhijack2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnhijack2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnhijack2.ForeColor = System.Drawing.Color.White;
-            this.btnhijack2.Location = new System.Drawing.Point(196, 391);
+            this.btnhijack2.Location = new System.Drawing.Point(187, 391);
             this.btnhijack2.Name = "btnhijack2";
             this.btnhijack2.Size = new System.Drawing.Size(113, 23);
             this.btnhijack2.TabIndex = 6;
@@ -306,19 +319,6 @@
             this.desktopWatermark.Size = new System.Drawing.Size(136, 18);
             this.desktopWatermark.TabIndex = 5;
             this.desktopWatermark.Text = "desktopWatermark";
-            // 
-            // btnFileManager
-            // 
-            this.btnFileManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFileManager.Font = new System.Drawing.Font("Consolas", 9.75F);
-            this.btnFileManager.ForeColor = System.Drawing.Color.White;
-            this.btnFileManager.Location = new System.Drawing.Point(83, 106);
-            this.btnFileManager.Name = "btnFileManager";
-            this.btnFileManager.Size = new System.Drawing.Size(148, 43);
-            this.btnFileManager.TabIndex = 15;
-            this.btnFileManager.Text = "File Manager";
-            this.btnFileManager.UseVisualStyleBackColor = true;
-            this.btnFileManager.Click += new System.EventHandler(this.btnFileManager_Click);
             // 
             // Desktop
             // 
