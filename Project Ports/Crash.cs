@@ -21,8 +21,7 @@ namespace Project_Ports
 
         private void Crash_Load(object sender, EventArgs e)
         {
-            this.BringToFront();
-            /*
+            Thread.Sleep(2000);
             if (Properties.Settings.Default.hijacked2 == true)
             {
                 MessageBox.Show("Coming soon!");
@@ -32,7 +31,7 @@ namespace Project_Ports
                 Boot boot = new Boot();
                 boot.Show();
                 this.Close();
-            }*/
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

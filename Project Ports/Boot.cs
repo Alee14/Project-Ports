@@ -20,7 +20,6 @@ namespace Project_Ports
 
         private void Boot_Load(object sender, EventArgs e)
         {
-            this.BringToFront();
             Thread.Sleep(2000);
             txtBoot.AppendText("PortOS is now booting...");
             Thread.Sleep(2000);
