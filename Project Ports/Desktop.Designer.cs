@@ -32,21 +32,21 @@
             this.ltime = new System.Windows.Forms.Label();
             this.dclock = new System.Windows.Forms.Timer(this.components);
             this.appMenu = new System.Windows.Forms.Panel();
+            this.btnQuantumNet = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.btnChatter = new System.Windows.Forms.Button();
+            this.btnTerminal = new System.Windows.Forms.Button();
+            this.lbPrograms = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnTestWindow = new System.Windows.Forms.Button();
             this.btnCrash = new System.Windows.Forms.Button();
             this.btnhijack2 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.shutdownButton = new System.Windows.Forms.Button();
             this.playerName = new System.Windows.Forms.Label();
             this.taskBar = new System.Windows.Forms.Panel();
             this.appButton = new System.Windows.Forms.Button();
             this.desktopWatermark = new System.Windows.Forms.Label();
-            this.lbPrograms = new System.Windows.Forms.Label();
-            this.btnTerminal = new System.Windows.Forms.Button();
-            this.btnChatter = new System.Windows.Forms.Button();
-            this.btnSettings = new System.Windows.Forms.Button();
-            this.btnQuantumNet = new System.Windows.Forms.Button();
-            this.btnTestWindow = new System.Windows.Forms.Button();
             this.appMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -57,9 +57,9 @@
             // 
             this.ltime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ltime.AutoSize = true;
-            this.ltime.BackColor = System.Drawing.Color.DarkGray;
+            this.ltime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ltime.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ltime.ForeColor = System.Drawing.Color.Black;
+            this.ltime.ForeColor = System.Drawing.Color.White;
             this.ltime.Location = new System.Drawing.Point(991, 9);
             this.ltime.Name = "ltime";
             this.ltime.Size = new System.Drawing.Size(63, 15);
@@ -72,7 +72,7 @@
             // 
             // appMenu
             // 
-            this.appMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.appMenu.BackColor = System.Drawing.Color.Gray;
             this.appMenu.Controls.Add(this.btnQuantumNet);
             this.appMenu.Controls.Add(this.btnSettings);
             this.appMenu.Controls.Add(this.btnChatter);
@@ -85,6 +85,89 @@
             this.appMenu.Name = "appMenu";
             this.appMenu.Size = new System.Drawing.Size(376, 429);
             this.appMenu.TabIndex = 3;
+            // 
+            // btnQuantumNet
+            // 
+            this.btnQuantumNet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQuantumNet.ForeColor = System.Drawing.Color.White;
+            this.btnQuantumNet.Location = new System.Drawing.Point(21, 188);
+            this.btnQuantumNet.Name = "btnQuantumNet";
+            this.btnQuantumNet.Size = new System.Drawing.Size(120, 23);
+            this.btnQuantumNet.TabIndex = 12;
+            this.btnQuantumNet.Text = "QuantumNet Browser";
+            this.btnQuantumNet.UseVisualStyleBackColor = true;
+            this.btnQuantumNet.Click += new System.EventHandler(this.btnQuantumNet_Click);
+            // 
+            // btnSettings
+            // 
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.ForeColor = System.Drawing.Color.White;
+            this.btnSettings.Location = new System.Drawing.Point(21, 159);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(120, 23);
+            this.btnSettings.TabIndex = 11;
+            this.btnSettings.Text = "Settings";
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
+            // 
+            // btnChatter
+            // 
+            this.btnChatter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChatter.ForeColor = System.Drawing.Color.White;
+            this.btnChatter.Location = new System.Drawing.Point(21, 130);
+            this.btnChatter.Name = "btnChatter";
+            this.btnChatter.Size = new System.Drawing.Size(120, 23);
+            this.btnChatter.TabIndex = 10;
+            this.btnChatter.Text = "Chatter";
+            this.btnChatter.UseVisualStyleBackColor = true;
+            this.btnChatter.Click += new System.EventHandler(this.btnChatter_Click);
+            // 
+            // btnTerminal
+            // 
+            this.btnTerminal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTerminal.ForeColor = System.Drawing.Color.White;
+            this.btnTerminal.Location = new System.Drawing.Point(21, 101);
+            this.btnTerminal.Name = "btnTerminal";
+            this.btnTerminal.Size = new System.Drawing.Size(120, 23);
+            this.btnTerminal.TabIndex = 9;
+            this.btnTerminal.Text = "Terminal";
+            this.btnTerminal.UseVisualStyleBackColor = true;
+            this.btnTerminal.Click += new System.EventHandler(this.btnTerminal_Click);
+            // 
+            // lbPrograms
+            // 
+            this.lbPrograms.AutoSize = true;
+            this.lbPrograms.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPrograms.ForeColor = System.Drawing.Color.White;
+            this.lbPrograms.Location = new System.Drawing.Point(17, 66);
+            this.lbPrograms.Name = "lbPrograms";
+            this.lbPrograms.Size = new System.Drawing.Size(81, 19);
+            this.lbPrograms.TabIndex = 8;
+            this.lbPrograms.Text = "Programs";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.btnTestWindow);
+            this.panel2.Controls.Add(this.btnCrash);
+            this.panel2.Controls.Add(this.btnhijack2);
+            this.panel2.Location = new System.Drawing.Point(0, 377);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(376, 52);
+            this.panel2.TabIndex = 1;
+            // 
+            // btnTestWindow
+            // 
+            this.btnTestWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTestWindow.ForeColor = System.Drawing.Color.White;
+            this.btnTestWindow.Location = new System.Drawing.Point(21, 16);
+            this.btnTestWindow.Name = "btnTestWindow";
+            this.btnTestWindow.Size = new System.Drawing.Size(77, 23);
+            this.btnTestWindow.TabIndex = 13;
+            this.btnTestWindow.Text = "TestWindow";
+            this.btnTestWindow.UseVisualStyleBackColor = true;
+            this.btnTestWindow.Visible = false;
+            this.btnTestWindow.Click += new System.EventHandler(this.btnTestWindow_Click);
             // 
             // btnCrash
             // 
@@ -112,20 +195,9 @@
             this.btnhijack2.Visible = false;
             this.btnhijack2.Click += new System.EventHandler(this.btnhijack2_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Gray;
-            this.panel2.Controls.Add(this.btnTestWindow);
-            this.panel2.Controls.Add(this.btnCrash);
-            this.panel2.Controls.Add(this.btnhijack2);
-            this.panel2.Location = new System.Drawing.Point(0, 377);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(376, 52);
-            this.panel2.TabIndex = 1;
-            // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Gray;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.shutdownButton);
             this.panel1.Controls.Add(this.playerName);
             this.panel1.ForeColor = System.Drawing.Color.Gray;
@@ -162,7 +234,7 @@
             // 
             this.taskBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.taskBar.BackColor = System.Drawing.Color.DarkGray;
+            this.taskBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.taskBar.Controls.Add(this.appButton);
             this.taskBar.Controls.Add(this.ltime);
             this.taskBar.Location = new System.Drawing.Point(0, 0);
@@ -174,7 +246,7 @@
             // 
             this.appButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.appButton.Font = new System.Drawing.Font("Consolas", 9.25F);
-            this.appButton.ForeColor = System.Drawing.Color.Black;
+            this.appButton.ForeColor = System.Drawing.Color.White;
             this.appButton.Location = new System.Drawing.Point(9, 3);
             this.appButton.Name = "appButton";
             this.appButton.Size = new System.Drawing.Size(107, 26);
@@ -194,78 +266,6 @@
             this.desktopWatermark.Size = new System.Drawing.Size(136, 18);
             this.desktopWatermark.TabIndex = 5;
             this.desktopWatermark.Text = "desktopWatermark";
-            // 
-            // lbPrograms
-            // 
-            this.lbPrograms.AutoSize = true;
-            this.lbPrograms.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPrograms.ForeColor = System.Drawing.Color.White;
-            this.lbPrograms.Location = new System.Drawing.Point(17, 66);
-            this.lbPrograms.Name = "lbPrograms";
-            this.lbPrograms.Size = new System.Drawing.Size(81, 19);
-            this.lbPrograms.TabIndex = 8;
-            this.lbPrograms.Text = "Programs";
-            // 
-            // btnTerminal
-            // 
-            this.btnTerminal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTerminal.ForeColor = System.Drawing.Color.White;
-            this.btnTerminal.Location = new System.Drawing.Point(21, 101);
-            this.btnTerminal.Name = "btnTerminal";
-            this.btnTerminal.Size = new System.Drawing.Size(120, 23);
-            this.btnTerminal.TabIndex = 9;
-            this.btnTerminal.Text = "Terminal";
-            this.btnTerminal.UseVisualStyleBackColor = true;
-            this.btnTerminal.Click += new System.EventHandler(this.btnTerminal_Click);
-            // 
-            // btnChatter
-            // 
-            this.btnChatter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChatter.ForeColor = System.Drawing.Color.White;
-            this.btnChatter.Location = new System.Drawing.Point(21, 130);
-            this.btnChatter.Name = "btnChatter";
-            this.btnChatter.Size = new System.Drawing.Size(120, 23);
-            this.btnChatter.TabIndex = 10;
-            this.btnChatter.Text = "Chatter";
-            this.btnChatter.UseVisualStyleBackColor = true;
-            this.btnChatter.Click += new System.EventHandler(this.btnChatter_Click);
-            // 
-            // btnSettings
-            // 
-            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.Location = new System.Drawing.Point(21, 159);
-            this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(120, 23);
-            this.btnSettings.TabIndex = 11;
-            this.btnSettings.Text = "Settings";
-            this.btnSettings.UseVisualStyleBackColor = true;
-            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
-            // 
-            // btnQuantumNet
-            // 
-            this.btnQuantumNet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuantumNet.ForeColor = System.Drawing.Color.White;
-            this.btnQuantumNet.Location = new System.Drawing.Point(21, 188);
-            this.btnQuantumNet.Name = "btnQuantumNet";
-            this.btnQuantumNet.Size = new System.Drawing.Size(120, 23);
-            this.btnQuantumNet.TabIndex = 12;
-            this.btnQuantumNet.Text = "QuantumNet Browser";
-            this.btnQuantumNet.UseVisualStyleBackColor = true;
-            this.btnQuantumNet.Click += new System.EventHandler(this.btnQuantumNet_Click);
-            // 
-            // btnTestWindow
-            // 
-            this.btnTestWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTestWindow.ForeColor = System.Drawing.Color.White;
-            this.btnTestWindow.Location = new System.Drawing.Point(21, 16);
-            this.btnTestWindow.Name = "btnTestWindow";
-            this.btnTestWindow.Size = new System.Drawing.Size(77, 23);
-            this.btnTestWindow.TabIndex = 13;
-            this.btnTestWindow.Text = "TestWindow";
-            this.btnTestWindow.UseVisualStyleBackColor = true;
-            this.btnTestWindow.Visible = false;
-            this.btnTestWindow.Click += new System.EventHandler(this.btnTestWindow_Click);
             // 
             // Desktop
             // 

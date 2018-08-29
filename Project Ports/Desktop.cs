@@ -44,13 +44,13 @@ namespace Project_Ports
         private void dclock_Tick(object sender, EventArgs e)
         {
             GeneralAPI.setNameOnAppLauncher(playerName);
-                this.ltime.Text = DateTime.Now.ToString("hh:mm tt");
+            this.ltime.Text = DateTime.Now.ToString("hh:mm tt");
             
         }
 
         private void Desktop_Load(object sender, EventArgs e)
         {
-#if DEBUG
+            #if DEBUG
             btnTestWindow.Visible = true;
             btnhijack2.Visible = true;
             btnCrash.Visible = true;
