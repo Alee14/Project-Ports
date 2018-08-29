@@ -128,5 +128,15 @@ namespace Project_Ports
             crash.Show();
             this.Close();
         }
+
+        private void lbPrograms_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnFileManager_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

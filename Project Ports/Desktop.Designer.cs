@@ -96,7 +96,7 @@
             this.appMenu.ForeColor = System.Drawing.Color.Black;
             this.appMenu.Location = new System.Drawing.Point(0, 39);
             this.appMenu.Name = "appMenu";
-            this.appMenu.Size = new System.Drawing.Size(471, 429);
+            this.appMenu.Size = new System.Drawing.Size(317, 429);
             this.appMenu.TabIndex = 3;
             // 
             // btnTestWindow
@@ -150,7 +150,7 @@
             this.shutdownButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.shutdownButton.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shutdownButton.ForeColor = System.Drawing.Color.White;
-            this.shutdownButton.Location = new System.Drawing.Point(361, 13);
+            this.shutdownButton.Location = new System.Drawing.Point(220, 13);
             this.shutdownButton.Name = "shutdownButton";
             this.shutdownButton.Size = new System.Drawing.Size(89, 29);
             this.shutdownButton.TabIndex = 0;
@@ -175,7 +175,7 @@
             this.appMenuPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.appMenuPanel2.Location = new System.Drawing.Point(0, 376);
             this.appMenuPanel2.Name = "appMenuPanel2";
-            this.appMenuPanel2.Size = new System.Drawing.Size(471, 53);
+            this.appMenuPanel2.Size = new System.Drawing.Size(317, 53);
             this.appMenuPanel2.TabIndex = 7;
             this.appMenuPanel2.TabStop = false;
             // 
@@ -184,7 +184,7 @@
             this.appMenuPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.appMenuPanel1.Location = new System.Drawing.Point(0, 0);
             this.appMenuPanel1.Name = "appMenuPanel1";
-            this.appMenuPanel1.Size = new System.Drawing.Size(471, 54);
+            this.appMenuPanel1.Size = new System.Drawing.Size(317, 54);
             this.appMenuPanel1.TabIndex = 6;
             this.appMenuPanel1.TabStop = false;
             // 
@@ -200,7 +200,7 @@
             // appMenuFrame2
             // 
             this.appMenuFrame2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.appMenuFrame2.Location = new System.Drawing.Point(460, 50);
+            this.appMenuFrame2.Location = new System.Drawing.Point(306, 50);
             this.appMenuFrame2.Name = "appMenuFrame2";
             this.appMenuFrame2.Size = new System.Drawing.Size(10, 327);
             this.appMenuFrame2.TabIndex = 13;
@@ -211,7 +211,7 @@
             this.btnQuantumNet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuantumNet.Font = new System.Drawing.Font("Consolas", 9.75F);
             this.btnQuantumNet.ForeColor = System.Drawing.Color.White;
-            this.btnQuantumNet.Location = new System.Drawing.Point(32, 251);
+            this.btnQuantumNet.Location = new System.Drawing.Point(83, 253);
             this.btnQuantumNet.Name = "btnQuantumNet";
             this.btnQuantumNet.Size = new System.Drawing.Size(148, 43);
             this.btnQuantumNet.TabIndex = 12;
@@ -224,7 +224,7 @@
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSettings.Font = new System.Drawing.Font("Consolas", 9.75F);
             this.btnSettings.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.Location = new System.Drawing.Point(32, 153);
+            this.btnSettings.Location = new System.Drawing.Point(83, 155);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(148, 43);
             this.btnSettings.TabIndex = 11;
@@ -237,7 +237,7 @@
             this.btnChatter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChatter.Font = new System.Drawing.Font("Consolas", 9.75F);
             this.btnChatter.ForeColor = System.Drawing.Color.White;
-            this.btnChatter.Location = new System.Drawing.Point(32, 298);
+            this.btnChatter.Location = new System.Drawing.Point(83, 302);
             this.btnChatter.Name = "btnChatter";
             this.btnChatter.Size = new System.Drawing.Size(148, 43);
             this.btnChatter.TabIndex = 10;
@@ -250,7 +250,7 @@
             this.btnTerminal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTerminal.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTerminal.ForeColor = System.Drawing.Color.White;
-            this.btnTerminal.Location = new System.Drawing.Point(32, 202);
+            this.btnTerminal.Location = new System.Drawing.Point(83, 204);
             this.btnTerminal.Name = "btnTerminal";
             this.btnTerminal.Size = new System.Drawing.Size(148, 43);
             this.btnTerminal.TabIndex = 9;
@@ -263,11 +263,12 @@
             this.lbPrograms.AutoSize = true;
             this.lbPrograms.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPrograms.ForeColor = System.Drawing.Color.White;
-            this.lbPrograms.Location = new System.Drawing.Point(28, 68);
+            this.lbPrograms.Location = new System.Drawing.Point(114, 72);
             this.lbPrograms.Name = "lbPrograms";
             this.lbPrograms.Size = new System.Drawing.Size(81, 19);
             this.lbPrograms.TabIndex = 8;
             this.lbPrograms.Text = "Programs";
+            this.lbPrograms.Click += new System.EventHandler(this.lbPrograms_Click);
             // 
             // taskBar
             // 
@@ -311,12 +312,13 @@
             this.btnFileManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFileManager.Font = new System.Drawing.Font("Consolas", 9.75F);
             this.btnFileManager.ForeColor = System.Drawing.Color.White;
-            this.btnFileManager.Location = new System.Drawing.Point(32, 104);
+            this.btnFileManager.Location = new System.Drawing.Point(83, 106);
             this.btnFileManager.Name = "btnFileManager";
             this.btnFileManager.Size = new System.Drawing.Size(148, 43);
             this.btnFileManager.TabIndex = 15;
             this.btnFileManager.Text = "File Manager";
             this.btnFileManager.UseVisualStyleBackColor = true;
+            this.btnFileManager.Click += new System.EventHandler(this.btnFileManager_Click);
             // 
             // Desktop
             // 
