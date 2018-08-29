@@ -49,6 +49,7 @@
             this.taskBar = new System.Windows.Forms.Panel();
             this.appButton = new System.Windows.Forms.Button();
             this.desktopWatermark = new System.Windows.Forms.Label();
+            this.btnFileManager = new System.Windows.Forms.Button();
             this.appMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.appMenuPanel2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenuPanel1)).BeginInit();
@@ -77,6 +78,7 @@
             // appMenu
             // 
             this.appMenu.BackColor = System.Drawing.Color.Black;
+            this.appMenu.Controls.Add(this.btnFileManager);
             this.appMenu.Controls.Add(this.btnTestWindow);
             this.appMenu.Controls.Add(this.btnCrash);
             this.appMenu.Controls.Add(this.btnhijack2);
@@ -209,7 +211,7 @@
             this.btnQuantumNet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQuantumNet.Font = new System.Drawing.Font("Consolas", 9.75F);
             this.btnQuantumNet.ForeColor = System.Drawing.Color.White;
-            this.btnQuantumNet.Location = new System.Drawing.Point(32, 202);
+            this.btnQuantumNet.Location = new System.Drawing.Point(32, 251);
             this.btnQuantumNet.Name = "btnQuantumNet";
             this.btnQuantumNet.Size = new System.Drawing.Size(148, 43);
             this.btnQuantumNet.TabIndex = 12;
@@ -235,7 +237,7 @@
             this.btnChatter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChatter.Font = new System.Drawing.Font("Consolas", 9.75F);
             this.btnChatter.ForeColor = System.Drawing.Color.White;
-            this.btnChatter.Location = new System.Drawing.Point(32, 104);
+            this.btnChatter.Location = new System.Drawing.Point(32, 298);
             this.btnChatter.Name = "btnChatter";
             this.btnChatter.Size = new System.Drawing.Size(148, 43);
             this.btnChatter.TabIndex = 10;
@@ -248,7 +250,7 @@
             this.btnTerminal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTerminal.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTerminal.ForeColor = System.Drawing.Color.White;
-            this.btnTerminal.Location = new System.Drawing.Point(32, 249);
+            this.btnTerminal.Location = new System.Drawing.Point(32, 202);
             this.btnTerminal.Name = "btnTerminal";
             this.btnTerminal.Size = new System.Drawing.Size(148, 43);
             this.btnTerminal.TabIndex = 9;
@@ -304,6 +306,18 @@
             this.desktopWatermark.TabIndex = 5;
             this.desktopWatermark.Text = "desktopWatermark";
             // 
+            // btnFileManager
+            // 
+            this.btnFileManager.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFileManager.Font = new System.Drawing.Font("Consolas", 9.75F);
+            this.btnFileManager.ForeColor = System.Drawing.Color.White;
+            this.btnFileManager.Location = new System.Drawing.Point(32, 104);
+            this.btnFileManager.Name = "btnFileManager";
+            this.btnFileManager.Size = new System.Drawing.Size(148, 43);
+            this.btnFileManager.TabIndex = 15;
+            this.btnFileManager.Text = "File Manager";
+            this.btnFileManager.UseVisualStyleBackColor = true;
+            // 
             // Desktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -354,5 +368,6 @@
         private System.Windows.Forms.PictureBox appMenuFrame2;
         private System.Windows.Forms.PictureBox appMenuPanel2;
         private System.Windows.Forms.PictureBox appMenuPanel1;
+        private System.Windows.Forms.Button btnFileManager;
     }
 }
