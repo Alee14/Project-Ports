@@ -18,6 +18,7 @@
  * 
  **************************************************************************/
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -74,6 +75,12 @@ namespace Project_Ports
             MessageBox.Show("You have set the build to \"Debug\". There are some features that is disabled in debug builds.");
             #endif
             portsVersion.Text = Properties.Settings.Default.version;
+
+            string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+            string path = Path.Combine(appDataPath, @"\Roaming\UniverseDG\Project_Ports");
+            if (!Directory.Exists(path))
+                Directory.CreateDirectory(path);
+
         }
 
     }

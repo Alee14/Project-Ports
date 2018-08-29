@@ -92,7 +92,7 @@
             this.appMenu.Controls.Add(this.btnTerminal);
             this.appMenu.Controls.Add(this.lbPrograms);
             this.appMenu.ForeColor = System.Drawing.Color.Black;
-            this.appMenu.Location = new System.Drawing.Point(0, 38);
+            this.appMenu.Location = new System.Drawing.Point(0, 39);
             this.appMenu.Name = "appMenu";
             this.appMenu.Size = new System.Drawing.Size(376, 429);
             this.appMenu.TabIndex = 3;
