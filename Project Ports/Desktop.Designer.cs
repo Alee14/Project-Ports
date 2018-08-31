@@ -118,7 +118,7 @@
             this.btnTestWindow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTestWindow.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTestWindow.ForeColor = System.Drawing.Color.White;
-            this.btnTestWindow.Location = new System.Drawing.Point(23, 391);
+            this.btnTestWindow.Location = new System.Drawing.Point(18, 391);
             this.btnTestWindow.Name = "btnTestWindow";
             this.btnTestWindow.Size = new System.Drawing.Size(77, 23);
             this.btnTestWindow.TabIndex = 13;
@@ -133,7 +133,7 @@
             this.btnCrash.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCrash.Font = new System.Drawing.Font("Consolas", 9.75F);
             this.btnCrash.ForeColor = System.Drawing.Color.White;
-            this.btnCrash.Location = new System.Drawing.Point(106, 391);
+            this.btnCrash.Location = new System.Drawing.Point(103, 390);
             this.btnCrash.Name = "btnCrash";
             this.btnCrash.Size = new System.Drawing.Size(75, 23);
             this.btnCrash.TabIndex = 7;
@@ -148,7 +148,7 @@
             this.btnhijack2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnhijack2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnhijack2.ForeColor = System.Drawing.Color.White;
-            this.btnhijack2.Location = new System.Drawing.Point(187, 391);
+            this.btnhijack2.Location = new System.Drawing.Point(184, 390);
             this.btnhijack2.Name = "btnhijack2";
             this.btnhijack2.Size = new System.Drawing.Size(113, 23);
             this.btnhijack2.TabIndex = 6;
@@ -163,7 +163,7 @@
             this.shutdownButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.shutdownButton.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shutdownButton.ForeColor = System.Drawing.Color.White;
-            this.shutdownButton.Location = new System.Drawing.Point(220, 13);
+            this.shutdownButton.Location = new System.Drawing.Point(208, 13);
             this.shutdownButton.Name = "shutdownButton";
             this.shutdownButton.Size = new System.Drawing.Size(89, 29);
             this.shutdownButton.TabIndex = 0;
