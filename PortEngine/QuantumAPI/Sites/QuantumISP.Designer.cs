@@ -94,9 +94,9 @@
             this.lblMalwarebitsHyperlink.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.lblMalwarebitsHyperlink.Location = new System.Drawing.Point(27, 250);
             this.lblMalwarebitsHyperlink.Name = "lblMalwarebitsHyperlink";
-            this.lblMalwarebitsHyperlink.Size = new System.Drawing.Size(148, 16);
+            this.lblMalwarebitsHyperlink.Size = new System.Drawing.Size(198, 16);
             this.lblMalwarebitsHyperlink.TabIndex = 5;
-            this.lblMalwarebitsHyperlink.Text = "qt.malwarebits";
+            this.lblMalwarebitsHyperlink.Text = "qt.malwarebits/home";
             this.lblMalwarebitsHyperlink.Click += new System.EventHandler(this.lblMalwarebitsHyperlink_Click);
             // 
             // QuantumISP

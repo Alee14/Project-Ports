@@ -57,11 +57,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Consolas", 20F);
-            this.label2.Location = new System.Drawing.Point(174, 277);
+            this.label2.Location = new System.Drawing.Point(152, 277);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(510, 32);
+            this.label2.Size = new System.Drawing.Size(585, 32);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Lost? Visit qt.quantumconnections";
+            this.label2.Text = "Lost? Visit qt.quantumconnections/home";
             // 
             // _404Error
             // 
