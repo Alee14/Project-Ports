@@ -58,6 +58,7 @@
     <Compile Include="EarnSite.Designer.cs">
       <DependentUpon>EarnSite.cs</DependentUpon>
     </Compile>
+    <Compile Include="FileSystem.cs" />
     <Compile Include="GeneralAPI.cs" />
     <Compile Include="PortsTerminalAPI.cs" />
     <Compile Include="QuantumAPI\Sites\Malwarebits.cs">

@@ -77,10 +77,9 @@ namespace Project_Ports
             portsVersion.Text = Properties.Settings.Default.version;
 
             string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            string path = Path.Combine(appDataPath, @"\UniverseDG\Project_Ports");
+            string path = Path.Combine(appDataPath, "Project Ports");
             if (!Directory.Exists(path))
                 Directory.CreateDirectory(path);
-
         }
 
     }

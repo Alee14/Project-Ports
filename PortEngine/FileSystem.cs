@@ -1,6 +1,6 @@
 ﻿/************************************************************************
  *  
- *  PortsTerminal
+ *  PortEngine
  *  Copyright (C) 2018 UniverseDG
  *
  *  This program is free software: you can redistribute it and/or modify
@@ -18,28 +18,16 @@
  * 
  **************************************************************************/
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PortEngine;
 
-namespace PortsTerminal
+namespace PortEngine
 {
-    class Program
+    class FileSystem
     {
-        static void Main(string[] args)
-        {
-            bool RunConsole = true;
-            PortsTerminalAPI.InitializeConsole();
-
-            while(RunConsole == true)
-            {
-                PortsTerminalAPI.RunCommand(Console.ReadLine());
-            }
-
-            
-            Console.ReadLine();
-        }
+     
     }
 }
