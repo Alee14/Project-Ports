@@ -50,6 +50,7 @@
       <DependentUpon>EarnSite.cs</DependentUpon>
     </Compile>
     <Compile Include="GeneralAPI.cs" />
+    <Compile Include="PortsTerminalAPI.cs" />
     <Compile Include="QuantumAPI\Sites\Malwarebits.cs">
       <SubType>UserControl</SubType>
     </Compile>

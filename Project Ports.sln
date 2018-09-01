@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project Ports", "Project Po
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortEngine", "PortEngine\PortEngine.csproj", "{C1B21B60-7CCC-42FC-83AA-B41644FAA952}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortsTerminal", "PortsTerminal\PortsTerminal.csproj", "{51B19B80-B154-4EFE-B838-FEC598F9E6D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C1B21B60-7CCC-42FC-83AA-B41644FAA952}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1B21B60-7CCC-42FC-83AA-B41644FAA952}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1B21B60-7CCC-42FC-83AA-B41644FAA952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51B19B80-B154-4EFE-B838-FEC598F9E6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B19B80-B154-4EFE-B838-FEC598F9E6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B19B80-B154-4EFE-B838-FEC598F9E6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B19B80-B154-4EFE-B838-FEC598F9E6D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
