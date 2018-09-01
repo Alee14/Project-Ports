@@ -12,19 +12,26 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Hybrid|Any CPU = Hybrid|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7FF89341-BE42-4AE1-B53E-F9FA4104D30F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7FF89341-BE42-4AE1-B53E-F9FA4104D30F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FF89341-BE42-4AE1-B53E-F9FA4104D30F}.Hybrid|Any CPU.ActiveCfg = Hybrid|Any CPU
+		{7FF89341-BE42-4AE1-B53E-F9FA4104D30F}.Hybrid|Any CPU.Build.0 = Hybrid|Any CPU
 		{7FF89341-BE42-4AE1-B53E-F9FA4104D30F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7FF89341-BE42-4AE1-B53E-F9FA4104D30F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C1B21B60-7CCC-42FC-83AA-B41644FAA952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C1B21B60-7CCC-42FC-83AA-B41644FAA952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B21B60-7CCC-42FC-83AA-B41644FAA952}.Hybrid|Any CPU.ActiveCfg = Hybrid|Any CPU
+		{C1B21B60-7CCC-42FC-83AA-B41644FAA952}.Hybrid|Any CPU.Build.0 = Hybrid|Any CPU
 		{C1B21B60-7CCC-42FC-83AA-B41644FAA952}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1B21B60-7CCC-42FC-83AA-B41644FAA952}.Release|Any CPU.Build.0 = Release|Any CPU
 		{51B19B80-B154-4EFE-B838-FEC598F9E6D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{51B19B80-B154-4EFE-B838-FEC598F9E6D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B19B80-B154-4EFE-B838-FEC598F9E6D9}.Hybrid|Any CPU.ActiveCfg = Hybrid|Any CPU
+		{51B19B80-B154-4EFE-B838-FEC598F9E6D9}.Hybrid|Any CPU.Build.0 = Hybrid|Any CPU
 		{51B19B80-B154-4EFE-B838-FEC598F9E6D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51B19B80-B154-4EFE-B838-FEC598F9E6D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection

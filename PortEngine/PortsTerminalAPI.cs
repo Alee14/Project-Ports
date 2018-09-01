@@ -44,7 +44,7 @@ namespace PortEngine
                 default:
                     if (pendingCommand.StartsWith("changeusername --"))
                     {
-                        Console.WriteLine("Username changed from " + Properties.Settings.Default.userDisplayName + " to " + pendingCommand.Substring(17));
+                        Console.WriteLine("Changed username.");
                         Properties.Settings.Default.userDisplayName = pendingCommand.Substring(17);
                         break;
                     }

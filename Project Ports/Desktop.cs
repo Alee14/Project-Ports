@@ -43,7 +43,7 @@ namespace Project_Ports
 
         private void dclock_Tick(object sender, EventArgs e)
         {
-            GeneralAPI.setNameOnAppLauncher(playerName);
+            GeneralAPI.appendUsername(playerName);
             this.ltime.Text = DateTime.Now.ToString("hh:mm tt");
             
         }

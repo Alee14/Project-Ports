@@ -19,6 +19,7 @@
  **************************************************************************/
 using System;
 using System.Collections.Generic;
+using System.Timers;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -29,8 +30,10 @@ namespace PortEngine
 {
     public class ChatAPI
     {
+
         public static void SendMessage(TextBox txtPending, TextBox txtDestination)
         {
+;
             txtDestination.AppendText("<" + Properties.Settings.Default.userDisplayName + "> " + txtPending.Text + Environment.NewLine);
             txtPending.Clear();
         }

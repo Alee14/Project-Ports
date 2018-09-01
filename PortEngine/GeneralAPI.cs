@@ -29,7 +29,7 @@ namespace PortEngine
     public class GeneralAPI
     {
 
-        public static void setNameOnAppLauncher(Label txtUserDestination)
+        public static void appendUsername(Label txtUserDestination)
         {
             txtUserDestination.Text = Properties.Settings.Default.userDisplayName;
         }

@@ -46,7 +46,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Hybrid|AnyCPU'">
+    <OutputPath>bin\Hybrid\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ConsoleControl, Version=1.1.0.0, Culture=neutral, PublicKeyToken=7edd23586f5e297f, processorArchitecture=MSIL">
+      <HintPath>..\packages\ConsoleControl.1.1.0.0\lib\net40\ConsoleControl.dll</HintPath>
+    </Reference>
+    <Reference Include="ConsoleControlAPI, Version=1.1.0.0, Culture=neutral, PublicKeyToken=7c86b8a36b9c33e2, processorArchitecture=MSIL">
+      <HintPath>..\packages\ConsoleControl.1.1.0.0\lib\net40\ConsoleControlAPI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -198,6 +207,7 @@
     <EmbeddedResource Include="Storyline\Hijack2Terminal.resx">
       <DependentUpon>Hijack2Terminal.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -218,6 +228,10 @@
     <ProjectReference Include="..\PortEngine\PortEngine.csproj">
       <Project>{c1b21b60-7ccc-42fc-83aa-b41644faa952}</Project>
       <Name>PortEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PortsTerminal\PortsTerminal.csproj">
+      <Project>{51b19b80-b154-4efe-b838-fec598f9e6d9}</Project>
+      <Name>PortsTerminal</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -14,5 +14,8 @@
     <Setting Name="hijacked2" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
+    <Setting Name="userDisplayName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Player</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

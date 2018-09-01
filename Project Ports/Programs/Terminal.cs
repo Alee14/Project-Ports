@@ -38,19 +38,9 @@ namespace Project_Ports
             InitializeComponent();
         }    
 
-        private void Terminal_Load(object sender, EventArgs e)
+        private void terminalControl_Load(object sender, EventArgs e)
         {
-            WindowManager wm = new WindowManager();
-        }
-
-        private void txtInput_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Enter)
-            {
-                TerminalAPI.RunCommand(txtInput, txtConsole);
-                e.SuppressKeyPress = true;
-                txtInput.Clear();
-            }
+            terminalControl.StartProcess("PortsTerminal.exe", "");
         }
     }
 }
