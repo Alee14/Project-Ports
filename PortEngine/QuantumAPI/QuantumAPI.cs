@@ -40,13 +40,13 @@ namespace PortEngine
         {
             switch (txtNavigateToThis.Text)
             {
-                case "qt.quantumconnections":
+                case "qt.quantumconnections/home":
                     loadSite(new QuantumAPI.Sites.QuantumISP(), pnlLoadSiteHere);
                     break;
-                case "qt.malwarebits":
+                case "qt.malwarebits/home":
                     loadSite(new Malwarebits(), pnlLoadSiteHere);
                     break;
-                case "qt.portosdefender":
+                case "qt.portosdefender/home":
                     loadSite(new QuantumAPI.Sites.PortOSDefender(), pnlLoadSiteHere);
                     break;
                 default:

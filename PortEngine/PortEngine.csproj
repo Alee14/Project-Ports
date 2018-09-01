@@ -91,6 +91,7 @@
     <Compile Include="QuantumAPI\Sites\QuantumISP.Designer.cs">
       <DependentUpon>QuantumISP.cs</DependentUpon>
     </Compile>
+    <Compile Include="StorylineAPI.cs" />
     <Compile Include="TerminalAPI.cs" />
     <Compile Include="WindowManager\base.cs">
       <SubType>Form</SubType>

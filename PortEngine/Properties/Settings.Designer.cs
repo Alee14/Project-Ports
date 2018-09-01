@@ -79,5 +79,41 @@ namespace PortEngine.Properties {
                 this["userPowerLevel"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool storylineStatus {
+            get {
+                return ((bool)(this["storylineStatus"]));
+            }
+            set {
+                this["storylineStatus"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool hijack1EventCompleted {
+            get {
+                return ((bool)(this["hijack1EventCompleted"]));
+            }
+            set {
+                this["hijack1EventCompleted"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool chatter1EventCompleted {
+            get {
+                return ((bool)(this["chatter1EventCompleted"]));
+            }
+            set {
+                this["chatter1EventCompleted"] = value;
+            }
+        }
     }
 }
