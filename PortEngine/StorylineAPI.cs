@@ -26,6 +26,7 @@ namespace PortEngine
         {
             if (IsHijack1Completed == false)
             {
+                Thread.Sleep(2000);
                 txtHijack1.AppendText("PortOS is now booting..." + Environment.NewLine);
                 Thread.Sleep(5000);
                 txtHijack1.AppendText("SYSTEM ERROR: HIJACKED" + Environment.NewLine);
