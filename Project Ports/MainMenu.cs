@@ -76,10 +76,7 @@ namespace Project_Ports
             #endif
             portsVersion.Text = Properties.Settings.Default.version;
 
-            string appDataPath = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            string path = Path.Combine(appDataPath, "Project Ports");
-            if (!Directory.Exists(path))
-                Directory.CreateDirectory(path);
+            FileSystem.CreateDataFolder();
         }
 
     }

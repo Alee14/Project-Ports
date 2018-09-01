@@ -26,8 +26,22 @@ using System.Threading.Tasks;
 
 namespace PortEngine
 {
-    class FileSystem
+    public class FileSystem
     {
-     
+        public static string appDataFolder
+        {
+            get
+            {
+                return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Project Ports");
+            }
+        }
+
+        public static void CreateDataFolder()
+        { 
+
+            if (!Directory.Exists(appDataFolder))
+                Directory.CreateDirectory(appDataFolder);
+        }
+   
     }
 }
