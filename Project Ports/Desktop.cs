@@ -107,16 +107,16 @@ namespace Project_Ports
             appMenu.Hide();
         }
 
-        private void btnhijack2_Click(object sender, EventArgs e)
+        private async void btnhijack2_Click(object sender, EventArgs e)
         {
             appMenu.Hide();
-            Thread.Sleep(5000);
+            await Task.Delay(5000);
             appButton.Enabled = false;
-            Thread.Sleep(2000);
+            await Task.Delay(2000);
             dclock.Stop();
             ltime.Text = "66:66 AM";
             appButton.Text = "HIJACKED";
-            Thread.Sleep(5000);
+            await Task.Delay(5000);
             Crash crash = new Crash();
             crash.Show();
 
