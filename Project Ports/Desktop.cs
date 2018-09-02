@@ -119,6 +119,7 @@ namespace Project_Ports
             await Task.Delay(5000);
             Crash crash = new Crash();
             crash.Show();
+            this.Close();
 
         }
 
