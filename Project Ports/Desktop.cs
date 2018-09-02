@@ -107,6 +107,12 @@ namespace Project_Ports
             appMenu.Hide();
         }
 
+        private void btnFileManager_Click(object sender, EventArgs e)
+        {
+            wm.createWindow(new Programs.FileManager(), "File Manager");
+            appMenu.Hide();
+        }
+
         private async void btnhijack2_Click(object sender, EventArgs e)
         {
             appMenu.Hide();
@@ -131,11 +137,6 @@ namespace Project_Ports
         }
 
         private void lbPrograms_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnFileManager_Click(object sender, EventArgs e)
         {
 
         }

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PortEngine;
+using System.Diagnostics;
 
 namespace Project_Ports.Programs
 {
@@ -24,7 +25,22 @@ namespace Project_Ports.Programs
         {
             listFiles.Clear();
             listView.Items.Clear();
+            DirectoryInfo fmdataFolder = new DirectoryInfo(FileSystem.dataFolder);
+            txtPath.Text = fmdataFolder.FullName;
+            foreach (string item in Directory.GetFiles(fmdataFolder.FullName))
+            {
+                imageList.Images.Add(System.Drawing.Icon.ExtractAssociatedIcon(item));
+                FileInfo fi = new FileInfo(item);
+                listFiles.Add(fi.FullName);
+                listView.Items.Add(fi.Name, imageList.Images.Count - 1);
+            }
             
+        }
+
+        private void listView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listView.FocusedItem != null)
+                Process.Start(listFiles[listView.FocusedItem.Index]);
         }
     }
 }
