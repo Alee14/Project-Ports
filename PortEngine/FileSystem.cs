@@ -70,6 +70,13 @@ namespace PortEngine
                 return Path.Combine(dataFolder, "sys");
             }
         }
+        public static void warningTxt()
+        {
+         //   string textWarning = "Warning: You are currently in the Project Ports AppData folder" + Environment.NewLine +
+         //                        "Please be caution if modifing the system files, the game can corrupt. "+ Environment.NewLine + "Stay safe, UniverseDG";
+
+         //   File.WriteAllText(dataFolder, "warning.txt", textWarning);
+        }
 
 
         public static void CreateGameFolder()
