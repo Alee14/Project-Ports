@@ -75,8 +75,8 @@ namespace Project_Ports
             MessageBox.Show("You have set the build to \"Debug\". There are some features that is disabled in debug builds.");
             #endif
             portsVersion.Text = Properties.Settings.Default.version;
-
             FileSystem.CreateGameFolder();
+
         }
 
     }
