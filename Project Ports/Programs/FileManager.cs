@@ -16,6 +16,7 @@ namespace Project_Ports.Programs
     public partial class FileManager : UserControl
     {
         List<string> listFiles = new List<string>();
+
         public FileManager()
         {
             InitializeComponent();
@@ -41,6 +42,11 @@ namespace Project_Ports.Programs
         {
             if (listView.FocusedItem != null)
                 Process.Start(listFiles[listView.FocusedItem.Index]);
+        }
+
+        private void listView_DoubleClick(object sender, EventArgs e)
+        {
+
         }
     }
 }
