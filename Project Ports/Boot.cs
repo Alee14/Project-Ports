@@ -37,17 +37,15 @@ namespace Project_Ports
             InitializeComponent();
         }
 
-        private void Boot_Load(object sender, EventArgs e)
+        private async void Boot_Load(object sender, EventArgs e)
         {
-            Thread.Sleep(2000);
-            txtBoot.AppendText("PortOS is now booting...");
-            Thread.Sleep(2000);
+            await Task.Delay(2000);
             txtBoot.AppendText("PortOS is now booting..." + Environment.NewLine);
-            Thread.Sleep(2000);
+            await Task.Delay(2000);
             txtBoot.AppendText("GUI Driver has been found!" + Environment.NewLine);
-            Thread.Sleep(2000);
+            await Task.Delay(2000);
             txtBoot.AppendText("Starting Desktop..." + Environment.NewLine);
-            Thread.Sleep(3000);
+            await Task.Delay(2000);
 
             Desktop desktop = new Desktop();
             desktop.Show();

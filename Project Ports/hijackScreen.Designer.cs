@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.hijackPanel = new System.Windows.Forms.Panel();
-            this.txtHijack = new System.Windows.Forms.TextBox();
             this.btnSkipHijack = new System.Windows.Forms.Button();
+            this.txtHijack = new System.Windows.Forms.TextBox();
             this.hijackPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,6 +46,17 @@
             this.hijackPanel.Name = "hijackPanel";
             this.hijackPanel.Size = new System.Drawing.Size(986, 571);
             this.hijackPanel.TabIndex = 3;
+            // 
+            // btnSkipHijack
+            // 
+            this.btnSkipHijack.Font = new System.Drawing.Font("Consolas", 10F);
+            this.btnSkipHijack.Location = new System.Drawing.Point(880, 531);
+            this.btnSkipHijack.Name = "btnSkipHijack";
+            this.btnSkipHijack.Size = new System.Drawing.Size(103, 37);
+            this.btnSkipHijack.TabIndex = 4;
+            this.btnSkipHijack.Text = "Skip";
+            this.btnSkipHijack.UseVisualStyleBackColor = true;
+            this.btnSkipHijack.Click += new System.EventHandler(this.btnSkipHijack_Click);
             // 
             // txtHijack
             // 
@@ -63,17 +74,6 @@
             this.txtHijack.ReadOnly = true;
             this.txtHijack.Size = new System.Drawing.Size(957, 547);
             this.txtHijack.TabIndex = 3;
-            // 
-            // btnSkipHijack
-            // 
-            this.btnSkipHijack.Font = new System.Drawing.Font("Consolas", 10F);
-            this.btnSkipHijack.Location = new System.Drawing.Point(880, 531);
-            this.btnSkipHijack.Name = "btnSkipHijack";
-            this.btnSkipHijack.Size = new System.Drawing.Size(103, 37);
-            this.btnSkipHijack.TabIndex = 4;
-            this.btnSkipHijack.Text = "Skip";
-            this.btnSkipHijack.UseVisualStyleBackColor = true;
-            this.btnSkipHijack.Click += new System.EventHandler(this.btnSkipHijack_Click);
             // 
             // hijackScreen
             // 

@@ -38,9 +38,9 @@ namespace Project_Ports
             InitializeComponent();
         }
 
-        private void Crash_Load(object sender, EventArgs e)
+        private async void Crash_Load(object sender, EventArgs e)
         {
-            Thread.Sleep(2000);
+            await Task.Delay(2000);
             if (Properties.Settings.Default.hijacked2 == true)
             {
                 MessageBox.Show("Coming soon!");

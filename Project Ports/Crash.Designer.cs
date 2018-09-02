@@ -42,7 +42,7 @@
             this.txtCrash.BackColor = System.Drawing.Color.Black;
             this.txtCrash.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtCrash.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCrash.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCrash.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCrash.ForeColor = System.Drawing.Color.Red;
             this.txtCrash.Location = new System.Drawing.Point(21, 15);
             this.txtCrash.MaxLength = 32767;

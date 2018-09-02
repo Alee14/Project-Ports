@@ -55,7 +55,7 @@ namespace Project_Ports
 
         private void ChatApp_Load(object sender, EventArgs e)
         {
-            txtSentMessages.AppendText(GeneralAPI.PlayerName + " has entered the channel!");
+            txtSentMessages.AppendText(GeneralAPI.PlayerName + " has entered the channel!" + Environment.NewLine);
 
         }
 

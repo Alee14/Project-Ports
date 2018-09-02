@@ -96,6 +96,7 @@ namespace PortEngine
                 await Task.Delay(2000);
                 txtHijack1.AppendText("Starting Desktop..." + Environment.NewLine);
                 await Task.Delay(3000);
+
             }
             else
             {

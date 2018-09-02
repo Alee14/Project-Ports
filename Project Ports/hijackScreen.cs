@@ -40,13 +40,14 @@ namespace Project_Ports
 
         private void hijackScreen_Load(object sender, EventArgs e)
         {
-            StorylineAPI.StartHijackEvent1(txtHijack);    
+            StorylineAPI.StartHijackEvent1(txtHijack);
         }
 
         private void btnSkipHijack_Click(object sender, EventArgs e)
         {
             Desktop desktop = new Desktop();
             desktop.Show();
+            this.Close();
         }
     }
 }

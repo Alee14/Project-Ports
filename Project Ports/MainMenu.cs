@@ -43,10 +43,10 @@ namespace Project_Ports
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
-            Desktop desktop = new Desktop(); 
+            Desktop desktop = new Desktop();
+            Boot boot = new Boot();
             #if DEBUG
             Properties.Settings.Default.hijacked = false;
-            desktop.Show();
             #endif 
             if (Properties.Settings.Default.hijacked == true)
             {
@@ -55,7 +55,7 @@ namespace Project_Ports
             }
             else
             {
-                desktop.Show();
+                boot.Show();
             }
 
         }
