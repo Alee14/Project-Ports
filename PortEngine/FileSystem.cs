@@ -28,20 +28,62 @@ namespace PortEngine
 {
     public class FileSystem
     {
-        public static string appDataFolder
+        public static string universedgFolder
         {
             get
             {
-                return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "Project Ports");
+                return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "UniverseDG");
+            }
+        }
+        public static string portsFolder
+        {
+            get
+            {
+                return Path.Combine(universedgFolder, "Project Ports");
+            }
+        }
+        public static string dataFolder
+        {
+            get
+            {
+                return Path.Combine(portsFolder, "Data");
+            }
+        }
+        public static string homeFolder
+        {
+            get
+            {
+                return Path.Combine(dataFolder, "home");
+            }
+        }
+        public static string logsFolder
+        {
+            get
+            {
+                return Path.Combine(dataFolder, "logs");
+            }
+        }
+        public static string sysFolder
+        {
+            get
+            {
+                return Path.Combine(dataFolder, "sys");
             }
         }
 
-        public static void CreateDataFolder()
-        { 
 
-            if (!Directory.Exists(appDataFolder))
-                Directory.CreateDirectory(appDataFolder);
+        public static void CreateGameFolder()
+        {
+                Directory.CreateDirectory(universedgFolder);
+                Directory.CreateDirectory(portsFolder);
+                Directory.CreateDirectory(dataFolder);
+                Directory.CreateDirectory(homeFolder);
+                Directory.CreateDirectory(logsFolder);
+                Directory.CreateDirectory(sysFolder);
         }
-   
+
     }
+   
 }
+
+

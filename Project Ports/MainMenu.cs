@@ -76,7 +76,7 @@ namespace Project_Ports
             #endif
             portsVersion.Text = Properties.Settings.Default.version;
 
-            FileSystem.CreateDataFolder();
+            FileSystem.CreateGameFolder();
         }
 
     }
