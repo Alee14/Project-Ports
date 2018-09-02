@@ -40,19 +40,13 @@ namespace Project_Ports
 
         private void hijackScreen_Load(object sender, EventArgs e)
         {
-            StorylineAPI.StartHijackEvent1(txtHijack);
-            Desktop desktop = new Desktop();
-            Properties.Settings.Default.hijacked = false;
-            desktop.Show();
-            this.Close();     
+            StorylineAPI.StartHijackEvent1(txtHijack);    
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSkipHijack_Click(object sender, EventArgs e)
         {
             Desktop desktop = new Desktop();
-            Properties.Settings.Default.hijacked = false;
             desktop.Show();
-            this.Close();
         }
     }
 }
