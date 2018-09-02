@@ -30,20 +30,10 @@ namespace PortEngine
 {
     public class StorylineAPI
     {
-        public static bool StorylineStatus = Properties.Settings.Default.storylineStatus;
-        public static bool IsHijack1Completed = Properties.Settings.Default.hijack1EventCompleted;
-        public static bool IsChatter1Completed = Properties.Settings.Default.chatter1EventCompleted;
-        public static string PlayerDisplayName = Properties.Settings.Default.userDisplayName;
-        static BackgroundWorker WorkerBee = new BackgroundWorker();
-
-        public static void StorylineState(bool IsStorylineEnabled)
-        {
-            StorylineStatus = IsStorylineEnabled;
-        }
 
         public static void StartHijackEvent1(TextBox txtHijack1)
         {
-            if (IsHijack1Completed == false)
+            if (GeneralAPI.HijackStorylineState == 1)
             {
                 Thread.Sleep(2000);
                 txtHijack1.AppendText("PortOS is now booting..." + Environment.NewLine);
@@ -121,7 +111,7 @@ namespace PortEngine
 
         public static void StartChatterEvent1(TextBox txtSentMessageDump)
         {
-            if (IsChatter1Completed == false)
+            if (GeneralAPI.ChatterStorylineState == 1)
             {
                 txtSentMessageDump.AppendText("Adam has entered the channel..." + Environment.NewLine);
                 Thread.Sleep(2000);
@@ -133,7 +123,7 @@ namespace PortEngine
                 Thread.Sleep(10000);
                 txtSentMessageDump.AppendText("<Adam> Great!" + Environment.NewLine);
                 Thread.Sleep(2000);
-                txtSentMessageDump.AppendText("<Adam> Hello, " + PlayerDisplayName + Environment.NewLine);
+                txtSentMessageDump.AppendText("<Adam> Hello, " + GeneralAPI.PlayerName + Environment.NewLine);
                 Thread.Sleep(2000);
                 txtSentMessageDump.AppendText("<Adam> If you open your app launcher, there is an application called the 'QuantumNet Browser'" + Environment.NewLine);
                 Thread.Sleep(2000);
@@ -160,10 +150,6 @@ namespace PortEngine
                 txtSentMessageDump.AppendText("<Adam> I need to work on... something else..." + Environment.NewLine);
                 Thread.Sleep(2000);
                 txtSentMessageDump.AppendText("Adam has disconnected from the channel. " + Environment.NewLine);
-            }
-            else
-            {
-                txtSentMessageDump.AppendText(PlayerDisplayName + " has entered the channel!");
             }
         }
 

@@ -41,21 +41,31 @@ namespace Project_Ports
 
         private void btnSendMSG_Click(object sender, EventArgs e)
         {
-            //ChatAPI.SendMessage(txtMsgContents, txtSentMessages);
+            ChatAPI.SendMessage(txtMsgContents, txtSentMessages);
         }
 
         private void txtMsgContents_KeyDown(object sender, KeyEventArgs e)
         {
-            //if (e.KeyCode == Keys.Enter)
-            //{
-                //ChatAPI.SendMessage(txtMsgContents, txtSentMessages);
-                //e.SuppressKeyPress = true;
-            //}
+            if (e.KeyCode == Keys.Enter)
+            {
+                ChatAPI.SendMessage(txtMsgContents, txtSentMessages);
+                e.SuppressKeyPress = true;
+            }
         }
 
         private void ChatApp_Load(object sender, EventArgs e)
         {
-            StorylineAPI.StartChatterEvent1(txtMsgContents);
+            txtSentMessages.AppendText(GeneralAPI.PlayerName + " has entered the channel!");
+
+        }
+
+        private async void txtSentMessages_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSentMessages.Text == GeneralAPI.PlayerName + " has entered the channel!" + Environment.NewLine)
+            {
+                await Task.Delay(1000);
+                StorylineAPI.StartChatterEvent1(txtSentMessages);
+            }
         }
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.hijackPanel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.txtHijack = new System.Windows.Forms.TextBox();
             this.hijackPanel.SuspendLayout();
             this.SuspendLayout();
@@ -40,24 +39,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.hijackPanel.BackColor = System.Drawing.Color.Black;
-            this.hijackPanel.Controls.Add(this.button1);
             this.hijackPanel.Controls.Add(this.txtHijack);
             this.hijackPanel.Location = new System.Drawing.Point(0, 0);
             this.hijackPanel.Name = "hijackPanel";
             this.hijackPanel.Size = new System.Drawing.Size(986, 571);
             this.hijackPanel.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Location = new System.Drawing.Point(911, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 571);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "skip";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtHijack
             // 
@@ -65,13 +51,15 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtHijack.BackColor = System.Drawing.Color.Black;
+            this.txtHijack.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtHijack.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtHijack.Font = new System.Drawing.Font("Consolas", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtHijack.ForeColor = System.Drawing.Color.White;
             this.txtHijack.Location = new System.Drawing.Point(15, 12);
             this.txtHijack.Multiline = true;
             this.txtHijack.Name = "txtHijack";
             this.txtHijack.ReadOnly = true;
-            this.txtHijack.Size = new System.Drawing.Size(878, 547);
+            this.txtHijack.Size = new System.Drawing.Size(957, 547);
             this.txtHijack.TabIndex = 3;
             // 
             // hijackScreen
@@ -95,6 +83,5 @@
 
         private System.Windows.Forms.Panel hijackPanel;
         private System.Windows.Forms.TextBox txtHijack;
-        private System.Windows.Forms.Button button1;
     }
 }

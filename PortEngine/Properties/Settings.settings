@@ -11,20 +11,20 @@
     <Setting Name="userBalance" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="userSecurityLevel" Type="System.String" Scope="User">
+    <Setting Name="userSecurityLevel" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">1</Value>
     </Setting>
-    <Setting Name="userPowerLevel" Type="System.String" Scope="User">
+    <Setting Name="userPowerLevel" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">1</Value>
     </Setting>
-    <Setting Name="storylineStatus" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+    <Setting Name="storylineStatus" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">1</Value>
     </Setting>
-    <Setting Name="hijack1EventCompleted" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+    <Setting Name="hijackStorylineStatus" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">1</Value>
     </Setting>
-    <Setting Name="chatter1EventCompleted" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+    <Setting Name="chatterStorylineStatus" Type="System.Single" Scope="User">
+      <Value Profile="(Default)">1</Value>
     </Setting>
   </Settings>
 </SettingsFile>

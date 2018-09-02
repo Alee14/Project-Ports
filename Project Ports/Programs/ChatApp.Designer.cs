@@ -48,6 +48,7 @@
             this.txtSentMessages.ReadOnly = true;
             this.txtSentMessages.Size = new System.Drawing.Size(439, 187);
             this.txtSentMessages.TabIndex = 0;
+            this.txtSentMessages.TextChanged += new System.EventHandler(this.txtSentMessages_TextChanged);
             // 
             // txtMsgContents
             // 

@@ -12,7 +12,7 @@ namespace PortEngine.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.7.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.8.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -59,9 +59,9 @@ namespace PortEngine.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("1")]
-        public string userSecurityLevel {
+        public int userSecurityLevel {
             get {
-                return ((string)(this["userSecurityLevel"]));
+                return ((int)(this["userSecurityLevel"]));
             }
             set {
                 this["userSecurityLevel"] = value;
@@ -71,9 +71,9 @@ namespace PortEngine.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("1")]
-        public string userPowerLevel {
+        public int userPowerLevel {
             get {
-                return ((string)(this["userPowerLevel"]));
+                return ((int)(this["userPowerLevel"]));
             }
             set {
                 this["userPowerLevel"] = value;
@@ -82,10 +82,10 @@ namespace PortEngine.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool storylineStatus {
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public float storylineStatus {
             get {
-                return ((bool)(this["storylineStatus"]));
+                return ((float)(this["storylineStatus"]));
             }
             set {
                 this["storylineStatus"] = value;
@@ -94,25 +94,25 @@ namespace PortEngine.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool hijack1EventCompleted {
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public float hijackStorylineStatus {
             get {
-                return ((bool)(this["hijack1EventCompleted"]));
+                return ((float)(this["hijackStorylineStatus"]));
             }
             set {
-                this["hijack1EventCompleted"] = value;
+                this["hijackStorylineStatus"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool chatter1EventCompleted {
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public float chatterStorylineStatus {
             get {
-                return ((bool)(this["chatter1EventCompleted"]));
+                return ((float)(this["chatterStorylineStatus"]));
             }
             set {
-                this["chatter1EventCompleted"] = value;
+                this["chatterStorylineStatus"] = value;
             }
         }
     }

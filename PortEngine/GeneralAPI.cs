@@ -29,6 +29,14 @@ namespace PortEngine
     public class GeneralAPI
     {
 
+        public static float ChatterStorylineState = Properties.Settings.Default.chatterStorylineStatus;
+        public static float HijackStorylineState = Properties.Settings.Default.hijackStorylineStatus;
+        public static int PlayerBalance = Properties.Settings.Default.userBalance;
+        public static string PlayerName = Properties.Settings.Default.userDisplayName;
+        public static int PlayerSecurityLevel = Properties.Settings.Default.userSecurityLevel;
+        public static float PlayerPowerLevel = Properties.Settings.Default.userPowerLevel;
+        
+
         public static void appendUsername(Label txtUserDestination)
         {
             txtUserDestination.Text = Properties.Settings.Default.userDisplayName;
