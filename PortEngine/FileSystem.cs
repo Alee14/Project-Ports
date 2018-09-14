@@ -49,6 +49,13 @@ namespace PortEngine
                 return Path.Combine(portsFolder, "Data");
             }
         }
+        public static string bootFolder
+        {
+            get
+            {
+                return Path.Combine(dataFolder, "boot");
+            }
+        }
         public static string homeFolder
         {
             get
@@ -56,11 +63,46 @@ namespace PortEngine
                 return Path.Combine(dataFolder, "home");
             }
         }
-        public static string logsFolder
+        public static string usrFolder
         {
             get
             {
-                return Path.Combine(dataFolder, "logs");
+                return Path.Combine(dataFolder, "usr");
+            }
+        }
+        public static string etcFolder
+        {
+            get
+            {
+                return Path.Combine(dataFolder, "etc");
+            }
+        }
+        public static string tmpFolder
+        {
+            get
+            {
+                return Path.Combine(dataFolder, "tmp");
+            }
+        }
+        public static string rootFolder
+        {
+            get
+            {
+                return Path.Combine(dataFolder, "root");
+            }
+        }
+        public static string mntFolder
+        {
+            get
+            {
+                return Path.Combine(dataFolder, "mnt");
+            }
+        }
+        public static string runFolder
+        {
+            get
+            {
+                return Path.Combine(dataFolder, "run");
             }
         }
         public static string sysFolder
@@ -85,10 +127,15 @@ namespace PortEngine
                 Directory.CreateDirectory(portsFolder);
                 Directory.CreateDirectory(dataFolder);
                 Directory.CreateDirectory(homeFolder);
-                Directory.CreateDirectory(logsFolder);
+                Directory.CreateDirectory(bootFolder);
                 Directory.CreateDirectory(sysFolder);
+                Directory.CreateDirectory(etcFolder);
+                Directory.CreateDirectory(usrFolder);
+                Directory.CreateDirectory(tmpFolder);
+                Directory.CreateDirectory(rootFolder);
+                Directory.CreateDirectory(runFolder);
+                Directory.CreateDirectory(mntFolder);
         }
-
     }
    
 }
