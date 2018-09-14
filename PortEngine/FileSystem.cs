@@ -119,6 +119,10 @@ namespace PortEngine
 
          //   File.WriteAllText(dataFolder, "warning.txt", textWarning);
         }
+        public static void bootFile()
+        {
+
+        }
 
 
         public static void CreateGameFolder()
