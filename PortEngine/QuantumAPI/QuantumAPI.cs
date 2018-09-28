@@ -47,7 +47,7 @@ namespace PortEngine
                     loadSite(new Malwarebits(), pnlLoadSiteHere);
                     break;
                 case "qt.portosdefender/home":
-                    loadSite(new QuantumAPI.Sites.PortOSDefender(), pnlLoadSiteHere);
+                    loadSite(new QuantumAPI.Sites.SiliconOSDefender(), pnlLoadSiteHere);
                     break;
                 default:
                     loadSite(new QuantumAPI.Sites._404Error(), pnlLoadSiteHere);

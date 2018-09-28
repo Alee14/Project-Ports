@@ -29,9 +29,9 @@ using System.Windows.Forms;
 
 namespace PortEngine.QuantumAPI.Sites
 {
-    public partial class PortOSDefender : UserControl
+    public partial class SiliconOSDefender : UserControl
     {
-        public PortOSDefender()
+        public SiliconOSDefender()
         {
             InitializeComponent();
         }

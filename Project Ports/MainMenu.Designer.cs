@@ -91,7 +91,7 @@
             this.wbPortsNews.ScrollBarsEnabled = false;
             this.wbPortsNews.Size = new System.Drawing.Size(852, 450);
             this.wbPortsNews.TabIndex = 5;
-            this.wbPortsNews.Url = new System.Uri("https://portsupdate.tumblr.com/", System.UriKind.Absolute);
+            this.wbPortsNews.Url = new System.Uri("https://siliconupdate.tumblr.com/", System.UriKind.Absolute);
             // 
             // portsVersion
             // 
@@ -101,9 +101,9 @@
             this.portsVersion.ForeColor = System.Drawing.Color.White;
             this.portsVersion.Location = new System.Drawing.Point(13, 66);
             this.portsVersion.Name = "portsVersion";
-            this.portsVersion.Size = new System.Drawing.Size(103, 13);
+            this.portsVersion.Size = new System.Drawing.Size(119, 13);
             this.portsVersion.TabIndex = 6;
-            this.portsVersion.Text = "portsVersion";
+            this.portsVersion.Text = "siliconVersion";
             // 
             // btnExit
             // 
@@ -141,7 +141,7 @@
             this.Controls.Add(this.wbPortsNews);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainMenu";
-            this.Text = "Project: Ports Launcher";
+            this.Text = "Project: Silicon Launcher";
             this.Load += new System.EventHandler(this.MainMenu_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

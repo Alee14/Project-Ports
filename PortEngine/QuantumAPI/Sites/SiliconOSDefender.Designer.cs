@@ -1,6 +1,6 @@
 ﻿namespace PortEngine.QuantumAPI.Sites
 {
-    partial class PortOSDefender
+    partial class SiliconOSDefender
     {
         /// <summary> 
         /// Required designer variable.
@@ -43,9 +43,9 @@
             this.posLogo.ForeColor = System.Drawing.Color.LimeGreen;
             this.posLogo.Location = new System.Drawing.Point(21, 18);
             this.posLogo.Name = "posLogo";
-            this.posLogo.Size = new System.Drawing.Size(190, 24);
+            this.posLogo.Size = new System.Drawing.Size(226, 24);
             this.posLogo.TabIndex = 0;
-            this.posLogo.Text = "PortOS Defender";
+            this.posLogo.Text = "SiliconOS Defender";
             // 
             // btnSignin
             // 
@@ -108,7 +108,7 @@
             this.richTextBox1.TabIndex = 5;
             this.richTextBox1.Text = "We are a hacker group and the point of this is to defeat the A.H.G.";
             // 
-            // PortOSDefender
+            // SiliconOSDefender
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -119,7 +119,7 @@
             this.Controls.Add(this.rtxtNews);
             this.Controls.Add(this.btnSignin);
             this.Controls.Add(this.posLogo);
-            this.Name = "PortOSDefender";
+            this.Name = "SiliconOSDefender";
             this.Size = new System.Drawing.Size(842, 452);
             this.Load += new System.EventHandler(this.PortOSDefender_Load);
             this.ResumeLayout(false);

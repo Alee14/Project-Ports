@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7FF89341-BE42-4AE1-B53E-F9FA4104D30F}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Project_Ports</RootNamespace>
-    <AssemblyName>Project Ports</AssemblyName>
+    <RootNamespace>Project_Silicon</RootNamespace>
+    <AssemblyName>Project Silicon</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

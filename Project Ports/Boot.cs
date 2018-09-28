@@ -1,6 +1,6 @@
 ﻿/************************************************************************
  *  
- *  Project Ports
+ *  Project Silicon
  *  Copyright (C) 2018 UniverseDG
  *
  *  This program is free software: you can redistribute it and/or modify
@@ -41,7 +41,7 @@ namespace Project_Ports
         private async void Boot_Load(object sender, EventArgs e)
         {
             await Task.Delay(2000);
-            txtBoot.AppendText("PortOS is now booting..." + Environment.NewLine);
+            txtBoot.AppendText("SiliconOS is now booting..." + Environment.NewLine);
             await Task.Delay(2000);
             txtBoot.AppendText("GUI Driver has been found!" + Environment.NewLine);
             await Task.Delay(2000);

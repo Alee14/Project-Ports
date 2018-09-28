@@ -36,7 +36,7 @@ namespace PortEngine
             if (GeneralAPI.HijackStorylineState == 1)
             {
                 await Task.Delay(2000);
-                txtHijack1.AppendText("PortOS is now booting..." + Environment.NewLine);
+                txtHijack1.AppendText("SiliconOS is now booting..." + Environment.NewLine);
                 await Task.Delay(5000);
                 txtHijack1.AppendText("SYSTEM ERROR: HIJACKED" + Environment.NewLine);
                 await Task.Delay(2000);
@@ -78,9 +78,9 @@ namespace PortEngine
                 await Task.Delay(1000);
                 txtHijack1.AppendText("??? is now known as Adam…" + Environment.NewLine);
                 await Task.Delay(2000);
-                txtHijack1.AppendText("Adam: I am Adam and I am one of the developers of PortOS!" + Environment.NewLine);
+                txtHijack1.AppendText("Adam: I am Adam and I am one of the developers of SiliconOS!" + Environment.NewLine);
                 await Task.Delay(2000);
-                txtHijack1.AppendText("Adam: As you know, A.H.G is a group of hackers that destroys PortOS computers." + Environment.NewLine);
+                txtHijack1.AppendText("Adam: As you know, A.H.G is a group of hackers that destroys SiliconOS computers." + Environment.NewLine);
                 await Task.Delay(2000);
                 txtHijack1.AppendText("Adam: This computer will shortly reboot and redirected to the desktop…" + Environment.NewLine);
                 await Task.Delay(2000);
@@ -90,7 +90,7 @@ namespace PortEngine
                 await Task.Delay(5000);
                 txtHijack1.Clear();
                 await Task.Delay(2000);
-                txtHijack1.AppendText("PortOS is now booting..." + Environment.NewLine);
+                txtHijack1.AppendText("SiliconOS is now booting..." + Environment.NewLine);
                 await Task.Delay(2000);
                 txtHijack1.AppendText("GUI Driver has been found!" + Environment.NewLine);
                 await Task.Delay(2000);
@@ -100,7 +100,7 @@ namespace PortEngine
             }
             else
             {
-                txtHijack1.AppendText("PortOS is now booting..." + Environment.NewLine);
+                txtHijack1.AppendText("SiliconOS is now booting..." + Environment.NewLine);
                 await Task.Delay(2000);
                 txtHijack1.AppendText("GUI Driver has been found!" + Environment.NewLine);
                 await Task.Delay(2000);
