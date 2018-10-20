@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Project_Silicon.Properties {
+namespace Project_Ports.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
