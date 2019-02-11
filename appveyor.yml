@@ -1,7 +1,31 @@
+image: Visual Studio 2015
+configuration: Debug
+platform: Any CPU
+before_build:
+- nuget restore
+
+build:
+    verbosity: detailed
+    project: Project_Silicon.sln
+ 
 after_build:
-  - tree /F
-  - 7z a "%APPVEYOR_BUILD_FOLDER%\Project Ports\bin\Debug\Ports-%APPVEYOR_BUILD_VERSION%.zip" "%APPVEYOR_BUILD_FOLDER%\Project Ports\bin\Debug\**"
+- cmd: tree /F
+- cmd: 7z a -tzip "Project Ports/bin/Debug/Project-Silicon.zip" "Project Ports/bin/Debug/*"
 
 artifacts:
-  - path: \bin\Debug\Ports-%APPVEYOR_BUILD_VERSION%.zip
-    name: Ports-%APPVEYOR_BUILD_VERSION%
+- path: Project Ports/bin/Debug/BSODPrank.zip
+  name: DevBuild
+
+deploy:
+    provider: GitHub
+    release: Continuous build
+    description: 'Project Silicon Development Builds'
+    auth_token:
+        secure: MeuJU9DaBpnzRdWaqvDfR4M7WhtB90FIpmYkZ5GmS8GyVSWyHT2FAMtDczW3D/JQ
+    artifact: /.*\.zip/
+    draft: false
+    prerelease: true
+    force_update: true
+    tag: continuous
+    on:
+        appveyor_repo_tag: true
