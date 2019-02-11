@@ -13,7 +13,7 @@ after_build:
 - cmd: 7z a -tzip "Project Ports/bin/Debug/Project-Silicon.zip" "Project Ports/bin/Debug/*"
 
 artifacts:
-- path: Project Ports/bin/Debug/BSODPrank.zip
+- path: Project Ports/bin/Debug/Project-Silicon.zip
   name: DevBuild
 
 deploy:
