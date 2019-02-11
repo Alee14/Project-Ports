@@ -63,7 +63,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(270, 38);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Copyright (C) 2018 UniverseDG\r\nLicensed with: GPL 3.0";
+            this.label2.Text = "Copyright (C) 2019 UniverseDG\r\nLicensed with: GPL 3.0";
             // 
             // btnAbout
             // 
