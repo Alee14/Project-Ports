@@ -56,6 +56,12 @@
     <Compile Include="FileSystem.cs" />
     <Compile Include="GeneralAPI.cs" />
     <Compile Include="PortsTerminalAPI.cs" />
+    <Compile Include="QuantumAPI\Sites\HomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QuantumAPI\Sites\HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuantumAPI\Sites\Malwarebits.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     <EmbeddedResource Include="QuantumAPI\Sites\404Error.resx">
       <DependentUpon>404Error.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuantumAPI\Sites\HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuantumAPI\Sites\Malwarebits.resx">
       <DependentUpon>Malwarebits.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,7 +138,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="ConsoleControl">
-      <Version>1.1.0</Version>
+      <Version>1.2.1</Version>
     </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -54,6 +54,7 @@
             this.Controls.Add(this.txtAddress);
             this.Name = "QuantumNet";
             this.Size = new System.Drawing.Size(849, 486);
+           // this.Load += new System.EventHandler(this.QuantumNet_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

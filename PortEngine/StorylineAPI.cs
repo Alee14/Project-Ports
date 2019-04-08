@@ -132,7 +132,7 @@ namespace PortEngine
                 await Task.Delay(2000);
                 txtSentMessageDump.AppendText("<Adam> It protects your privacy and has custom web-pages." + Environment.NewLine);
                 await Task.Delay(2000);
-                txtSentMessageDump.AppendText("<Adam> Think of it like the deep web, but, deeper." + Environment.NewLine);
+                txtSentMessageDump.AppendText("<Adam> Think of it like the dark web, but, deeper." + Environment.NewLine);
                 await Task.Delay(2000);
                 txtSentMessageDump.AppendText("<Adam> It does not use the normal domains used with the World Wide Web, it uses specially formatted domains." + Environment.NewLine);
                 await Task.Delay(2000);

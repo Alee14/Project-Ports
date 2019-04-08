@@ -28,10 +28,13 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using PortEngine;
 
+
 namespace Project_Ports
 {
     public partial class QuantumNet : UserControl
     {
+        private Panel pnlLoadSiteHere;
+
         public QuantumNet()
         {
             InitializeComponent();
@@ -44,5 +47,10 @@ namespace Project_Ports
                 QuantumnetAPI.navigateToSite(txtAddress, pnlSiteContents);
             }
         }
+        /*
+        private void QuantumNet_Load(object sender, EventArgs e)
+        {
+            QuantumnetAPI.loadSite(new PortEngine.QuantumAPI.Sites.HomePage(), pnlLoadSiteHere);
+        }*/
     }
 }

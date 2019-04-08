@@ -23,17 +23,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using PortEngine.QuantumAPI.Sites;
 
 namespace PortEngine
 {
     public class QuantumnetAPI
     {
 
-        private static void loadSite(UserControl site, Panel pnlSiteArea)
+        public static void loadSite(UserControl site, Panel pnlSiteArea)
         {
-            pnlSiteArea.Controls.Clear();
-            pnlSiteArea.Controls.Add(site);
+           /* if (pnlSiteArea == null)
+            {
+                pnlSiteArea.Controls.Add(site);
+
+            }
+            else
+            {*/
+                pnlSiteArea.Controls.Clear();
+                pnlSiteArea.Controls.Add(site);
+            //}
         }
 
         public static void navigateToSite(TextBox txtNavigateToThis, Panel pnlLoadSiteHere)
