@@ -1,5 +1,5 @@
 # Project Silicon
-A game project by Universe
+A game project by AleeCorp
 
 # PUBLIC SERVICE ANNOUNCEMENT
 We are officially ending support for the WinForms version and replacing it with Unreal Engine once Alpha 0.2 is released...
